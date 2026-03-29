@@ -83,6 +83,8 @@ npm run build
 docker compose up --build
 ```
 
+The web bundle reads `VITE_API_BASE_URL` at build time. The compose file now passes `http://localhost:3000` as a build arg so the browser-facing app talks to the locally published API port.
+
 Services:
 - API: `http://localhost:3000`
 - Web: `http://localhost:4173`
