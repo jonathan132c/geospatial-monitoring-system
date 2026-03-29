@@ -12,8 +12,9 @@
     "dev:web": "vite --config apps/web/vite.config.ts",
     "preview:web": "vite preview --config apps/web/vite.config.ts --host 0.0.0.0 --port 4173",
     "dev:worker": "tsx apps/worker/src/worker.ts",
-    "seed:demo": "tsx scripts/seed-demo.ts",
-    "generate:report": "tsx scripts/generate-demo-report.ts",
+    "seed:demo": "tsx scripts/seed-demo.ts && python3 scripts/repair_dataset_integrity.py",
+    "generate:report": "python3 scripts/repair_dataset_integrity.py",
+    "repair:integrity": "python3 scripts/repair_dataset_integrity.py",
     "test": "vitest run",
     "test:watch": "vitest",
     "lint:types": "tsc -p apps/api/tsconfig.json --noEmit && tsc -p apps/worker/tsconfig.json --noEmit && tsc -p apps/web/tsconfig.json --noEmit"

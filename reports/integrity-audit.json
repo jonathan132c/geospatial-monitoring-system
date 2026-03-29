@@ -1,0 +1,2274 @@
+{
+  "reviewedAt": "2026-03-29T10:11:53Z",
+  "sourceFile": "data/generated/demo-snapshot.json",
+  "outputFiles": [
+    "data/generated/demo-snapshot.json",
+    "reports/integrity-audit.json",
+    "reports/integrity-report.md",
+    "reports/demo-report.md"
+  ],
+  "summary": {
+    "totalRecordsReviewed": 77,
+    "recordsChanged": 77,
+    "recordsDowngraded": 28,
+    "recordsReclassifiedAsSyntheticDemo": 65,
+    "recordsWithIncorrectRegionTagging": 16,
+    "recordsWithScoringFixes": 8,
+    "unresolvedUncertainties": 3,
+    "datasetSuitability": "demo only",
+    "productionSafe": false
+  },
+  "recordsChanged": [
+    {
+      "recordType": "region",
+      "id": "iran",
+      "changes": [
+        "added provenance metadata",
+        "marked geometry as approximate"
+      ]
+    },
+    {
+      "recordType": "region",
+      "id": "israel",
+      "changes": [
+        "added provenance metadata",
+        "marked geometry as approximate"
+      ]
+    },
+    {
+      "recordType": "region",
+      "id": "arabian-peninsula",
+      "changes": [
+        "added provenance metadata",
+        "marked geometry as approximate"
+      ]
+    },
+    {
+      "recordType": "region",
+      "id": "eastern-mediterranean",
+      "changes": [
+        "added provenance metadata",
+        "marked geometry as approximate"
+      ]
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-opensky-obs-1a",
+      "changes": [
+        "renamed provider to fixture identifier",
+        "added provenance metadata",
+        "detected demo markers: demo, offline, sample, seed, seeded"
+      ]
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-adsb_exchange-obs-1b",
+      "changes": [
+        "renamed provider to fixture identifier",
+        "added provenance metadata",
+        "detected demo markers: demo, offline, sample, seed, seeded"
+      ]
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-flightaware-obs-1c",
+      "changes": [
+        "renamed provider to fixture identifier",
+        "added provenance metadata",
+        "detected demo markers: demo, offline, sample, seed, seeded"
+      ]
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-opensky-obs-2a",
+      "changes": [
+        "renamed provider to fixture identifier",
+        "added provenance metadata",
+        "detected demo markers: demo, offline, sample, seed, seeded"
+      ]
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-adsb_exchange-obs-2b",
+      "changes": [
+        "renamed provider to fixture identifier",
+        "added provenance metadata",
+        "detected demo markers: demo, offline, sample, seed, seeded"
+      ]
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-flightaware-obs-3c",
+      "changes": [
+        "renamed provider to fixture identifier",
+        "added provenance metadata",
+        "detected demo markers: demo, offline, sample, seed, seeded"
+      ]
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-opensky-obs-4a",
+      "changes": [
+        "renamed provider to fixture identifier",
+        "added provenance metadata",
+        "detected demo markers: demo, offline, sample, seed, seeded"
+      ]
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-adsb_exchange-obs-5b",
+      "changes": [
+        "renamed provider to fixture identifier",
+        "added provenance metadata",
+        "detected demo markers: demo, offline, sample, seed, seeded"
+      ]
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-opensky-mea-1",
+      "changes": [
+        "renamed provider to fixture identifier",
+        "added provenance metadata",
+        "detected demo markers: demo, offline, sample, seed, seeded"
+      ]
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-adsb_exchange-mea-2",
+      "changes": [
+        "renamed provider to fixture identifier",
+        "added provenance metadata",
+        "detected demo markers: demo, offline, sample, seed, seeded"
+      ]
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-flightaware-mea-3",
+      "changes": [
+        "renamed provider to fixture identifier",
+        "added provenance metadata",
+        "detected demo markers: demo, offline, sample, seed, seeded"
+      ]
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-opensky-mea-4",
+      "changes": [
+        "renamed provider to fixture identifier",
+        "added provenance metadata",
+        "detected demo markers: demo, offline, sample, seed, seeded"
+      ]
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-opensky-gfa-1",
+      "changes": [
+        "renamed provider to fixture identifier",
+        "added provenance metadata",
+        "detected demo markers: demo, offline, sample, seed, seeded"
+      ]
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-adsb_exchange-gfa-2",
+      "changes": [
+        "renamed provider to fixture identifier",
+        "added provenance metadata",
+        "detected demo markers: demo, offline, sample, seed, seeded"
+      ]
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-flightaware-gfa-3",
+      "changes": [
+        "renamed provider to fixture identifier",
+        "added provenance metadata",
+        "detected demo markers: demo, offline, sample, seed, seeded"
+      ]
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-opensky-gfa-4",
+      "changes": [
+        "renamed provider to fixture identifier",
+        "added provenance metadata",
+        "detected demo markers: demo, offline, sample, seed, seeded"
+      ]
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-adsb_exchange-gfa-5",
+      "changes": [
+        "renamed provider to fixture identifier",
+        "added provenance metadata",
+        "detected demo markers: demo, offline, sample, seed, seeded"
+      ]
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-opensky-ira-1",
+      "changes": [
+        "renamed provider to fixture identifier",
+        "added provenance metadata",
+        "detected demo markers: demo, offline, sample, seed, seeded"
+      ]
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-flightaware-ira-2",
+      "changes": [
+        "renamed provider to fixture identifier",
+        "added provenance metadata",
+        "detected demo markers: demo, offline, sample, seed, seeded"
+      ]
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-opensky-ira-3",
+      "changes": [
+        "renamed provider to fixture identifier",
+        "added provenance metadata",
+        "detected demo markers: demo, offline, sample, seed, seeded"
+      ]
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-flightaware-ira-4",
+      "changes": [
+        "renamed provider to fixture identifier",
+        "added provenance metadata",
+        "detected demo markers: demo, offline, sample, seed, seeded"
+      ]
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-adsb_exchange-kac-1",
+      "changes": [
+        "renamed provider to fixture identifier",
+        "added provenance metadata",
+        "detected demo markers: demo, offline, sample, seed, seeded"
+      ]
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-opensky-kac-2",
+      "changes": [
+        "renamed provider to fixture identifier",
+        "added provenance metadata",
+        "detected demo markers: demo, offline, sample, seed, seeded"
+      ]
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-adsb_exchange-kac-3",
+      "changes": [
+        "renamed provider to fixture identifier",
+        "added provenance metadata",
+        "detected demo markers: demo, offline, sample, seed, seeded"
+      ]
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-opensky-kac-4",
+      "changes": [
+        "renamed provider to fixture identifier",
+        "added provenance metadata",
+        "detected demo markers: demo, offline, sample, seed, seeded"
+      ]
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-flightaware-axy-1",
+      "changes": [
+        "renamed provider to fixture identifier",
+        "added provenance metadata",
+        "detected demo markers: demo, offline, sample, seed, seeded"
+      ]
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-opensky-axy-2",
+      "changes": [
+        "renamed provider to fixture identifier",
+        "added provenance metadata",
+        "detected demo markers: demo, offline, sample, seed, seeded"
+      ]
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-flightaware-axy-3",
+      "changes": [
+        "renamed provider to fixture identifier",
+        "added provenance metadata",
+        "detected demo markers: demo, offline, sample, seed, seeded"
+      ]
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-opensky-axy-4",
+      "changes": [
+        "renamed provider to fixture identifier",
+        "added provenance metadata",
+        "detected demo markers: demo, offline, sample, seed, seeded"
+      ]
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-flightaware-axy-5",
+      "changes": [
+        "renamed provider to fixture identifier",
+        "added provenance metadata",
+        "detected demo markers: demo, offline, sample, seed, seeded"
+      ]
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-flightaware-lowcov-1",
+      "changes": [
+        "renamed provider to fixture identifier",
+        "added provenance metadata",
+        "detected demo markers: demo, offline, sample, seed, seeded"
+      ]
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-flightaware-lowcov-2",
+      "changes": [
+        "renamed provider to fixture identifier",
+        "added provenance metadata",
+        "detected demo markers: demo, offline, sample, seed, seeded"
+      ]
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-notam_feed-restr-1",
+      "changes": [
+        "renamed provider to fixture identifier",
+        "added provenance metadata",
+        "detected demo markers: demo, offline, seed, seeded"
+      ]
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-notam_feed-restr-2",
+      "changes": [
+        "renamed provider to fixture identifier",
+        "added provenance metadata",
+        "detected demo markers: demo, offline, seed, seeded"
+      ]
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-icao_bulletins-bulletin-1",
+      "changes": [
+        "renamed provider to fixture identifier",
+        "added provenance metadata",
+        "detected demo markers: demo, offline, seed, seeded"
+      ]
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-easa_bulletins-bulletin-2",
+      "changes": [
+        "renamed provider to fixture identifier",
+        "added provenance metadata",
+        "detected demo markers: demo, offline, seed, seeded"
+      ]
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-nasa_firms-thermal-1",
+      "changes": [
+        "renamed provider to fixture identifier",
+        "added provenance metadata",
+        "detected demo markers: demo, offline, seed, seeded"
+      ]
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-nasa_firms-thermal-2",
+      "changes": [
+        "renamed provider to fixture identifier",
+        "added provenance metadata",
+        "detected demo markers: demo, offline, seed, seeded"
+      ]
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-nasa_firms-thermal-3",
+      "changes": [
+        "renamed provider to fixture identifier",
+        "added provenance metadata",
+        "detected demo markers: demo, offline, seed, seeded"
+      ]
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-nasa_firms-thermal-4",
+      "changes": [
+        "renamed provider to fixture identifier",
+        "added provenance metadata",
+        "detected demo markers: demo, offline, seed, seeded"
+      ]
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-nasa_firms-thermal-5",
+      "changes": [
+        "renamed provider to fixture identifier",
+        "added provenance metadata",
+        "detected demo markers: demo, offline, seed, seeded"
+      ]
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-osint_news-osint-1",
+      "changes": [
+        "renamed provider to fixture identifier",
+        "added provenance metadata",
+        "detected demo markers: demo, offline, seed, seeded"
+      ]
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-osint_news-news-1",
+      "changes": [
+        "renamed provider to fixture identifier",
+        "added provenance metadata",
+        "detected demo markers: demo, offline, seed, seeded"
+      ]
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-osint_news-osint-2",
+      "changes": [
+        "renamed provider to fixture identifier",
+        "added provenance metadata",
+        "detected demo markers: demo, offline, seed, seeded"
+      ]
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-osint_news-osint-3",
+      "changes": [
+        "renamed provider to fixture identifier",
+        "added provenance metadata",
+        "detected demo markers: demo, offline, seed, seeded"
+      ]
+    },
+    {
+      "recordType": "restriction",
+      "id": "restr-1",
+      "changes": [
+        "provider renamed to fixture identifier",
+        "restriction downgraded to advisory wording",
+        "regionIds recalculated",
+        "external verification added"
+      ]
+    },
+    {
+      "recordType": "restriction",
+      "id": "restr-2",
+      "changes": [
+        "provider renamed to fixture identifier",
+        "restriction downgraded to advisory wording",
+        "regionIds recalculated",
+        "external verification added"
+      ]
+    },
+    {
+      "recordType": "track",
+      "id": "track-abc001",
+      "changes": [
+        "providers renamed to fixture identifiers",
+        "callsign prefixed with DEMO-",
+        "anomaly taxonomy downgraded",
+        "regionIds recalculated",
+        "external verification added"
+      ]
+    },
+    {
+      "recordType": "track",
+      "id": "track-def002",
+      "changes": [
+        "providers renamed to fixture identifiers",
+        "callsign prefixed with DEMO-",
+        "anomaly taxonomy downgraded",
+        "regionIds recalculated",
+        "external verification added"
+      ]
+    },
+    {
+      "recordType": "track",
+      "id": "track-ghi003",
+      "changes": [
+        "providers renamed to fixture identifiers",
+        "callsign prefixed with DEMO-",
+        "anomaly taxonomy downgraded",
+        "regionIds recalculated",
+        "external verification added"
+      ]
+    },
+    {
+      "recordType": "track",
+      "id": "track-jkl004",
+      "changes": [
+        "providers renamed to fixture identifiers",
+        "callsign prefixed with DEMO-",
+        "anomaly taxonomy downgraded",
+        "regionIds recalculated",
+        "external verification added"
+      ]
+    },
+    {
+      "recordType": "track",
+      "id": "track-mno005",
+      "changes": [
+        "providers renamed to fixture identifiers",
+        "callsign prefixed with DEMO-",
+        "anomaly taxonomy downgraded",
+        "regionIds recalculated",
+        "external verification added"
+      ]
+    },
+    {
+      "recordType": "track",
+      "id": "track-pqr006",
+      "changes": [
+        "providers renamed to fixture identifiers",
+        "callsign prefixed with DEMO-",
+        "anomaly taxonomy downgraded",
+        "regionIds recalculated",
+        "external verification added"
+      ]
+    },
+    {
+      "recordType": "track",
+      "id": "track-stu007",
+      "changes": [
+        "providers renamed to fixture identifiers",
+        "callsign prefixed with DEMO-",
+        "anomaly taxonomy downgraded",
+        "regionIds recalculated",
+        "external verification added"
+      ]
+    },
+    {
+      "recordType": "indicator",
+      "id": "bulletin-1",
+      "changes": [
+        "provider renamed to fixture identifier",
+        "taxonomy downgraded to neutral vocabulary",
+        "headline/description rewritten",
+        "regionIds recalculated",
+        "external verification added"
+      ]
+    },
+    {
+      "recordType": "indicator",
+      "id": "bulletin-2",
+      "changes": [
+        "provider renamed to fixture identifier",
+        "taxonomy downgraded to neutral vocabulary",
+        "headline/description rewritten",
+        "regionIds recalculated",
+        "external verification added"
+      ]
+    },
+    {
+      "recordType": "indicator",
+      "id": "thermal-1",
+      "changes": [
+        "provider renamed to fixture identifier",
+        "taxonomy downgraded to neutral vocabulary",
+        "headline/description rewritten",
+        "regionIds recalculated",
+        "external verification added"
+      ]
+    },
+    {
+      "recordType": "indicator",
+      "id": "thermal-2",
+      "changes": [
+        "provider renamed to fixture identifier",
+        "taxonomy downgraded to neutral vocabulary",
+        "headline/description rewritten",
+        "regionIds recalculated",
+        "external verification added"
+      ]
+    },
+    {
+      "recordType": "indicator",
+      "id": "thermal-3",
+      "changes": [
+        "provider renamed to fixture identifier",
+        "taxonomy downgraded to neutral vocabulary",
+        "headline/description rewritten",
+        "regionIds recalculated",
+        "external verification added"
+      ]
+    },
+    {
+      "recordType": "indicator",
+      "id": "thermal-4",
+      "changes": [
+        "provider renamed to fixture identifier",
+        "taxonomy downgraded to neutral vocabulary",
+        "headline/description rewritten",
+        "regionIds recalculated",
+        "external verification added"
+      ]
+    },
+    {
+      "recordType": "indicator",
+      "id": "thermal-5",
+      "changes": [
+        "provider renamed to fixture identifier",
+        "taxonomy downgraded to neutral vocabulary",
+        "headline/description rewritten",
+        "regionIds recalculated",
+        "external verification added"
+      ]
+    },
+    {
+      "recordType": "indicator",
+      "id": "osint-1",
+      "changes": [
+        "provider renamed to fixture identifier",
+        "taxonomy downgraded to neutral vocabulary",
+        "headline/description rewritten",
+        "regionIds recalculated",
+        "external verification added"
+      ]
+    },
+    {
+      "recordType": "indicator",
+      "id": "news-1",
+      "changes": [
+        "provider renamed to fixture identifier",
+        "taxonomy downgraded to neutral vocabulary",
+        "headline/description rewritten",
+        "regionIds recalculated",
+        "external verification added"
+      ]
+    },
+    {
+      "recordType": "indicator",
+      "id": "osint-2",
+      "changes": [
+        "provider renamed to fixture identifier",
+        "taxonomy downgraded to neutral vocabulary",
+        "headline/description rewritten",
+        "regionIds recalculated",
+        "external verification added"
+      ]
+    },
+    {
+      "recordType": "indicator",
+      "id": "osint-3",
+      "changes": [
+        "provider renamed to fixture identifier",
+        "taxonomy downgraded to neutral vocabulary",
+        "headline/description rewritten",
+        "regionIds recalculated",
+        "external verification added"
+      ]
+    },
+    {
+      "recordType": "event",
+      "id": "event-thermal-2",
+      "changes": [
+        "removed overstated taxonomy",
+        "recomputed conservative score",
+        "rewrote title and summary",
+        "renamed providers to fixture identifiers",
+        "added inherited external verification context"
+      ]
+    },
+    {
+      "recordType": "event",
+      "id": "event-strike-2",
+      "changes": [
+        "removed overstated taxonomy",
+        "recomputed conservative score",
+        "rewrote title and summary",
+        "renamed providers to fixture identifiers",
+        "added inherited external verification context"
+      ]
+    },
+    {
+      "recordType": "event",
+      "id": "event-thermal-1",
+      "changes": [
+        "removed overstated taxonomy",
+        "recomputed conservative score",
+        "rewrote title and summary",
+        "renamed providers to fixture identifiers",
+        "added inherited external verification context"
+      ]
+    },
+    {
+      "recordType": "event",
+      "id": "event-strike-1",
+      "changes": [
+        "removed overstated taxonomy",
+        "recomputed conservative score",
+        "rewrote title and summary",
+        "renamed providers to fixture identifiers",
+        "added inherited external verification context"
+      ]
+    },
+    {
+      "recordType": "event",
+      "id": "event-restr-1",
+      "changes": [
+        "removed overstated taxonomy",
+        "recomputed conservative score",
+        "rewrote title and summary",
+        "renamed providers to fixture identifiers",
+        "added inherited external verification context"
+      ]
+    },
+    {
+      "recordType": "event",
+      "id": "event-diversion-4defb183-14b2-4d4c-a9df-2a14868f82aa",
+      "changes": [
+        "removed overstated taxonomy",
+        "recomputed conservative score",
+        "rewrote title and summary",
+        "renamed providers to fixture identifiers",
+        "added inherited external verification context"
+      ]
+    },
+    {
+      "recordType": "event",
+      "id": "event-restr-2",
+      "changes": [
+        "removed overstated taxonomy",
+        "recomputed conservative score",
+        "rewrote title and summary",
+        "renamed providers to fixture identifiers",
+        "added inherited external verification context"
+      ]
+    },
+    {
+      "recordType": "event",
+      "id": "event-unverified-osint-3",
+      "changes": [
+        "removed overstated taxonomy",
+        "recomputed conservative score",
+        "rewrote title and summary",
+        "renamed providers to fixture identifiers",
+        "added inherited external verification context"
+      ]
+    }
+  ],
+  "recordsDowngraded": [
+    {
+      "recordType": "restriction",
+      "id": "restr-1",
+      "from": {
+        "restrictionLevel": "closure",
+        "title": "Temporary closure east of Cyprus / Levant corridor"
+      },
+      "to": {
+        "restrictionLevel": "advisory",
+        "title": "Synthetic demo restriction: Temporary closure east of Cyprus / Levant corridor"
+      },
+      "reason": "Seeded restriction-like payload must not present as live operational truth."
+    },
+    {
+      "recordType": "restriction",
+      "id": "restr-2",
+      "from": {
+        "restrictionLevel": "avoidance",
+        "title": "Avoidance advisory over northern Arabian Peninsula transit lanes"
+      },
+      "to": {
+        "restrictionLevel": "advisory",
+        "title": "Synthetic demo restriction: Avoidance advisory over northern Arabian Peninsula transit lanes"
+      },
+      "reason": "Seeded restriction-like payload must not present as live operational truth."
+    },
+    {
+      "recordType": "track",
+      "id": "track-abc001",
+      "from": [
+        {
+          "type": "route_deviation",
+          "observedAt": "2026-03-28T16:31:00.000Z",
+          "severity": "medium",
+          "explanation": "Heading changed by 92\u00b0 over 13 minutes",
+          "relatedRegionIds": [
+            "israel",
+            "eastern-mediterranean"
+          ],
+          "point": {
+            "type": "Point",
+            "coordinates": [
+              36.18,
+              33.02
+            ]
+          }
+        },
+        {
+          "type": "route_deviation",
+          "observedAt": "2026-03-28T16:45:00.000Z",
+          "severity": "high",
+          "explanation": "Heading changed by 148\u00b0 over 14 minutes",
+          "relatedRegionIds": [
+            "israel",
+            "eastern-mediterranean"
+          ],
+          "point": {
+            "type": "Point",
+            "coordinates": [
+              35.91,
+              33.19
+            ]
+          }
+        }
+      ],
+      "to": [
+        {
+          "type": "route_revectoring_candidate",
+          "observedAt": "2026-03-28T16:31:00.000Z",
+          "severity": "medium",
+          "explanation": "Course changes are retained only as a route-revectoring candidate within a seeded scenario; they do not prove abnormal real-world flight behavior.",
+          "relatedRegionIds": [
+            "israel",
+            "eastern-mediterranean"
+          ],
+          "point": {
+            "type": "Point",
+            "coordinates": [
+              36.18,
+              33.02
+            ]
+          },
+          "legacyType": "route_deviation"
+        },
+        {
+          "type": "route_revectoring_candidate",
+          "observedAt": "2026-03-28T16:45:00.000Z",
+          "severity": "high",
+          "explanation": "Course changes are retained only as a route-revectoring candidate within a seeded scenario; they do not prove abnormal real-world flight behavior.",
+          "relatedRegionIds": [
+            "israel",
+            "eastern-mediterranean"
+          ],
+          "point": {
+            "type": "Point",
+            "coordinates": [
+              35.91,
+              33.19
+            ]
+          },
+          "legacyType": "route_deviation"
+        }
+      ],
+      "reason": "Operational anomaly claims were downgraded to candidate/discontinuity labels."
+    },
+    {
+      "recordType": "track",
+      "id": "track-def002",
+      "from": [
+        {
+          "type": "transponder_loss",
+          "observedAt": "2026-03-28T17:51:00.000Z",
+          "severity": "medium",
+          "explanation": "Signal gap of 31 minutes detected between observations",
+          "relatedRegionIds": [
+            "israel",
+            "eastern-mediterranean"
+          ],
+          "point": {
+            "type": "Point",
+            "coordinates": [
+              36.11,
+              32.86
+            ]
+          }
+        },
+        {
+          "type": "transponder_loss",
+          "observedAt": "2026-03-28T18:25:00.000Z",
+          "severity": "medium",
+          "explanation": "Signal gap of 34 minutes detected between observations",
+          "relatedRegionIds": [
+            "israel",
+            "eastern-mediterranean"
+          ],
+          "point": {
+            "type": "Point",
+            "coordinates": [
+              35.79,
+              33.04
+            ]
+          }
+        },
+        {
+          "type": "holding_pattern",
+          "observedAt": "2026-03-28T18:25:00.000Z",
+          "severity": "medium",
+          "explanation": "Track loop stayed within 11.6 km radius",
+          "relatedRegionIds": [
+            "israel",
+            "eastern-mediterranean"
+          ],
+          "point": {
+            "type": "Point",
+            "coordinates": [
+              35.79,
+              33.04
+            ]
+          }
+        }
+      ],
+      "to": [
+        {
+          "type": "tracking_discontinuity",
+          "observedAt": "2026-03-28T17:51:00.000Z",
+          "severity": "medium",
+          "explanation": "Observation gap retained as a tracking discontinuity; evidence does not support claiming transponder shutdown.",
+          "relatedRegionIds": [
+            "israel",
+            "eastern-mediterranean"
+          ],
+          "point": {
+            "type": "Point",
+            "coordinates": [
+              36.11,
+              32.86
+            ]
+          },
+          "legacyType": "transponder_loss"
+        },
+        {
+          "type": "tracking_discontinuity",
+          "observedAt": "2026-03-28T18:25:00.000Z",
+          "severity": "medium",
+          "explanation": "Observation gap retained as a tracking discontinuity; evidence does not support claiming transponder shutdown.",
+          "relatedRegionIds": [
+            "israel",
+            "eastern-mediterranean"
+          ],
+          "point": {
+            "type": "Point",
+            "coordinates": [
+              35.79,
+              33.04
+            ]
+          },
+          "legacyType": "transponder_loss"
+        },
+        {
+          "type": "holding_pattern_candidate",
+          "observedAt": "2026-03-28T18:25:00.000Z",
+          "severity": "medium",
+          "explanation": "Loop-like motion retained as a holding-pattern candidate, not a confirmed operational hold.",
+          "relatedRegionIds": [
+            "israel",
+            "eastern-mediterranean"
+          ],
+          "point": {
+            "type": "Point",
+            "coordinates": [
+              35.79,
+              33.04
+            ]
+          },
+          "legacyType": "holding_pattern"
+        }
+      ],
+      "reason": "Operational anomaly claims were downgraded to candidate/discontinuity labels."
+    },
+    {
+      "recordType": "track",
+      "id": "track-ghi003",
+      "from": [
+        {
+          "type": "abrupt_altitude_change",
+          "observedAt": "2026-03-28T13:10:00.000Z",
+          "severity": "medium",
+          "explanation": "Altitude shifted by 8000 ft within 10 minutes",
+          "relatedRegionIds": [
+            "iran",
+            "arabian-peninsula"
+          ],
+          "point": {
+            "type": "Point",
+            "coordinates": [
+              42.9,
+              23.1
+            ]
+          }
+        }
+      ],
+      "to": [
+        {
+          "type": "altitude_change_candidate",
+          "observedAt": "2026-03-28T13:10:00.000Z",
+          "severity": "medium",
+          "explanation": "Altitude profile change retained as a candidate only; sparse seeded observations are insufficient to claim an operational anomaly.",
+          "relatedRegionIds": [
+            "iran",
+            "arabian-peninsula"
+          ],
+          "point": {
+            "type": "Point",
+            "coordinates": [
+              42.9,
+              23.1
+            ]
+          },
+          "legacyType": "abrupt_altitude_change"
+        }
+      ],
+      "reason": "Operational anomaly claims were downgraded to candidate/discontinuity labels."
+    },
+    {
+      "recordType": "track",
+      "id": "track-jkl004",
+      "from": [
+        {
+          "type": "abrupt_altitude_change",
+          "observedAt": "2026-03-28T09:20:00.000Z",
+          "severity": "medium",
+          "explanation": "Altitude shifted by 7150 ft within 10 minutes",
+          "relatedRegionIds": [
+            "iran"
+          ],
+          "point": {
+            "type": "Point",
+            "coordinates": [
+              50.1,
+              35.5
+            ]
+          }
+        },
+        {
+          "type": "transponder_loss",
+          "observedAt": "2026-03-28T09:50:00.000Z",
+          "severity": "medium",
+          "explanation": "Signal gap of 30 minutes detected between observations",
+          "relatedRegionIds": [
+            "iran"
+          ],
+          "point": {
+            "type": "Point",
+            "coordinates": [
+              49.7,
+              35.7
+            ]
+          }
+        }
+      ],
+      "to": [
+        {
+          "type": "altitude_change_candidate",
+          "observedAt": "2026-03-28T09:20:00.000Z",
+          "severity": "medium",
+          "explanation": "Altitude profile change retained as a candidate only; sparse seeded observations are insufficient to claim an operational anomaly.",
+          "relatedRegionIds": [
+            "iran"
+          ],
+          "point": {
+            "type": "Point",
+            "coordinates": [
+              50.1,
+              35.5
+            ]
+          },
+          "legacyType": "abrupt_altitude_change"
+        },
+        {
+          "type": "tracking_discontinuity",
+          "observedAt": "2026-03-28T09:50:00.000Z",
+          "severity": "medium",
+          "explanation": "Observation gap retained as a tracking discontinuity; evidence does not support claiming transponder shutdown.",
+          "relatedRegionIds": [
+            "iran"
+          ],
+          "point": {
+            "type": "Point",
+            "coordinates": [
+              49.7,
+              35.7
+            ]
+          },
+          "legacyType": "transponder_loss"
+        }
+      ],
+      "reason": "Operational anomaly claims were downgraded to candidate/discontinuity labels."
+    },
+    {
+      "recordType": "track",
+      "id": "track-mno005",
+      "from": [
+        {
+          "type": "transponder_loss",
+          "observedAt": "2026-03-28T18:55:00.000Z",
+          "severity": "medium",
+          "explanation": "Signal gap of 35 minutes detected between observations",
+          "relatedRegionIds": [
+            "iran",
+            "arabian-peninsula"
+          ],
+          "point": {
+            "type": "Point",
+            "coordinates": [
+              43.5,
+              27.3
+            ]
+          }
+        }
+      ],
+      "to": [
+        {
+          "type": "tracking_discontinuity",
+          "observedAt": "2026-03-28T18:55:00.000Z",
+          "severity": "medium",
+          "explanation": "Observation gap retained as a tracking discontinuity; evidence does not support claiming transponder shutdown.",
+          "relatedRegionIds": [
+            "iran",
+            "arabian-peninsula"
+          ],
+          "point": {
+            "type": "Point",
+            "coordinates": [
+              43.5,
+              27.3
+            ]
+          },
+          "legacyType": "transponder_loss"
+        }
+      ],
+      "reason": "Operational anomaly claims were downgraded to candidate/discontinuity labels."
+    },
+    {
+      "recordType": "track",
+      "id": "track-pqr006",
+      "from": [
+        {
+          "type": "route_deviation",
+          "observedAt": "2026-03-28T19:10:00.000Z",
+          "severity": "medium",
+          "explanation": "Heading changed by 90\u00b0 over 10 minutes",
+          "relatedRegionIds": [
+            "israel",
+            "eastern-mediterranean",
+            "arabian-peninsula"
+          ],
+          "point": {
+            "type": "Point",
+            "coordinates": [
+              34.8,
+              32.05
+            ]
+          }
+        },
+        {
+          "type": "route_deviation",
+          "observedAt": "2026-03-28T19:20:00.000Z",
+          "severity": "medium",
+          "explanation": "Heading changed by 90\u00b0 over 10 minutes",
+          "relatedRegionIds": [
+            "israel",
+            "eastern-mediterranean",
+            "arabian-peninsula"
+          ],
+          "point": {
+            "type": "Point",
+            "coordinates": [
+              34.9,
+              32
+            ]
+          }
+        },
+        {
+          "type": "route_deviation",
+          "observedAt": "2026-03-28T19:30:00.000Z",
+          "severity": "high",
+          "explanation": "Heading changed by 270\u00b0 over 10 minutes",
+          "relatedRegionIds": [
+            "israel",
+            "eastern-mediterranean",
+            "arabian-peninsula"
+          ],
+          "point": {
+            "type": "Point",
+            "coordinates": [
+              34.8,
+              31.95
+            ]
+          }
+        },
+        {
+          "type": "route_deviation",
+          "observedAt": "2026-03-28T19:40:00.000Z",
+          "severity": "medium",
+          "explanation": "Heading changed by 90\u00b0 over 10 minutes",
+          "relatedRegionIds": [
+            "israel",
+            "eastern-mediterranean",
+            "arabian-peninsula"
+          ],
+          "point": {
+            "type": "Point",
+            "coordinates": [
+              34.7,
+              32
+            ]
+          }
+        },
+        {
+          "type": "holding_pattern",
+          "observedAt": "2026-03-28T19:40:00.000Z",
+          "severity": "medium",
+          "explanation": "Track loop stayed within 0.0 km radius",
+          "relatedRegionIds": [
+            "israel",
+            "eastern-mediterranean",
+            "arabian-peninsula"
+          ],
+          "point": {
+            "type": "Point",
+            "coordinates": [
+              34.7,
+              32
+            ]
+          }
+        }
+      ],
+      "to": [
+        {
+          "type": "route_revectoring_candidate",
+          "observedAt": "2026-03-28T19:10:00.000Z",
+          "severity": "medium",
+          "explanation": "Course changes are retained only as a route-revectoring candidate within a seeded scenario; they do not prove abnormal real-world flight behavior.",
+          "relatedRegionIds": [
+            "israel",
+            "eastern-mediterranean",
+            "arabian-peninsula"
+          ],
+          "point": {
+            "type": "Point",
+            "coordinates": [
+              34.8,
+              32.05
+            ]
+          },
+          "legacyType": "route_deviation"
+        },
+        {
+          "type": "route_revectoring_candidate",
+          "observedAt": "2026-03-28T19:20:00.000Z",
+          "severity": "medium",
+          "explanation": "Course changes are retained only as a route-revectoring candidate within a seeded scenario; they do not prove abnormal real-world flight behavior.",
+          "relatedRegionIds": [
+            "israel",
+            "eastern-mediterranean",
+            "arabian-peninsula"
+          ],
+          "point": {
+            "type": "Point",
+            "coordinates": [
+              34.9,
+              32
+            ]
+          },
+          "legacyType": "route_deviation"
+        },
+        {
+          "type": "route_revectoring_candidate",
+          "observedAt": "2026-03-28T19:30:00.000Z",
+          "severity": "high",
+          "explanation": "Course changes are retained only as a route-revectoring candidate within a seeded scenario; they do not prove abnormal real-world flight behavior.",
+          "relatedRegionIds": [
+            "israel",
+            "eastern-mediterranean",
+            "arabian-peninsula"
+          ],
+          "point": {
+            "type": "Point",
+            "coordinates": [
+              34.8,
+              31.95
+            ]
+          },
+          "legacyType": "route_deviation"
+        },
+        {
+          "type": "route_revectoring_candidate",
+          "observedAt": "2026-03-28T19:40:00.000Z",
+          "severity": "medium",
+          "explanation": "Course changes are retained only as a route-revectoring candidate within a seeded scenario; they do not prove abnormal real-world flight behavior.",
+          "relatedRegionIds": [
+            "israel",
+            "eastern-mediterranean",
+            "arabian-peninsula"
+          ],
+          "point": {
+            "type": "Point",
+            "coordinates": [
+              34.7,
+              32
+            ]
+          },
+          "legacyType": "route_deviation"
+        },
+        {
+          "type": "holding_pattern_candidate",
+          "observedAt": "2026-03-28T19:40:00.000Z",
+          "severity": "medium",
+          "explanation": "Loop-like motion retained as a holding-pattern candidate, not a confirmed operational hold.",
+          "relatedRegionIds": [
+            "israel",
+            "eastern-mediterranean",
+            "arabian-peninsula"
+          ],
+          "point": {
+            "type": "Point",
+            "coordinates": [
+              34.7,
+              32
+            ]
+          },
+          "legacyType": "holding_pattern"
+        }
+      ],
+      "reason": "Operational anomaly claims were downgraded to candidate/discontinuity labels."
+    },
+    {
+      "recordType": "track",
+      "id": "track-stu007",
+      "from": [
+        {
+          "type": "transponder_loss",
+          "observedAt": "2026-03-27T22:58:00.000Z",
+          "severity": "medium",
+          "explanation": "Signal gap of 28 minutes detected between observations",
+          "relatedRegionIds": [
+            "arabian-peninsula"
+          ],
+          "point": {
+            "type": "Point",
+            "coordinates": [
+              46.2,
+              15.1
+            ]
+          }
+        }
+      ],
+      "to": [
+        {
+          "type": "coverage_gap",
+          "observedAt": "2026-03-27T22:58:00.000Z",
+          "severity": "medium",
+          "explanation": "Observation gap likely reflects sparse sample coverage rather than transponder loss.",
+          "relatedRegionIds": [
+            "arabian-peninsula"
+          ],
+          "point": {
+            "type": "Point",
+            "coordinates": [
+              46.2,
+              15.1
+            ]
+          },
+          "legacyType": "transponder_loss"
+        }
+      ],
+      "reason": "Operational anomaly claims were downgraded to candidate/discontinuity labels."
+    },
+    {
+      "recordType": "indicator",
+      "id": "bulletin-1",
+      "from": {
+        "type": "icao_bulletin",
+        "headline": "ICAO conflict-zone advisory references tactical disruption in the Eastern Mediterranean corridor"
+      },
+      "to": {
+        "type": "bulletin_notice",
+        "headline": "Synthetic demo: ICAO conflict-zone advisory references tactical disruption in the Eastern Mediterranean corridor"
+      },
+      "reason": "Authoritative-sounding bulletin/report/thermal labels were replaced with neutral synthetic-demo wording."
+    },
+    {
+      "recordType": "indicator",
+      "id": "bulletin-2",
+      "from": {
+        "type": "easa_bulletin",
+        "headline": "EASA conflict-zone bulletin notes tactical risk for northern Arabian transit lanes"
+      },
+      "to": {
+        "type": "bulletin_notice",
+        "headline": "Synthetic demo: EASA conflict-zone bulletin notes tactical risk for northern Arabian transit lanes"
+      },
+      "reason": "Authoritative-sounding bulletin/report/thermal labels were replaced with neutral synthetic-demo wording."
+    },
+    {
+      "recordType": "indicator",
+      "id": "thermal-1",
+      "from": {
+        "type": "thermal_anomaly",
+        "headline": "FIRMS thermal hit thermal-1"
+      },
+      "to": {
+        "type": "thermal_observation_candidate",
+        "headline": "Synthetic demo: FIRMS thermal hit thermal-1"
+      },
+      "reason": "Authoritative-sounding bulletin/report/thermal labels were replaced with neutral synthetic-demo wording."
+    },
+    {
+      "recordType": "indicator",
+      "id": "thermal-2",
+      "from": {
+        "type": "thermal_anomaly",
+        "headline": "FIRMS thermal hit thermal-2"
+      },
+      "to": {
+        "type": "thermal_observation_candidate",
+        "headline": "Synthetic demo: FIRMS thermal hit thermal-2"
+      },
+      "reason": "Authoritative-sounding bulletin/report/thermal labels were replaced with neutral synthetic-demo wording."
+    },
+    {
+      "recordType": "indicator",
+      "id": "thermal-3",
+      "from": {
+        "type": "thermal_anomaly",
+        "headline": "FIRMS thermal hit thermal-3"
+      },
+      "to": {
+        "type": "thermal_observation_candidate",
+        "headline": "Synthetic demo: FIRMS thermal hit thermal-3"
+      },
+      "reason": "Authoritative-sounding bulletin/report/thermal labels were replaced with neutral synthetic-demo wording."
+    },
+    {
+      "recordType": "indicator",
+      "id": "thermal-4",
+      "from": {
+        "type": "thermal_anomaly",
+        "headline": "FIRMS thermal hit thermal-4"
+      },
+      "to": {
+        "type": "thermal_observation_candidate",
+        "headline": "Synthetic demo: FIRMS thermal hit thermal-4"
+      },
+      "reason": "Authoritative-sounding bulletin/report/thermal labels were replaced with neutral synthetic-demo wording."
+    },
+    {
+      "recordType": "indicator",
+      "id": "thermal-5",
+      "from": {
+        "type": "thermal_anomaly",
+        "headline": "FIRMS thermal hit thermal-5"
+      },
+      "to": {
+        "type": "thermal_observation_candidate",
+        "headline": "Synthetic demo: FIRMS thermal hit thermal-5"
+      },
+      "reason": "Authoritative-sounding bulletin/report/thermal labels were replaced with neutral synthetic-demo wording."
+    },
+    {
+      "recordType": "indicator",
+      "id": "osint-1",
+      "from": {
+        "type": "osint_report",
+        "headline": "Multiple local channels mention impact sounds east of Cyprus corridor"
+      },
+      "to": {
+        "type": "reported_observation",
+        "headline": "Synthetic demo: Multiple local channels mention impact sounds east of Cyprus corridor"
+      },
+      "reason": "Authoritative-sounding bulletin/report/thermal labels were replaced with neutral synthetic-demo wording."
+    },
+    {
+      "recordType": "indicator",
+      "id": "news-1",
+      "from": {
+        "type": "news_report",
+        "headline": "Regional desk reports emergency reroutes linked to suspected strike activity"
+      },
+      "to": {
+        "type": "reported_observation",
+        "headline": "Synthetic demo: Regional desk reports emergency reroutes linked to suspected strike activity"
+      },
+      "reason": "Authoritative-sounding bulletin/report/thermal labels were replaced with neutral synthetic-demo wording."
+    },
+    {
+      "recordType": "indicator",
+      "id": "osint-2",
+      "from": {
+        "type": "osint_report",
+        "headline": "Two independent reports mention flashes near the southern Israeli corridor"
+      },
+      "to": {
+        "type": "reported_observation",
+        "headline": "Synthetic demo: Two independent reports mention flashes near the southern Israeli corridor"
+      },
+      "reason": "Authoritative-sounding bulletin/report/thermal labels were replaced with neutral synthetic-demo wording."
+    },
+    {
+      "recordType": "indicator",
+      "id": "osint-3",
+      "from": {
+        "type": "osint_report",
+        "headline": "Single channel claims blast near western Iran"
+      },
+      "to": {
+        "type": "reported_observation",
+        "headline": "Synthetic demo: Single channel claims blast near western Iran"
+      },
+      "reason": "Authoritative-sounding bulletin/report/thermal labels were replaced with neutral synthetic-demo wording."
+    },
+    {
+      "recordType": "event",
+      "id": "event-thermal-2",
+      "from": {
+        "eventType": "thermal_anomaly",
+        "confidence": 0.62,
+        "title": "Thermal anomaly cluster 2"
+      },
+      "to": {
+        "eventType": "thermal_cluster",
+        "confidence": 0.04,
+        "title": "Synthetic demo thermal cluster"
+      },
+      "reason": "Overstated event certainty and confidence were replaced with conservative derived-inference semantics."
+    },
+    {
+      "recordType": "event",
+      "id": "event-strike-2",
+      "from": {
+        "eventType": "probable_strike",
+        "confidence": 0.52,
+        "title": "Probable strike candidate 2"
+      },
+      "to": {
+        "eventType": "possible_strike",
+        "confidence": 0.13,
+        "title": "Synthetic demo strike-candidate scenario"
+      },
+      "reason": "Overstated event certainty and confidence were replaced with conservative derived-inference semantics."
+    },
+    {
+      "recordType": "event",
+      "id": "event-thermal-1",
+      "from": {
+        "eventType": "thermal_anomaly",
+        "confidence": 0.62,
+        "title": "Thermal anomaly cluster 1"
+      },
+      "to": {
+        "eventType": "thermal_cluster",
+        "confidence": 0.04,
+        "title": "Synthetic demo thermal cluster"
+      },
+      "reason": "Overstated event certainty and confidence were replaced with conservative derived-inference semantics."
+    },
+    {
+      "recordType": "event",
+      "id": "event-strike-1",
+      "from": {
+        "eventType": "confirmed_strike",
+        "confidence": 1,
+        "title": "Confirmed strike candidate 1"
+      },
+      "to": {
+        "eventType": "possible_strike",
+        "confidence": 0.09,
+        "title": "Synthetic demo strike-candidate scenario"
+      },
+      "reason": "Overstated event certainty and confidence were replaced with conservative derived-inference semantics."
+    },
+    {
+      "recordType": "event",
+      "id": "event-restr-1",
+      "from": {
+        "eventType": "airspace_closure",
+        "confidence": 0.9,
+        "title": "Temporary closure east of Cyprus / Levant corridor"
+      },
+      "to": {
+        "eventType": "airspace_restriction_notice",
+        "confidence": 0.0,
+        "title": "Synthetic demo airspace restriction scenario"
+      },
+      "reason": "Overstated event certainty and confidence were replaced with conservative derived-inference semantics."
+    },
+    {
+      "recordType": "event",
+      "id": "event-diversion-4defb183-14b2-4d4c-a9df-2a14868f82aa",
+      "from": {
+        "eventType": "aircraft_diversion_cluster",
+        "confidence": 0.55,
+        "title": "Diversion cluster 1"
+      },
+      "to": {
+        "eventType": "traffic_disruption_cluster",
+        "confidence": 0.04,
+        "title": "Synthetic demo traffic disruption cluster"
+      },
+      "reason": "Overstated event certainty and confidence were replaced with conservative derived-inference semantics."
+    },
+    {
+      "recordType": "event",
+      "id": "event-restr-2",
+      "from": {
+        "eventType": "airspace_closure",
+        "confidence": 0.7,
+        "title": "Avoidance advisory over northern Arabian Peninsula transit lanes"
+      },
+      "to": {
+        "eventType": "airspace_restriction_notice",
+        "confidence": 0.0,
+        "title": "Synthetic demo airspace restriction scenario"
+      },
+      "reason": "Overstated event certainty and confidence were replaced with conservative derived-inference semantics."
+    },
+    {
+      "recordType": "event",
+      "id": "event-unverified-osint-3",
+      "from": {
+        "eventType": "unverified_report",
+        "confidence": 0.2,
+        "title": "Single channel claims blast near western Iran"
+      },
+      "to": {
+        "eventType": "unverified_report",
+        "confidence": 0.0,
+        "title": "Synthetic demo unverified report scenario"
+      },
+      "reason": "Overstated event certainty and confidence were replaced with conservative derived-inference semantics."
+    }
+  ],
+  "recordsReclassifiedAsSyntheticDemo": [
+    {
+      "recordType": "rawPayload",
+      "id": "raw-opensky-obs-1a",
+      "reason": "payload attribution or raw body contains demo/sample markers"
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-adsb_exchange-obs-1b",
+      "reason": "payload attribution or raw body contains demo/sample markers"
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-flightaware-obs-1c",
+      "reason": "payload attribution or raw body contains demo/sample markers"
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-opensky-obs-2a",
+      "reason": "payload attribution or raw body contains demo/sample markers"
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-adsb_exchange-obs-2b",
+      "reason": "payload attribution or raw body contains demo/sample markers"
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-flightaware-obs-3c",
+      "reason": "payload attribution or raw body contains demo/sample markers"
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-opensky-obs-4a",
+      "reason": "payload attribution or raw body contains demo/sample markers"
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-adsb_exchange-obs-5b",
+      "reason": "payload attribution or raw body contains demo/sample markers"
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-opensky-mea-1",
+      "reason": "payload attribution or raw body contains demo/sample markers"
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-adsb_exchange-mea-2",
+      "reason": "payload attribution or raw body contains demo/sample markers"
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-flightaware-mea-3",
+      "reason": "payload attribution or raw body contains demo/sample markers"
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-opensky-mea-4",
+      "reason": "payload attribution or raw body contains demo/sample markers"
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-opensky-gfa-1",
+      "reason": "payload attribution or raw body contains demo/sample markers"
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-adsb_exchange-gfa-2",
+      "reason": "payload attribution or raw body contains demo/sample markers"
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-flightaware-gfa-3",
+      "reason": "payload attribution or raw body contains demo/sample markers"
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-opensky-gfa-4",
+      "reason": "payload attribution or raw body contains demo/sample markers"
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-adsb_exchange-gfa-5",
+      "reason": "payload attribution or raw body contains demo/sample markers"
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-opensky-ira-1",
+      "reason": "payload attribution or raw body contains demo/sample markers"
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-flightaware-ira-2",
+      "reason": "payload attribution or raw body contains demo/sample markers"
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-opensky-ira-3",
+      "reason": "payload attribution or raw body contains demo/sample markers"
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-flightaware-ira-4",
+      "reason": "payload attribution or raw body contains demo/sample markers"
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-adsb_exchange-kac-1",
+      "reason": "payload attribution or raw body contains demo/sample markers"
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-opensky-kac-2",
+      "reason": "payload attribution or raw body contains demo/sample markers"
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-adsb_exchange-kac-3",
+      "reason": "payload attribution or raw body contains demo/sample markers"
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-opensky-kac-4",
+      "reason": "payload attribution or raw body contains demo/sample markers"
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-flightaware-axy-1",
+      "reason": "payload attribution or raw body contains demo/sample markers"
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-opensky-axy-2",
+      "reason": "payload attribution or raw body contains demo/sample markers"
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-flightaware-axy-3",
+      "reason": "payload attribution or raw body contains demo/sample markers"
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-opensky-axy-4",
+      "reason": "payload attribution or raw body contains demo/sample markers"
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-flightaware-axy-5",
+      "reason": "payload attribution or raw body contains demo/sample markers"
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-flightaware-lowcov-1",
+      "reason": "payload attribution or raw body contains demo/sample markers"
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-flightaware-lowcov-2",
+      "reason": "payload attribution or raw body contains demo/sample markers"
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-notam_feed-restr-1",
+      "reason": "payload attribution or raw body contains demo/sample markers"
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-notam_feed-restr-2",
+      "reason": "payload attribution or raw body contains demo/sample markers"
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-icao_bulletins-bulletin-1",
+      "reason": "payload attribution or raw body contains demo/sample markers"
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-easa_bulletins-bulletin-2",
+      "reason": "payload attribution or raw body contains demo/sample markers"
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-nasa_firms-thermal-1",
+      "reason": "payload attribution or raw body contains demo/sample markers"
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-nasa_firms-thermal-2",
+      "reason": "payload attribution or raw body contains demo/sample markers"
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-nasa_firms-thermal-3",
+      "reason": "payload attribution or raw body contains demo/sample markers"
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-nasa_firms-thermal-4",
+      "reason": "payload attribution or raw body contains demo/sample markers"
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-nasa_firms-thermal-5",
+      "reason": "payload attribution or raw body contains demo/sample markers"
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-osint_news-osint-1",
+      "reason": "payload attribution or raw body contains demo/sample markers"
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-osint_news-news-1",
+      "reason": "payload attribution or raw body contains demo/sample markers"
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-osint_news-osint-2",
+      "reason": "payload attribution or raw body contains demo/sample markers"
+    },
+    {
+      "recordType": "rawPayload",
+      "id": "raw-osint_news-osint-3",
+      "reason": "payload attribution or raw body contains demo/sample markers"
+    },
+    {
+      "recordType": "restriction",
+      "id": "restr-1",
+      "reason": "source payload contains explicit seeded/demo markers"
+    },
+    {
+      "recordType": "restriction",
+      "id": "restr-2",
+      "reason": "source payload contains explicit seeded/demo markers"
+    },
+    {
+      "recordType": "track",
+      "id": "track-abc001",
+      "reason": "all source payloads are sample/fixture records"
+    },
+    {
+      "recordType": "track",
+      "id": "track-def002",
+      "reason": "all source payloads are sample/fixture records"
+    },
+    {
+      "recordType": "track",
+      "id": "track-ghi003",
+      "reason": "all source payloads are sample/fixture records"
+    },
+    {
+      "recordType": "track",
+      "id": "track-jkl004",
+      "reason": "all source payloads are sample/fixture records"
+    },
+    {
+      "recordType": "track",
+      "id": "track-mno005",
+      "reason": "all source payloads are sample/fixture records"
+    },
+    {
+      "recordType": "track",
+      "id": "track-pqr006",
+      "reason": "all source payloads are sample/fixture records"
+    },
+    {
+      "recordType": "track",
+      "id": "track-stu007",
+      "reason": "all source payloads are sample/fixture records"
+    },
+    {
+      "recordType": "indicator",
+      "id": "bulletin-1",
+      "reason": "payload lineage is seeded/demo and externally unmatched"
+    },
+    {
+      "recordType": "indicator",
+      "id": "bulletin-2",
+      "reason": "payload lineage is seeded/demo and externally unmatched"
+    },
+    {
+      "recordType": "indicator",
+      "id": "thermal-1",
+      "reason": "payload lineage is seeded/demo and externally unmatched"
+    },
+    {
+      "recordType": "indicator",
+      "id": "thermal-2",
+      "reason": "payload lineage is seeded/demo and externally unmatched"
+    },
+    {
+      "recordType": "indicator",
+      "id": "thermal-3",
+      "reason": "payload lineage is seeded/demo and externally unmatched"
+    },
+    {
+      "recordType": "indicator",
+      "id": "thermal-4",
+      "reason": "payload lineage is seeded/demo and externally unmatched"
+    },
+    {
+      "recordType": "indicator",
+      "id": "thermal-5",
+      "reason": "payload lineage is seeded/demo and externally unmatched"
+    },
+    {
+      "recordType": "indicator",
+      "id": "osint-1",
+      "reason": "payload lineage is seeded/demo and externally unmatched"
+    },
+    {
+      "recordType": "indicator",
+      "id": "news-1",
+      "reason": "payload lineage is seeded/demo and externally unmatched"
+    },
+    {
+      "recordType": "indicator",
+      "id": "osint-2",
+      "reason": "payload lineage is seeded/demo and externally unmatched"
+    },
+    {
+      "recordType": "indicator",
+      "id": "osint-3",
+      "reason": "payload lineage is seeded/demo and externally unmatched"
+    }
+  ],
+  "recordsWithIncorrectRegionTagging": [
+    {
+      "recordType": "restriction",
+      "id": "restr-1",
+      "from": [
+        "eastern-mediterranean"
+      ],
+      "to": [
+        "israel",
+        "eastern-mediterranean"
+      ],
+      "reason": "geometry intersection against coarse built-in polygons differs from legacy manual tagging"
+    },
+    {
+      "recordType": "indicator",
+      "id": "bulletin-1",
+      "from": [
+        "eastern-mediterranean"
+      ],
+      "to": [
+        "israel",
+        "eastern-mediterranean"
+      ],
+      "reason": "geometry-based region recomputation differs from legacy tagging"
+    },
+    {
+      "recordType": "indicator",
+      "id": "thermal-1",
+      "from": [
+        "eastern-mediterranean"
+      ],
+      "to": [
+        "israel",
+        "eastern-mediterranean"
+      ],
+      "reason": "geometry-based region recomputation differs from legacy tagging"
+    },
+    {
+      "recordType": "indicator",
+      "id": "thermal-2",
+      "from": [
+        "eastern-mediterranean"
+      ],
+      "to": [
+        "israel",
+        "eastern-mediterranean"
+      ],
+      "reason": "geometry-based region recomputation differs from legacy tagging"
+    },
+    {
+      "recordType": "indicator",
+      "id": "thermal-3",
+      "from": [
+        "eastern-mediterranean"
+      ],
+      "to": [
+        "israel",
+        "eastern-mediterranean"
+      ],
+      "reason": "geometry-based region recomputation differs from legacy tagging"
+    },
+    {
+      "recordType": "indicator",
+      "id": "thermal-4",
+      "from": [
+        "israel"
+      ],
+      "to": [
+        "israel",
+        "arabian-peninsula",
+        "eastern-mediterranean"
+      ],
+      "reason": "geometry-based region recomputation differs from legacy tagging"
+    },
+    {
+      "recordType": "indicator",
+      "id": "thermal-5",
+      "from": [
+        "israel"
+      ],
+      "to": [
+        "israel",
+        "arabian-peninsula",
+        "eastern-mediterranean"
+      ],
+      "reason": "geometry-based region recomputation differs from legacy tagging"
+    },
+    {
+      "recordType": "indicator",
+      "id": "osint-1",
+      "from": [
+        "eastern-mediterranean"
+      ],
+      "to": [
+        "israel",
+        "eastern-mediterranean"
+      ],
+      "reason": "geometry-based region recomputation differs from legacy tagging"
+    },
+    {
+      "recordType": "indicator",
+      "id": "news-1",
+      "from": [
+        "eastern-mediterranean"
+      ],
+      "to": [
+        "israel",
+        "eastern-mediterranean"
+      ],
+      "reason": "geometry-based region recomputation differs from legacy tagging"
+    },
+    {
+      "recordType": "indicator",
+      "id": "osint-2",
+      "from": [
+        "israel"
+      ],
+      "to": [
+        "israel",
+        "arabian-peninsula",
+        "eastern-mediterranean"
+      ],
+      "reason": "geometry-based region recomputation differs from legacy tagging"
+    },
+    {
+      "recordType": "event",
+      "id": "event-thermal-2",
+      "from": [
+        "israel"
+      ],
+      "to": [
+        "israel",
+        "arabian-peninsula",
+        "eastern-mediterranean"
+      ],
+      "reason": "event geometry intersection differs from legacy tagging"
+    },
+    {
+      "recordType": "event",
+      "id": "event-strike-2",
+      "from": [
+        "israel"
+      ],
+      "to": [
+        "israel",
+        "arabian-peninsula",
+        "eastern-mediterranean"
+      ],
+      "reason": "event geometry intersection differs from legacy tagging"
+    },
+    {
+      "recordType": "event",
+      "id": "event-thermal-1",
+      "from": [
+        "eastern-mediterranean"
+      ],
+      "to": [
+        "israel",
+        "eastern-mediterranean"
+      ],
+      "reason": "event geometry intersection differs from legacy tagging"
+    },
+    {
+      "recordType": "event",
+      "id": "event-strike-1",
+      "from": [
+        "eastern-mediterranean"
+      ],
+      "to": [
+        "israel",
+        "eastern-mediterranean"
+      ],
+      "reason": "event geometry intersection differs from legacy tagging"
+    },
+    {
+      "recordType": "event",
+      "id": "event-restr-1",
+      "from": [
+        "eastern-mediterranean"
+      ],
+      "to": [
+        "israel",
+        "eastern-mediterranean"
+      ],
+      "reason": "event geometry intersection differs from legacy tagging"
+    },
+    {
+      "recordType": "event",
+      "id": "event-diversion-4defb183-14b2-4d4c-a9df-2a14868f82aa",
+      "from": [
+        "israel",
+        "eastern-mediterranean"
+      ],
+      "to": [
+        "eastern-mediterranean"
+      ],
+      "reason": "event geometry intersection differs from legacy tagging"
+    }
+  ],
+  "recordsWithScoringFixes": [
+    {
+      "eventId": "event-thermal-2",
+      "legacyEventType": "thermal_anomaly",
+      "newEventType": "thermal_cluster",
+      "legacyConfidence": 0.62,
+      "newConfidence": 0.04,
+      "legacySignalWeightSum": 0.22,
+      "newSignalWeightSum": 0.44,
+      "reason": "New deterministic score penalizes synthetic lineage and missing exact external matches."
+    },
+    {
+      "eventId": "event-strike-2",
+      "legacyEventType": "probable_strike",
+      "newEventType": "possible_strike",
+      "legacyConfidence": 0.52,
+      "newConfidence": 0.13,
+      "legacySignalWeightSum": 0.44,
+      "newSignalWeightSum": 0.45,
+      "reason": "New deterministic score penalizes synthetic lineage and missing exact external matches."
+    },
+    {
+      "eventId": "event-thermal-1",
+      "legacyEventType": "thermal_anomaly",
+      "newEventType": "thermal_cluster",
+      "legacyConfidence": 0.62,
+      "newConfidence": 0.04,
+      "legacySignalWeightSum": 0.22,
+      "newSignalWeightSum": 0.44,
+      "reason": "New deterministic score penalizes synthetic lineage and missing exact external matches."
+    },
+    {
+      "eventId": "event-strike-1",
+      "legacyEventType": "confirmed_strike",
+      "newEventType": "possible_strike",
+      "legacyConfidence": 1,
+      "newConfidence": 0.09,
+      "legacySignalWeightSum": 1.2,
+      "newSignalWeightSum": 0.41,
+      "reason": "New deterministic score penalizes synthetic lineage and missing exact external matches."
+    },
+    {
+      "eventId": "event-restr-1",
+      "legacyEventType": "airspace_closure",
+      "newEventType": "airspace_restriction_notice",
+      "legacyConfidence": 0.9,
+      "newConfidence": 0.0,
+      "legacySignalWeightSum": 0.7,
+      "newSignalWeightSum": 0.38,
+      "reason": "New deterministic score penalizes synthetic lineage and missing exact external matches."
+    },
+    {
+      "eventId": "event-diversion-4defb183-14b2-4d4c-a9df-2a14868f82aa",
+      "legacyEventType": "aircraft_diversion_cluster",
+      "newEventType": "traffic_disruption_cluster",
+      "legacyConfidence": 0.55,
+      "newConfidence": 0.04,
+      "legacySignalWeightSum": 0.18,
+      "newSignalWeightSum": 0.44,
+      "reason": "New deterministic score penalizes synthetic lineage and missing exact external matches."
+    },
+    {
+      "eventId": "event-restr-2",
+      "legacyEventType": "airspace_closure",
+      "newEventType": "airspace_restriction_notice",
+      "legacyConfidence": 0.7,
+      "newConfidence": 0.0,
+      "legacySignalWeightSum": 0.7,
+      "newSignalWeightSum": 0.38,
+      "reason": "New deterministic score penalizes synthetic lineage and missing exact external matches."
+    },
+    {
+      "eventId": "event-unverified-osint-3",
+      "legacyEventType": "unverified_report",
+      "newEventType": "unverified_report",
+      "legacyConfidence": 0.2,
+      "newConfidence": 0.0,
+      "legacySignalWeightSum": 0.2,
+      "newSignalWeightSum": 0.35,
+      "reason": "New deterministic score penalizes synthetic lineage and missing exact external matches."
+    }
+  ],
+  "unresolvedUncertainties": [
+    {
+      "id": "overlapping-built-in-regions",
+      "severity": "medium",
+      "note": "Built-in simplified region polygons overlap, so multi-region tagging remains approximate even after recalculation."
+    },
+    {
+      "id": "external-search-scope",
+      "severity": "medium",
+      "note": "External verification used exact public web search, which is sufficient to refuse upgrades here but is not equivalent to authenticated provider API reconciliation."
+    },
+    {
+      "id": "legacy-identifiers-retained",
+      "severity": "low",
+      "note": "Legacy provider/callsign/type fields were retained for auditability, but active fields were renamed or prefixed to prevent downstream confusion."
+    }
+  ]
+}

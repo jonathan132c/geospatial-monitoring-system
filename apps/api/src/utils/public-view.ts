@@ -5,12 +5,11 @@ const COORD_DECIMALS = 1;
 export const PUBLIC_SAFETY_NOTICE = 'Non-operational public-source analytical output only. Historical/seeded or delayed data, coarsened map geometry, probabilistic inference, and no live tactical guidance.';
 
 export const EVENT_TYPE_LABELS: Record<string, string> = {
-  confirmed_strike: 'Historically corroborated public-source event candidate',
-  probable_strike: 'Probabilistic public-source event candidate',
-  airspace_closure: 'Public airspace restriction',
-  aircraft_diversion_cluster: 'Aircraft diversion cluster',
-  thermal_anomaly: 'Thermal anomaly cluster',
-  unverified_report: 'Unverified public-source report'
+  possible_strike: 'Possible strike candidate',
+  airspace_restriction_notice: 'Airspace restriction notice',
+  traffic_disruption_cluster: 'Traffic disruption cluster',
+  thermal_cluster: 'Thermal cluster',
+  unverified_report: 'Unverified report'
 };
 
 const round = (value: number): number => Number(value.toFixed(COORD_DECIMALS));

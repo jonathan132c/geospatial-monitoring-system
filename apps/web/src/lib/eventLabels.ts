@@ -1,11 +1,10 @@
 export const eventTypeLabel = (eventType: string): string => {
   switch (eventType) {
-    case 'confirmed_strike': return 'Historically corroborated public-source event candidate';
-    case 'probable_strike': return 'Probabilistic public-source event candidate';
-    case 'airspace_closure': return 'Public airspace restriction';
-    case 'aircraft_diversion_cluster': return 'Aircraft diversion cluster';
-    case 'thermal_anomaly': return 'Thermal anomaly cluster';
-    case 'unverified_report': return 'Unverified public-source report';
+    case 'possible_strike': return 'Possible strike candidate';
+    case 'airspace_restriction_notice': return 'Airspace restriction notice';
+    case 'traffic_disruption_cluster': return 'Traffic disruption cluster';
+    case 'thermal_cluster': return 'Thermal cluster';
+    case 'unverified_report': return 'Unverified report';
     default: return eventType;
   }
 };

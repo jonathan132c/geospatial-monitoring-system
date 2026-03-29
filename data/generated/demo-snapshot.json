@@ -44,7 +44,29 @@
             ]
           ]
         ]
-      }
+      },
+      "recordStatus": "partially_verified",
+      "verificationStatus": "approximate_geography_only",
+      "verificationNotes": "Built-in region geometry corresponds to a real place but is simplified and overlapping; use only as approximate analysis context.",
+      "sourceTrustLevel": "medium",
+      "derivedFrom": [
+        "builtin_simplified_geometry"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "completed",
+      "externalSourcesChecked": [
+        {
+          "engine": "manual_geography_review",
+          "query": "Iran",
+          "checkedAt": "2026-03-29T10:11:53Z",
+          "matchType": "context_only",
+          "resultCount": 1,
+          "results": []
+        }
+      ],
+      "externalMatchType": "context_only",
+      "externalVerificationNotes": "Region name and broad geography correspond to real-world context, but geometry is intentionally coarse and overlapping.",
+      "geospatialPrecision": "approximate_coarse_polygon"
     },
     {
       "id": "israel",
@@ -88,7 +110,29 @@
             ]
           ]
         ]
-      }
+      },
+      "recordStatus": "partially_verified",
+      "verificationStatus": "approximate_geography_only",
+      "verificationNotes": "Built-in region geometry corresponds to a real place but is simplified and overlapping; use only as approximate analysis context.",
+      "sourceTrustLevel": "medium",
+      "derivedFrom": [
+        "builtin_simplified_geometry"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "completed",
+      "externalSourcesChecked": [
+        {
+          "engine": "manual_geography_review",
+          "query": "Israel",
+          "checkedAt": "2026-03-29T10:11:53Z",
+          "matchType": "context_only",
+          "resultCount": 1,
+          "results": []
+        }
+      ],
+      "externalMatchType": "context_only",
+      "externalVerificationNotes": "Region name and broad geography correspond to real-world context, but geometry is intentionally coarse and overlapping.",
+      "geospatialPrecision": "approximate_coarse_polygon"
     },
     {
       "id": "arabian-peninsula",
@@ -132,7 +176,29 @@
             ]
           ]
         ]
-      }
+      },
+      "recordStatus": "partially_verified",
+      "verificationStatus": "approximate_geography_only",
+      "verificationNotes": "Built-in region geometry corresponds to a real place but is simplified and overlapping; use only as approximate analysis context.",
+      "sourceTrustLevel": "medium",
+      "derivedFrom": [
+        "builtin_simplified_geometry"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "completed",
+      "externalSourcesChecked": [
+        {
+          "engine": "manual_geography_review",
+          "query": "Arabian Peninsula",
+          "checkedAt": "2026-03-29T10:11:53Z",
+          "matchType": "context_only",
+          "resultCount": 1,
+          "results": []
+        }
+      ],
+      "externalMatchType": "context_only",
+      "externalVerificationNotes": "Region name and broad geography correspond to real-world context, but geometry is intentionally coarse and overlapping.",
+      "geospatialPrecision": "approximate_coarse_polygon"
     },
     {
       "id": "eastern-mediterranean",
@@ -176,13 +242,35 @@
             ]
           ]
         ]
-      }
+      },
+      "recordStatus": "partially_verified",
+      "verificationStatus": "approximate_geography_only",
+      "verificationNotes": "Built-in region geometry corresponds to a real place but is simplified and overlapping; use only as approximate analysis context.",
+      "sourceTrustLevel": "medium",
+      "derivedFrom": [
+        "builtin_simplified_geometry"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "completed",
+      "externalSourcesChecked": [
+        {
+          "engine": "manual_geography_review",
+          "query": "Eastern Mediterranean",
+          "checkedAt": "2026-03-29T10:11:53Z",
+          "matchType": "context_only",
+          "resultCount": 1,
+          "results": []
+        }
+      ],
+      "externalMatchType": "context_only",
+      "externalVerificationNotes": "Region name and broad geography correspond to real-world context, but geometry is intentionally coarse and overlapping.",
+      "geospatialPrecision": "approximate_coarse_polygon"
     }
   ],
   "restrictions": [
     {
       "id": "restr-1",
-      "title": "Temporary closure east of Cyprus / Levant corridor",
+      "title": "Synthetic demo restriction: Temporary closure east of Cyprus / Levant corridor",
       "observedAt": "2026-03-28T17:10:00.000Z",
       "expiresAt": "2026-03-29T05:00:00.000Z",
       "geometry": {
@@ -213,16 +301,42 @@
         ]
       },
       "regionIds": [
+        "israel",
         "eastern-mediterranean"
       ],
-      "restrictionLevel": "closure",
-      "summary": "Seeded NOTAM-like closure affecting the Levantine maritime corridor.",
-      "provider": "notam_feed",
-      "sourcePayloadId": "raw-notam_feed-restr-1"
+      "restrictionLevel": "advisory",
+      "summary": "Synthetic demo restriction fixture retained for schema continuity. This is not a verified live restriction or NOTAM.",
+      "provider": "notam_seed_fixture",
+      "sourcePayloadId": "raw-notam_feed-restr-1",
+      "legacyProvider": "notam_feed",
+      "legacyRestrictionLevel": "closure",
+      "legacyTitle": "Temporary closure east of Cyprus / Levant corridor",
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Restriction inherits seeded/demo lineage from its underlying payload and was downgraded to advisory wording.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-notam_feed-restr-1"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "completed",
+      "externalSourcesChecked": [
+        {
+          "engine": "duckduckgo_html",
+          "query": "\"Temporary closure east of Cyprus / Levant corridor\" \"DEMO-LEVANT-01\"",
+          "checkedAt": "2026-03-29T10:11:53Z",
+          "matchType": "no_match",
+          "resultCount": 0,
+          "results": []
+        }
+      ],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Exact public search did not validate this restriction as a real-world operational notice; synthetic payload lineage controls classification.",
+      "geospatialPrecision": "synthetic_polygon_with_approximate_region_overlap"
     },
     {
       "id": "restr-2",
-      "title": "Avoidance advisory over northern Arabian Peninsula transit lanes",
+      "title": "Synthetic demo restriction: Avoidance advisory over northern Arabian Peninsula transit lanes",
       "observedAt": "2026-03-28T12:45:00.000Z",
       "expiresAt": "2026-03-29T02:00:00.000Z",
       "geometry": {
@@ -255,25 +369,50 @@
       "regionIds": [
         "arabian-peninsula"
       ],
-      "restrictionLevel": "avoidance",
-      "summary": "Seeded advisory to avoid a narrow Gulf-to-Levant airway segment.",
-      "provider": "notam_feed",
-      "sourcePayloadId": "raw-notam_feed-restr-2"
+      "restrictionLevel": "advisory",
+      "summary": "Synthetic demo restriction fixture retained for schema continuity. This is not a verified live restriction or NOTAM.",
+      "provider": "notam_seed_fixture",
+      "sourcePayloadId": "raw-notam_feed-restr-2",
+      "legacyProvider": "notam_feed",
+      "legacyRestrictionLevel": "avoidance",
+      "legacyTitle": "Avoidance advisory over northern Arabian Peninsula transit lanes",
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Restriction inherits seeded/demo lineage from its underlying payload and was downgraded to advisory wording.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-notam_feed-restr-2"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "completed",
+      "externalSourcesChecked": [
+        {
+          "engine": "duckduckgo_html",
+          "query": "\"Avoidance advisory over northern Arabian Peninsula transit lanes\" \"DEMO-GULF-02\"",
+          "checkedAt": "2026-03-29T10:11:53Z",
+          "matchType": "no_match",
+          "resultCount": 0,
+          "results": []
+        }
+      ],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Exact public search did not validate this restriction as a real-world operational notice; synthetic payload lineage controls classification.",
+      "geospatialPrecision": "synthetic_polygon_with_approximate_region_overlap"
     }
   ],
   "tracks": [
     {
       "id": "track-abc001",
       "icao24": "abc001",
-      "callsign": "EM9001",
+      "callsign": "DEMO-EM9001",
       "squawk": "4312",
       "origin": "ATH",
       "destination": "TLV",
       "aircraftType": "A320",
       "providers": [
-        "opensky",
-        "adsb_exchange",
-        "flightaware"
+        "opensky_seed_fixture",
+        "adsb_exchange_seed_fixture",
+        "flightaware_seed_fixture"
       ],
       "startTime": "2026-03-28T16:00:00.000Z",
       "endTime": "2026-03-28T17:09:00.000Z",
@@ -331,10 +470,10 @@
       ],
       "anomalies": [
         {
-          "type": "route_deviation",
+          "type": "route_revectoring_candidate",
           "observedAt": "2026-03-28T16:31:00.000Z",
           "severity": "medium",
-          "explanation": "Heading changed by 92° over 13 minutes",
+          "explanation": "Course changes are retained only as a route-revectoring candidate within a seeded scenario; they do not prove abnormal real-world flight behavior.",
           "relatedRegionIds": [
             "israel",
             "eastern-mediterranean"
@@ -345,13 +484,14 @@
               36.18,
               33.02
             ]
-          }
+          },
+          "legacyType": "route_deviation"
         },
         {
-          "type": "route_deviation",
+          "type": "route_revectoring_candidate",
           "observedAt": "2026-03-28T16:45:00.000Z",
           "severity": "high",
-          "explanation": "Heading changed by 148° over 14 minutes",
+          "explanation": "Course changes are retained only as a route-revectoring candidate within a seeded scenario; they do not prove abnormal real-world flight behavior.",
           "relatedRegionIds": [
             "israel",
             "eastern-mediterranean"
@@ -362,26 +502,59 @@
               35.91,
               33.19
             ]
-          }
+          },
+          "legacyType": "route_deviation"
         }
       ],
       "regionIds": [
         "israel",
         "eastern-mediterranean"
-      ]
+      ],
+      "legacyProviders": [
+        "opensky",
+        "adsb_exchange",
+        "flightaware"
+      ],
+      "legacyCallsign": "EM9001",
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Track is assembled from sample/fixture provider payloads. Flight identity was prefixed with DEMO- and anomaly labels were downgraded to candidate/discontinuity language.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-adsb_exchange-obs-5b",
+        "raw-flightaware-obs-3c",
+        "raw-opensky-obs-1a",
+        "raw-opensky-obs-2a",
+        "raw-opensky-obs-4a"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "completed",
+      "externalSourcesChecked": [
+        {
+          "engine": "duckduckgo_html",
+          "query": "\"EM9001\" \"ATH\" \"TLV\" \"2026-03-28\"",
+          "checkedAt": "2026-03-29T10:11:53Z",
+          "matchType": "no_match",
+          "resultCount": 0,
+          "results": []
+        }
+      ],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Exact public-source search did not validate this assembled track as a matched real flight observation. Synthetic payload lineage controls classification.",
+      "geospatialPrecision": "seeded_point_samples_with_approximate_region_overlap"
     },
     {
       "id": "track-def002",
       "icao24": "def002",
-      "callsign": "MEA440",
+      "callsign": "DEMO-MEA440",
       "squawk": "5531",
       "origin": "BEY",
       "destination": "AUH",
       "aircraftType": "B738",
       "providers": [
-        "opensky",
-        "adsb_exchange",
-        "flightaware"
+        "opensky_seed_fixture",
+        "adsb_exchange_seed_fixture",
+        "flightaware_seed_fixture"
       ],
       "startTime": "2026-03-28T17:05:00.000Z",
       "endTime": "2026-03-28T18:25:00.000Z",
@@ -429,10 +602,10 @@
       ],
       "anomalies": [
         {
-          "type": "transponder_loss",
+          "type": "tracking_discontinuity",
           "observedAt": "2026-03-28T17:51:00.000Z",
           "severity": "medium",
-          "explanation": "Signal gap of 31 minutes detected between observations",
+          "explanation": "Observation gap retained as a tracking discontinuity; evidence does not support claiming transponder shutdown.",
           "relatedRegionIds": [
             "israel",
             "eastern-mediterranean"
@@ -443,13 +616,14 @@
               36.11,
               32.86
             ]
-          }
+          },
+          "legacyType": "transponder_loss"
         },
         {
-          "type": "transponder_loss",
+          "type": "tracking_discontinuity",
           "observedAt": "2026-03-28T18:25:00.000Z",
           "severity": "medium",
-          "explanation": "Signal gap of 34 minutes detected between observations",
+          "explanation": "Observation gap retained as a tracking discontinuity; evidence does not support claiming transponder shutdown.",
           "relatedRegionIds": [
             "israel",
             "eastern-mediterranean"
@@ -460,13 +634,14 @@
               35.79,
               33.04
             ]
-          }
+          },
+          "legacyType": "transponder_loss"
         },
         {
-          "type": "holding_pattern",
+          "type": "holding_pattern_candidate",
           "observedAt": "2026-03-28T18:25:00.000Z",
           "severity": "medium",
-          "explanation": "Track loop stayed within 11.6 km radius",
+          "explanation": "Loop-like motion retained as a holding-pattern candidate, not a confirmed operational hold.",
           "relatedRegionIds": [
             "israel",
             "eastern-mediterranean"
@@ -477,26 +652,58 @@
               35.79,
               33.04
             ]
-          }
+          },
+          "legacyType": "holding_pattern"
         }
       ],
       "regionIds": [
         "israel",
         "eastern-mediterranean"
-      ]
+      ],
+      "legacyProviders": [
+        "opensky",
+        "adsb_exchange",
+        "flightaware"
+      ],
+      "legacyCallsign": "MEA440",
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Track is assembled from sample/fixture provider payloads. Flight identity was prefixed with DEMO- and anomaly labels were downgraded to candidate/discontinuity language.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-adsb_exchange-mea-2",
+        "raw-flightaware-mea-3",
+        "raw-opensky-mea-1",
+        "raw-opensky-mea-4"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "completed",
+      "externalSourcesChecked": [
+        {
+          "engine": "duckduckgo_html",
+          "query": "\"MEA440\" \"BEY\" \"AUH\" \"2026-03-28\"",
+          "checkedAt": "2026-03-29T10:11:53Z",
+          "matchType": "no_match",
+          "resultCount": 0,
+          "results": []
+        }
+      ],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Exact public-source search did not validate this assembled track as a matched real flight observation. Synthetic payload lineage controls classification.",
+      "geospatialPrecision": "seeded_point_samples_with_approximate_region_overlap"
     },
     {
       "id": "track-ghi003",
       "icao24": "ghi003",
-      "callsign": "GFA221",
+      "callsign": "DEMO-GFA221",
       "squawk": "4421",
       "origin": "DOH",
       "destination": "AMM",
       "aircraftType": "A321",
       "providers": [
-        "opensky",
-        "adsb_exchange",
-        "flightaware"
+        "opensky_seed_fixture",
+        "adsb_exchange_seed_fixture",
+        "flightaware_seed_fixture"
       ],
       "startTime": "2026-03-28T12:00:00.000Z",
       "endTime": "2026-03-28T13:10:00.000Z",
@@ -554,10 +761,10 @@
       ],
       "anomalies": [
         {
-          "type": "abrupt_altitude_change",
+          "type": "altitude_change_candidate",
           "observedAt": "2026-03-28T13:10:00.000Z",
           "severity": "medium",
-          "explanation": "Altitude shifted by 8000 ft within 10 minutes",
+          "explanation": "Altitude profile change retained as a candidate only; sparse seeded observations are insufficient to claim an operational anomaly.",
           "relatedRegionIds": [
             "iran",
             "arabian-peninsula"
@@ -568,25 +775,58 @@
               42.9,
               23.1
             ]
-          }
+          },
+          "legacyType": "abrupt_altitude_change"
         }
       ],
       "regionIds": [
         "iran",
         "arabian-peninsula"
-      ]
+      ],
+      "legacyProviders": [
+        "opensky",
+        "adsb_exchange",
+        "flightaware"
+      ],
+      "legacyCallsign": "GFA221",
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Track is assembled from sample/fixture provider payloads. Flight identity was prefixed with DEMO- and anomaly labels were downgraded to candidate/discontinuity language.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-adsb_exchange-gfa-2",
+        "raw-adsb_exchange-gfa-5",
+        "raw-flightaware-gfa-3",
+        "raw-opensky-gfa-1",
+        "raw-opensky-gfa-4"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "completed",
+      "externalSourcesChecked": [
+        {
+          "engine": "duckduckgo_html",
+          "query": "\"GFA221\" \"DOH\" \"AMM\" \"2026-03-28\"",
+          "checkedAt": "2026-03-29T10:11:53Z",
+          "matchType": "no_match",
+          "resultCount": 0,
+          "results": []
+        }
+      ],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Exact public-source search did not validate this assembled track as a matched real flight observation. Synthetic payload lineage controls classification.",
+      "geospatialPrecision": "seeded_point_samples_with_approximate_region_overlap"
     },
     {
       "id": "track-jkl004",
       "icao24": "jkl004",
-      "callsign": "IRA781",
+      "callsign": "DEMO-IRA781",
       "squawk": "6701",
       "origin": "THR",
       "destination": "BGW",
       "aircraftType": "B742",
       "providers": [
-        "opensky",
-        "flightaware"
+        "opensky_seed_fixture",
+        "flightaware_seed_fixture"
       ],
       "startTime": "2026-03-28T09:00:00.000Z",
       "endTime": "2026-03-28T09:50:00.000Z",
@@ -634,10 +874,10 @@
       ],
       "anomalies": [
         {
-          "type": "abrupt_altitude_change",
+          "type": "altitude_change_candidate",
           "observedAt": "2026-03-28T09:20:00.000Z",
           "severity": "medium",
-          "explanation": "Altitude shifted by 7150 ft within 10 minutes",
+          "explanation": "Altitude profile change retained as a candidate only; sparse seeded observations are insufficient to claim an operational anomaly.",
           "relatedRegionIds": [
             "iran"
           ],
@@ -647,13 +887,14 @@
               50.1,
               35.5
             ]
-          }
+          },
+          "legacyType": "abrupt_altitude_change"
         },
         {
-          "type": "transponder_loss",
+          "type": "tracking_discontinuity",
           "observedAt": "2026-03-28T09:50:00.000Z",
           "severity": "medium",
-          "explanation": "Signal gap of 30 minutes detected between observations",
+          "explanation": "Observation gap retained as a tracking discontinuity; evidence does not support claiming transponder shutdown.",
           "relatedRegionIds": [
             "iran"
           ],
@@ -663,24 +904,55 @@
               49.7,
               35.7
             ]
-          }
+          },
+          "legacyType": "transponder_loss"
         }
       ],
       "regionIds": [
         "iran"
-      ]
+      ],
+      "legacyProviders": [
+        "opensky",
+        "flightaware"
+      ],
+      "legacyCallsign": "IRA781",
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Track is assembled from sample/fixture provider payloads. Flight identity was prefixed with DEMO- and anomaly labels were downgraded to candidate/discontinuity language.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-flightaware-ira-2",
+        "raw-flightaware-ira-4",
+        "raw-opensky-ira-1",
+        "raw-opensky-ira-3"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "completed",
+      "externalSourcesChecked": [
+        {
+          "engine": "duckduckgo_html",
+          "query": "\"IRA781\" \"THR\" \"BGW\" \"2026-03-28\"",
+          "checkedAt": "2026-03-29T10:11:53Z",
+          "matchType": "no_match",
+          "resultCount": 0,
+          "results": []
+        }
+      ],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Exact public-source search did not validate this assembled track as a matched real flight observation. Synthetic payload lineage controls classification.",
+      "geospatialPrecision": "seeded_point_samples_with_approximate_region_overlap"
     },
     {
       "id": "track-mno005",
       "icao24": "mno005",
-      "callsign": "KAC778",
+      "callsign": "DEMO-KAC778",
       "squawk": "5112",
       "origin": "KWI",
       "destination": "CAI",
       "aircraftType": "A320",
       "providers": [
-        "opensky",
-        "adsb_exchange"
+        "opensky_seed_fixture",
+        "adsb_exchange_seed_fixture"
       ],
       "startTime": "2026-03-28T18:00:00.000Z",
       "endTime": "2026-03-28T18:55:00.000Z",
@@ -728,10 +1000,10 @@
       ],
       "anomalies": [
         {
-          "type": "transponder_loss",
+          "type": "tracking_discontinuity",
           "observedAt": "2026-03-28T18:55:00.000Z",
           "severity": "medium",
-          "explanation": "Signal gap of 35 minutes detected between observations",
+          "explanation": "Observation gap retained as a tracking discontinuity; evidence does not support claiming transponder shutdown.",
           "relatedRegionIds": [
             "iran",
             "arabian-peninsula"
@@ -742,25 +1014,56 @@
               43.5,
               27.3
             ]
-          }
+          },
+          "legacyType": "transponder_loss"
         }
       ],
       "regionIds": [
         "iran",
         "arabian-peninsula"
-      ]
+      ],
+      "legacyProviders": [
+        "opensky",
+        "adsb_exchange"
+      ],
+      "legacyCallsign": "KAC778",
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Track is assembled from sample/fixture provider payloads. Flight identity was prefixed with DEMO- and anomaly labels were downgraded to candidate/discontinuity language.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-adsb_exchange-kac-1",
+        "raw-adsb_exchange-kac-3",
+        "raw-opensky-kac-2",
+        "raw-opensky-kac-4"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "completed",
+      "externalSourcesChecked": [
+        {
+          "engine": "duckduckgo_html",
+          "query": "\"KAC778\" \"KWI\" \"CAI\" \"2026-03-28\"",
+          "checkedAt": "2026-03-29T10:11:53Z",
+          "matchType": "no_match",
+          "resultCount": 0,
+          "results": []
+        }
+      ],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Exact public-source search did not validate this assembled track as a matched real flight observation. Synthetic payload lineage controls classification.",
+      "geospatialPrecision": "seeded_point_samples_with_approximate_region_overlap"
     },
     {
       "id": "track-pqr006",
       "icao24": "pqr006",
-      "callsign": "AXY330",
+      "callsign": "DEMO-AXY330",
       "squawk": "4107",
       "origin": "TLV",
       "destination": "LCA",
       "aircraftType": "B737",
       "providers": [
-        "opensky",
-        "flightaware"
+        "opensky_seed_fixture",
+        "flightaware_seed_fixture"
       ],
       "startTime": "2026-03-28T19:00:00.000Z",
       "endTime": "2026-03-28T19:40:00.000Z",
@@ -818,10 +1121,10 @@
       ],
       "anomalies": [
         {
-          "type": "route_deviation",
+          "type": "route_revectoring_candidate",
           "observedAt": "2026-03-28T19:10:00.000Z",
           "severity": "medium",
-          "explanation": "Heading changed by 90° over 10 minutes",
+          "explanation": "Course changes are retained only as a route-revectoring candidate within a seeded scenario; they do not prove abnormal real-world flight behavior.",
           "relatedRegionIds": [
             "israel",
             "eastern-mediterranean",
@@ -833,13 +1136,14 @@
               34.8,
               32.05
             ]
-          }
+          },
+          "legacyType": "route_deviation"
         },
         {
-          "type": "route_deviation",
+          "type": "route_revectoring_candidate",
           "observedAt": "2026-03-28T19:20:00.000Z",
           "severity": "medium",
-          "explanation": "Heading changed by 90° over 10 minutes",
+          "explanation": "Course changes are retained only as a route-revectoring candidate within a seeded scenario; they do not prove abnormal real-world flight behavior.",
           "relatedRegionIds": [
             "israel",
             "eastern-mediterranean",
@@ -851,13 +1155,14 @@
               34.9,
               32
             ]
-          }
+          },
+          "legacyType": "route_deviation"
         },
         {
-          "type": "route_deviation",
+          "type": "route_revectoring_candidate",
           "observedAt": "2026-03-28T19:30:00.000Z",
           "severity": "high",
-          "explanation": "Heading changed by 270° over 10 minutes",
+          "explanation": "Course changes are retained only as a route-revectoring candidate within a seeded scenario; they do not prove abnormal real-world flight behavior.",
           "relatedRegionIds": [
             "israel",
             "eastern-mediterranean",
@@ -869,13 +1174,14 @@
               34.8,
               31.95
             ]
-          }
+          },
+          "legacyType": "route_deviation"
         },
         {
-          "type": "route_deviation",
+          "type": "route_revectoring_candidate",
           "observedAt": "2026-03-28T19:40:00.000Z",
           "severity": "medium",
-          "explanation": "Heading changed by 90° over 10 minutes",
+          "explanation": "Course changes are retained only as a route-revectoring candidate within a seeded scenario; they do not prove abnormal real-world flight behavior.",
           "relatedRegionIds": [
             "israel",
             "eastern-mediterranean",
@@ -887,13 +1193,14 @@
               34.7,
               32
             ]
-          }
+          },
+          "legacyType": "route_deviation"
         },
         {
-          "type": "holding_pattern",
+          "type": "holding_pattern_candidate",
           "observedAt": "2026-03-28T19:40:00.000Z",
           "severity": "medium",
-          "explanation": "Track loop stayed within 0.0 km radius",
+          "explanation": "Loop-like motion retained as a holding-pattern candidate, not a confirmed operational hold.",
           "relatedRegionIds": [
             "israel",
             "eastern-mediterranean",
@@ -905,25 +1212,57 @@
               34.7,
               32
             ]
-          }
+          },
+          "legacyType": "holding_pattern"
         }
       ],
       "regionIds": [
         "israel",
         "eastern-mediterranean",
         "arabian-peninsula"
-      ]
+      ],
+      "legacyProviders": [
+        "opensky",
+        "flightaware"
+      ],
+      "legacyCallsign": "AXY330",
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Track is assembled from sample/fixture provider payloads. Flight identity was prefixed with DEMO- and anomaly labels were downgraded to candidate/discontinuity language.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-flightaware-axy-1",
+        "raw-flightaware-axy-3",
+        "raw-flightaware-axy-5",
+        "raw-opensky-axy-2",
+        "raw-opensky-axy-4"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "completed",
+      "externalSourcesChecked": [
+        {
+          "engine": "duckduckgo_html",
+          "query": "\"AXY330\" \"TLV\" \"LCA\" \"2026-03-28\"",
+          "checkedAt": "2026-03-29T10:11:53Z",
+          "matchType": "no_match",
+          "resultCount": 0,
+          "results": []
+        }
+      ],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Exact public-source search did not validate this assembled track as a matched real flight observation. Synthetic payload lineage controls classification.",
+      "geospatialPrecision": "seeded_point_samples_with_approximate_region_overlap"
     },
     {
       "id": "track-stu007",
       "icao24": "stu007",
-      "callsign": "DMS102",
+      "callsign": "DEMO-DMS102",
       "squawk": "6021",
       "origin": "JED",
       "destination": "MCT",
       "aircraftType": "B752",
       "providers": [
-        "flightaware"
+        "flightaware_seed_fixture"
       ],
       "startTime": "2026-03-27T22:30:00.000Z",
       "endTime": "2026-03-27T22:58:00.000Z",
@@ -951,10 +1290,10 @@
       ],
       "anomalies": [
         {
-          "type": "transponder_loss",
+          "type": "coverage_gap",
           "observedAt": "2026-03-27T22:58:00.000Z",
           "severity": "medium",
-          "explanation": "Signal gap of 28 minutes detected between observations",
+          "explanation": "Observation gap likely reflects sparse sample coverage rather than transponder loss.",
           "relatedRegionIds": [
             "arabian-peninsula"
           ],
@@ -964,18 +1303,46 @@
               46.2,
               15.1
             ]
-          }
+          },
+          "legacyType": "transponder_loss"
         }
       ],
       "regionIds": [
         "arabian-peninsula"
-      ]
+      ],
+      "legacyProviders": [
+        "flightaware"
+      ],
+      "legacyCallsign": "DMS102",
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Track is assembled from sample/fixture provider payloads. Flight identity was prefixed with DEMO- and anomaly labels were downgraded to candidate/discontinuity language.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-flightaware-lowcov-1",
+        "raw-flightaware-lowcov-2"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "completed",
+      "externalSourcesChecked": [
+        {
+          "engine": "duckduckgo_html",
+          "query": "\"DMS102\" \"JED\" \"MCT\" \"2026-03-27\"",
+          "checkedAt": "2026-03-29T10:11:53Z",
+          "matchType": "no_match",
+          "resultCount": 0,
+          "results": []
+        }
+      ],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Exact public-source search did not validate this assembled track as a matched real flight observation. Synthetic payload lineage controls classification.",
+      "geospatialPrecision": "seeded_point_samples_with_approximate_region_overlap"
     }
   ],
   "indicators": [
     {
       "id": "bulletin-1",
-      "type": "icao_bulletin",
+      "type": "bulletin_notice",
       "observedAt": "2026-03-28T16:50:00.000Z",
       "geometry": {
         "type": "Point",
@@ -985,21 +1352,47 @@
         ]
       },
       "regionIds": [
+        "israel",
         "eastern-mediterranean"
       ],
-      "headline": "ICAO conflict-zone advisory references tactical disruption in the Eastern Mediterranean corridor",
-      "description": "Seeded ICAO-style bulletin highlighting elevated tactical disruption risk and rerouting instructions.",
+      "headline": "Synthetic demo: ICAO conflict-zone advisory references tactical disruption in the Eastern Mediterranean corridor",
+      "description": "Synthetic bulletin-style fixture retained for schema coverage only; no authoritative bulletin was externally matched.",
       "severity": "warning",
       "independentSourceCount": 1,
       "metadata": {
         "bulletinId": "ICAO-DEMO-17"
       },
-      "provider": "icao_bulletins",
-      "sourcePayloadId": "raw-icao_bulletins-bulletin-1"
+      "provider": "icao_seed_bulletin_fixture",
+      "sourcePayloadId": "raw-icao_bulletins-bulletin-1",
+      "legacyProvider": "icao_bulletins",
+      "legacyType": "icao_bulletin",
+      "legacyHeadline": "ICAO conflict-zone advisory references tactical disruption in the Eastern Mediterranean corridor",
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Indicator inherits seeded/demo lineage from its payload and has been relabeled so it cannot imply authoritative real-world confirmation.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-icao_bulletins-bulletin-1"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "completed",
+      "externalSourcesChecked": [
+        {
+          "engine": "duckduckgo_html",
+          "query": "\"ICAO-DEMO-17\" \"ICAO conflict-zone advisory references tactical disruption in the Eastern Mediterranean corridor\"",
+          "checkedAt": "2026-03-29T10:11:53Z",
+          "matchType": "no_match",
+          "resultCount": 0,
+          "results": []
+        }
+      ],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Exact public-source search did not validate this indicator as a real external bulletin/report/thermal hit; synthetic lineage controls classification.",
+      "geospatialPrecision": "seeded_point_or_polygon_with_approximate_region_overlap"
     },
     {
       "id": "bulletin-2",
-      "type": "easa_bulletin",
+      "type": "bulletin_notice",
       "observedAt": "2026-03-28T12:35:00.000Z",
       "geometry": {
         "type": "Point",
@@ -1011,19 +1404,44 @@
       "regionIds": [
         "arabian-peninsula"
       ],
-      "headline": "EASA conflict-zone bulletin notes tactical risk for northern Arabian transit lanes",
-      "description": "Seeded EASA-style advisory coinciding with a cautionary reroute corridor.",
+      "headline": "Synthetic demo: EASA conflict-zone bulletin notes tactical risk for northern Arabian transit lanes",
+      "description": "Synthetic bulletin-style fixture retained for schema coverage only; no authoritative bulletin was externally matched.",
       "severity": "advisory",
       "independentSourceCount": 1,
       "metadata": {
         "bulletinId": "EASA-DEMO-9"
       },
-      "provider": "easa_bulletins",
-      "sourcePayloadId": "raw-easa_bulletins-bulletin-2"
+      "provider": "easa_seed_bulletin_fixture",
+      "sourcePayloadId": "raw-easa_bulletins-bulletin-2",
+      "legacyProvider": "easa_bulletins",
+      "legacyType": "easa_bulletin",
+      "legacyHeadline": "EASA conflict-zone bulletin notes tactical risk for northern Arabian transit lanes",
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Indicator inherits seeded/demo lineage from its payload and has been relabeled so it cannot imply authoritative real-world confirmation.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-easa_bulletins-bulletin-2"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "completed",
+      "externalSourcesChecked": [
+        {
+          "engine": "duckduckgo_html",
+          "query": "\"EASA-DEMO-9\" \"EASA conflict-zone bulletin notes tactical risk for northern Arabian transit lanes\"",
+          "checkedAt": "2026-03-29T10:11:53Z",
+          "matchType": "no_match",
+          "resultCount": 0,
+          "results": []
+        }
+      ],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Exact public-source search did not validate this indicator as a real external bulletin/report/thermal hit; synthetic lineage controls classification.",
+      "geospatialPrecision": "seeded_point_or_polygon_with_approximate_region_overlap"
     },
     {
       "id": "thermal-1",
-      "type": "thermal_anomaly",
+      "type": "thermal_observation_candidate",
       "observedAt": "2026-03-28T17:41:00.000Z",
       "geometry": {
         "type": "Point",
@@ -1033,22 +1451,48 @@
         ]
       },
       "regionIds": [
+        "israel",
         "eastern-mediterranean"
       ],
-      "headline": "FIRMS thermal hit thermal-1",
-      "description": "Seeded thermal anomaly used for offline clustering and strike inference demos.",
+      "headline": "Synthetic demo: FIRMS thermal hit thermal-1",
+      "description": "Synthetic thermal observation retained for clustering demos only; it is not a verified real-world heat event.",
       "severity": "warning",
       "independentSourceCount": 1,
       "metadata": {
         "brightness": 336,
         "confidence": "nominal"
       },
-      "provider": "nasa_firms",
-      "sourcePayloadId": "raw-nasa_firms-thermal-1"
+      "provider": "nasa_firms_seed_fixture",
+      "sourcePayloadId": "raw-nasa_firms-thermal-1",
+      "legacyProvider": "nasa_firms",
+      "legacyType": "thermal_anomaly",
+      "legacyHeadline": "FIRMS thermal hit thermal-1",
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Indicator inherits seeded/demo lineage from its payload and has been relabeled so it cannot imply authoritative real-world confirmation.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-nasa_firms-thermal-1"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "completed",
+      "externalSourcesChecked": [
+        {
+          "engine": "duckduckgo_html",
+          "query": "\"FIRMS thermal hit thermal-1\"",
+          "checkedAt": "2026-03-29T10:11:53Z",
+          "matchType": "no_match",
+          "resultCount": 0,
+          "results": []
+        }
+      ],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Exact public-source search did not validate this indicator as a real external bulletin/report/thermal hit; synthetic lineage controls classification.",
+      "geospatialPrecision": "seeded_point_or_polygon_with_approximate_region_overlap"
     },
     {
       "id": "thermal-2",
-      "type": "thermal_anomaly",
+      "type": "thermal_observation_candidate",
       "observedAt": "2026-03-28T18:02:00.000Z",
       "geometry": {
         "type": "Point",
@@ -1058,22 +1502,48 @@
         ]
       },
       "regionIds": [
+        "israel",
         "eastern-mediterranean"
       ],
-      "headline": "FIRMS thermal hit thermal-2",
-      "description": "Seeded thermal anomaly used for offline clustering and strike inference demos.",
+      "headline": "Synthetic demo: FIRMS thermal hit thermal-2",
+      "description": "Synthetic thermal observation retained for clustering demos only; it is not a verified real-world heat event.",
       "severity": "warning",
       "independentSourceCount": 1,
       "metadata": {
         "brightness": 336,
         "confidence": "nominal"
       },
-      "provider": "nasa_firms",
-      "sourcePayloadId": "raw-nasa_firms-thermal-2"
+      "provider": "nasa_firms_seed_fixture",
+      "sourcePayloadId": "raw-nasa_firms-thermal-2",
+      "legacyProvider": "nasa_firms",
+      "legacyType": "thermal_anomaly",
+      "legacyHeadline": "FIRMS thermal hit thermal-2",
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Indicator inherits seeded/demo lineage from its payload and has been relabeled so it cannot imply authoritative real-world confirmation.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-nasa_firms-thermal-2"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "completed",
+      "externalSourcesChecked": [
+        {
+          "engine": "duckduckgo_html",
+          "query": "\"FIRMS thermal hit thermal-2\"",
+          "checkedAt": "2026-03-29T10:11:53Z",
+          "matchType": "no_match",
+          "resultCount": 0,
+          "results": []
+        }
+      ],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Exact public-source search did not validate this indicator as a real external bulletin/report/thermal hit; synthetic lineage controls classification.",
+      "geospatialPrecision": "seeded_point_or_polygon_with_approximate_region_overlap"
     },
     {
       "id": "thermal-3",
-      "type": "thermal_anomaly",
+      "type": "thermal_observation_candidate",
       "observedAt": "2026-03-28T18:18:00.000Z",
       "geometry": {
         "type": "Point",
@@ -1083,22 +1553,48 @@
         ]
       },
       "regionIds": [
+        "israel",
         "eastern-mediterranean"
       ],
-      "headline": "FIRMS thermal hit thermal-3",
-      "description": "Seeded thermal anomaly used for offline clustering and strike inference demos.",
+      "headline": "Synthetic demo: FIRMS thermal hit thermal-3",
+      "description": "Synthetic thermal observation retained for clustering demos only; it is not a verified real-world heat event.",
       "severity": "warning",
       "independentSourceCount": 1,
       "metadata": {
         "brightness": 336,
         "confidence": "nominal"
       },
-      "provider": "nasa_firms",
-      "sourcePayloadId": "raw-nasa_firms-thermal-3"
+      "provider": "nasa_firms_seed_fixture",
+      "sourcePayloadId": "raw-nasa_firms-thermal-3",
+      "legacyProvider": "nasa_firms",
+      "legacyType": "thermal_anomaly",
+      "legacyHeadline": "FIRMS thermal hit thermal-3",
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Indicator inherits seeded/demo lineage from its payload and has been relabeled so it cannot imply authoritative real-world confirmation.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-nasa_firms-thermal-3"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "completed",
+      "externalSourcesChecked": [
+        {
+          "engine": "duckduckgo_html",
+          "query": "\"FIRMS thermal hit thermal-3\"",
+          "checkedAt": "2026-03-29T10:11:53Z",
+          "matchType": "no_match",
+          "resultCount": 0,
+          "results": []
+        }
+      ],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Exact public-source search did not validate this indicator as a real external bulletin/report/thermal hit; synthetic lineage controls classification.",
+      "geospatialPrecision": "seeded_point_or_polygon_with_approximate_region_overlap"
     },
     {
       "id": "thermal-4",
-      "type": "thermal_anomaly",
+      "type": "thermal_observation_candidate",
       "observedAt": "2026-03-28T19:22:00.000Z",
       "geometry": {
         "type": "Point",
@@ -1108,22 +1604,49 @@
         ]
       },
       "regionIds": [
-        "israel"
+        "israel",
+        "arabian-peninsula",
+        "eastern-mediterranean"
       ],
-      "headline": "FIRMS thermal hit thermal-4",
-      "description": "Seeded thermal anomaly used for offline clustering and strike inference demos.",
+      "headline": "Synthetic demo: FIRMS thermal hit thermal-4",
+      "description": "Synthetic thermal observation retained for clustering demos only; it is not a verified real-world heat event.",
       "severity": "warning",
       "independentSourceCount": 1,
       "metadata": {
         "brightness": 336,
         "confidence": "nominal"
       },
-      "provider": "nasa_firms",
-      "sourcePayloadId": "raw-nasa_firms-thermal-4"
+      "provider": "nasa_firms_seed_fixture",
+      "sourcePayloadId": "raw-nasa_firms-thermal-4",
+      "legacyProvider": "nasa_firms",
+      "legacyType": "thermal_anomaly",
+      "legacyHeadline": "FIRMS thermal hit thermal-4",
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Indicator inherits seeded/demo lineage from its payload and has been relabeled so it cannot imply authoritative real-world confirmation.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-nasa_firms-thermal-4"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "completed",
+      "externalSourcesChecked": [
+        {
+          "engine": "duckduckgo_html",
+          "query": "\"FIRMS thermal hit thermal-4\"",
+          "checkedAt": "2026-03-29T10:11:53Z",
+          "matchType": "no_match",
+          "resultCount": 0,
+          "results": []
+        }
+      ],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Exact public-source search did not validate this indicator as a real external bulletin/report/thermal hit; synthetic lineage controls classification.",
+      "geospatialPrecision": "seeded_point_or_polygon_with_approximate_region_overlap"
     },
     {
       "id": "thermal-5",
-      "type": "thermal_anomaly",
+      "type": "thermal_observation_candidate",
       "observedAt": "2026-03-28T19:46:00.000Z",
       "geometry": {
         "type": "Point",
@@ -1133,22 +1656,49 @@
         ]
       },
       "regionIds": [
-        "israel"
+        "israel",
+        "arabian-peninsula",
+        "eastern-mediterranean"
       ],
-      "headline": "FIRMS thermal hit thermal-5",
-      "description": "Seeded thermal anomaly used for offline clustering and strike inference demos.",
+      "headline": "Synthetic demo: FIRMS thermal hit thermal-5",
+      "description": "Synthetic thermal observation retained for clustering demos only; it is not a verified real-world heat event.",
       "severity": "warning",
       "independentSourceCount": 1,
       "metadata": {
         "brightness": 336,
         "confidence": "nominal"
       },
-      "provider": "nasa_firms",
-      "sourcePayloadId": "raw-nasa_firms-thermal-5"
+      "provider": "nasa_firms_seed_fixture",
+      "sourcePayloadId": "raw-nasa_firms-thermal-5",
+      "legacyProvider": "nasa_firms",
+      "legacyType": "thermal_anomaly",
+      "legacyHeadline": "FIRMS thermal hit thermal-5",
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Indicator inherits seeded/demo lineage from its payload and has been relabeled so it cannot imply authoritative real-world confirmation.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-nasa_firms-thermal-5"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "completed",
+      "externalSourcesChecked": [
+        {
+          "engine": "duckduckgo_html",
+          "query": "\"FIRMS thermal hit thermal-5\"",
+          "checkedAt": "2026-03-29T10:11:53Z",
+          "matchType": "no_match",
+          "resultCount": 0,
+          "results": []
+        }
+      ],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Exact public-source search did not validate this indicator as a real external bulletin/report/thermal hit; synthetic lineage controls classification.",
+      "geospatialPrecision": "seeded_point_or_polygon_with_approximate_region_overlap"
     },
     {
       "id": "osint-1",
-      "type": "osint_report",
+      "type": "reported_observation",
       "observedAt": "2026-03-28T17:55:00.000Z",
       "geometry": {
         "type": "Point",
@@ -1158,10 +1708,11 @@
         ]
       },
       "regionIds": [
+        "israel",
         "eastern-mediterranean"
       ],
-      "headline": "Multiple local channels mention impact sounds east of Cyprus corridor",
-      "description": "Cross-posted local observer reports aligned with maritime reroutes.",
+      "headline": "Synthetic demo: Multiple local channels mention impact sounds east of Cyprus corridor",
+      "description": "Synthetic report fixture retained to test weak-source handling and taxonomy behavior.",
       "severity": "warning",
       "independentSourceCount": 2,
       "metadata": {
@@ -1170,12 +1721,37 @@
           "source-b"
         ]
       },
-      "provider": "osint_news",
-      "sourcePayloadId": "raw-osint_news-osint-1"
+      "provider": "osint_seed_fixture",
+      "sourcePayloadId": "raw-osint_news-osint-1",
+      "legacyProvider": "osint_news",
+      "legacyType": "osint_report",
+      "legacyHeadline": "Multiple local channels mention impact sounds east of Cyprus corridor",
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Indicator inherits seeded/demo lineage from its payload and has been relabeled so it cannot imply authoritative real-world confirmation.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-osint_news-osint-1"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "completed",
+      "externalSourcesChecked": [
+        {
+          "engine": "duckduckgo_html",
+          "query": "\"Multiple local channels mention impact sounds east of Cyprus corridor\"",
+          "checkedAt": "2026-03-29T10:11:53Z",
+          "matchType": "no_match",
+          "resultCount": 0,
+          "results": []
+        }
+      ],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Exact public-source search did not validate this indicator as a real external bulletin/report/thermal hit; synthetic lineage controls classification.",
+      "geospatialPrecision": "seeded_point_or_polygon_with_approximate_region_overlap"
     },
     {
       "id": "news-1",
-      "type": "news_report",
+      "type": "reported_observation",
       "observedAt": "2026-03-28T18:10:00.000Z",
       "geometry": {
         "type": "Point",
@@ -1185,10 +1761,11 @@
         ]
       },
       "regionIds": [
+        "israel",
         "eastern-mediterranean"
       ],
-      "headline": "Regional desk reports emergency reroutes linked to suspected strike activity",
-      "description": "Seeded news aggregation item used to corroborate the cluster.",
+      "headline": "Synthetic demo: Regional desk reports emergency reroutes linked to suspected strike activity",
+      "description": "Synthetic report fixture retained to test weak-source handling and taxonomy behavior.",
       "severity": "warning",
       "independentSourceCount": 2,
       "metadata": {
@@ -1197,12 +1774,37 @@
           "desk-2"
         ]
       },
-      "provider": "osint_news",
-      "sourcePayloadId": "raw-osint_news-news-1"
+      "provider": "osint_seed_fixture",
+      "sourcePayloadId": "raw-osint_news-news-1",
+      "legacyProvider": "osint_news",
+      "legacyType": "news_report",
+      "legacyHeadline": "Regional desk reports emergency reroutes linked to suspected strike activity",
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Indicator inherits seeded/demo lineage from its payload and has been relabeled so it cannot imply authoritative real-world confirmation.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-osint_news-news-1"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "completed",
+      "externalSourcesChecked": [
+        {
+          "engine": "duckduckgo_html",
+          "query": "\"Regional desk reports emergency reroutes linked to suspected strike activity\"",
+          "checkedAt": "2026-03-29T10:11:53Z",
+          "matchType": "no_match",
+          "resultCount": 0,
+          "results": []
+        }
+      ],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Exact public-source search did not validate this indicator as a real external bulletin/report/thermal hit; synthetic lineage controls classification.",
+      "geospatialPrecision": "seeded_point_or_polygon_with_approximate_region_overlap"
     },
     {
       "id": "osint-2",
-      "type": "osint_report",
+      "type": "reported_observation",
       "observedAt": "2026-03-28T19:38:00.000Z",
       "geometry": {
         "type": "Point",
@@ -1212,10 +1814,12 @@
         ]
       },
       "regionIds": [
-        "israel"
+        "israel",
+        "arabian-peninsula",
+        "eastern-mediterranean"
       ],
-      "headline": "Two independent reports mention flashes near the southern Israeli corridor",
-      "description": "Seeded dual-source OSINT report with no official corroboration.",
+      "headline": "Synthetic demo: Two independent reports mention flashes near the southern Israeli corridor",
+      "description": "Synthetic report fixture retained to test weak-source handling and taxonomy behavior.",
       "severity": "warning",
       "independentSourceCount": 2,
       "metadata": {
@@ -1224,12 +1828,37 @@
           "observer-2"
         ]
       },
-      "provider": "osint_news",
-      "sourcePayloadId": "raw-osint_news-osint-2"
+      "provider": "osint_seed_fixture",
+      "sourcePayloadId": "raw-osint_news-osint-2",
+      "legacyProvider": "osint_news",
+      "legacyType": "osint_report",
+      "legacyHeadline": "Two independent reports mention flashes near the southern Israeli corridor",
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Indicator inherits seeded/demo lineage from its payload and has been relabeled so it cannot imply authoritative real-world confirmation.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-osint_news-osint-2"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "completed",
+      "externalSourcesChecked": [
+        {
+          "engine": "duckduckgo_html",
+          "query": "\"Two independent reports mention flashes near the southern Israeli corridor\"",
+          "checkedAt": "2026-03-29T10:11:53Z",
+          "matchType": "no_match",
+          "resultCount": 0,
+          "results": []
+        }
+      ],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Exact public-source search did not validate this indicator as a real external bulletin/report/thermal hit; synthetic lineage controls classification.",
+      "geospatialPrecision": "seeded_point_or_polygon_with_approximate_region_overlap"
     },
     {
       "id": "osint-3",
-      "type": "osint_report",
+      "type": "reported_observation",
       "observedAt": "2026-03-28T10:30:00.000Z",
       "geometry": {
         "type": "Point",
@@ -1241,8 +1870,8 @@
       "regionIds": [
         "iran"
       ],
-      "headline": "Single channel claims blast near western Iran",
-      "description": "Weak-source report intentionally retained as unverified.",
+      "headline": "Synthetic demo: Single channel claims blast near western Iran",
+      "description": "Synthetic report fixture retained to test weak-source handling and taxonomy behavior.",
       "severity": "info",
       "independentSourceCount": 1,
       "metadata": {
@@ -1250,14 +1879,39 @@
           "single-channel"
         ]
       },
-      "provider": "osint_news",
-      "sourcePayloadId": "raw-osint_news-osint-3"
+      "provider": "osint_seed_fixture",
+      "sourcePayloadId": "raw-osint_news-osint-3",
+      "legacyProvider": "osint_news",
+      "legacyType": "osint_report",
+      "legacyHeadline": "Single channel claims blast near western Iran",
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Indicator inherits seeded/demo lineage from its payload and has been relabeled so it cannot imply authoritative real-world confirmation.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-osint_news-osint-3"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "completed",
+      "externalSourcesChecked": [
+        {
+          "engine": "duckduckgo_html",
+          "query": "\"Single channel claims blast near western Iran\"",
+          "checkedAt": "2026-03-29T10:11:53Z",
+          "matchType": "no_match",
+          "resultCount": 0,
+          "results": []
+        }
+      ],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Exact public-source search did not validate this indicator as a real external bulletin/report/thermal hit; synthetic lineage controls classification.",
+      "geospatialPrecision": "seeded_point_or_polygon_with_approximate_region_overlap"
     }
   ],
   "events": [
     {
       "id": "event-thermal-2",
-      "eventType": "thermal_anomaly",
+      "eventType": "thermal_cluster",
       "startedAt": "2026-03-28T19:22:00.000Z",
       "endedAt": "2026-03-28T19:46:00.000Z",
       "geometry": {
@@ -1268,47 +1922,113 @@
         ]
       },
       "regionIds": [
-        "israel"
+        "israel",
+        "arabian-peninsula",
+        "eastern-mediterranean"
       ],
       "sourceProviders": [
-        "nasa_firms"
+        "nasa_firms_seed_fixture"
       ],
       "evidence": [
         {
-          "provider": "nasa_firms",
+          "provider": "nasa_firms_seed_fixture",
           "sourceType": "thermal_anomaly",
           "sourcePayloadId": "raw-nasa_firms-thermal-4",
-          "summary": "FIRMS thermal hit thermal-4",
-          "observedAt": "2026-03-28T19:22:00.000Z"
+          "summary": "Synthetic demo evidence: FIRMS thermal hit thermal-4",
+          "observedAt": "2026-03-28T19:22:00.000Z",
+          "legacyProvider": "nasa_firms"
         },
         {
-          "provider": "nasa_firms",
+          "provider": "nasa_firms_seed_fixture",
           "sourceType": "thermal_anomaly",
           "sourcePayloadId": "raw-nasa_firms-thermal-5",
-          "summary": "FIRMS thermal hit thermal-5",
-          "observedAt": "2026-03-28T19:46:00.000Z"
+          "summary": "Synthetic demo evidence: FIRMS thermal hit thermal-5",
+          "observedAt": "2026-03-28T19:46:00.000Z",
+          "legacyProvider": "nasa_firms"
         }
       ],
-      "confidence": 0.62,
+      "confidence": 0.04,
       "reasoning": {
-        "score": 0.62,
-        "confidenceLabel": "moderate",
+        "score": 0.04,
+        "confidenceLabel": "low",
         "signals": [
           {
-            "label": "Thermal cluster",
+            "label": "Conservative baseline",
             "effect": "increase",
-            "weight": 0.22,
-            "evidence": "2 thermals clustered."
+            "weight": 0.15,
+            "evidence": "All repaired event scores start from a low baseline before provenance and external verification checks."
+          },
+          {
+            "label": "Multiple evidence items",
+            "effect": "increase",
+            "weight": 0.05,
+            "evidence": "2 evidence items retained after audit."
+          },
+          {
+            "label": "Temporal clustering",
+            "effect": "increase",
+            "weight": 0.04,
+            "evidence": "Evidence items fall within a 24-minute window."
+          },
+          {
+            "label": "Synthetic lineage penalty",
+            "effect": "decrease",
+            "weight": 0.1,
+            "evidence": "Supporting evidence is explicitly marked synthetic_demo."
+          },
+          {
+            "label": "No exact external match",
+            "effect": "decrease",
+            "weight": 0.06,
+            "evidence": "Supporting records did not produce an exact public-source match."
+          },
+          {
+            "label": "Weak corroboration penalty",
+            "effect": "decrease",
+            "weight": 0.04,
+            "evidence": "Event remains single-family or explicitly weak-source after audit."
           }
         ],
-        "explanation": "Thermal anomalies alone are not sufficient to imply a confirmed strike."
+        "explanation": "+0.15 Conservative baseline; +0.05 Multiple evidence items; +0.04 Temporal clustering; -0.10 Synthetic lineage penalty; -0.06 No exact external match; -0.04 Weak corroboration penalty"
       },
-      "title": "Thermal anomaly cluster 2",
-      "summary": "2 thermal anomalies clustered within ~35 km / 90 minutes."
+      "title": "Synthetic demo thermal cluster",
+      "summary": "Derived from synthetic thermal observations and retained only as a neutral thermal cluster scenario.",
+      "legacyEventType": "thermal_anomaly",
+      "recordStatus": "derived_inference",
+      "verificationStatus": "derived_from_synthetic_sources",
+      "verificationNotes": "Event is a derived inference assembled from synthetic_demo supporting records. It remains useful only as a conservative scenario record, not as real-world confirmation.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-nasa_firms-thermal-4",
+        "raw-nasa_firms-thermal-5"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "inherited",
+      "externalSourcesChecked": [
+        {
+          "engine": "duckduckgo_html",
+          "query": "\"FIRMS thermal hit thermal-4\"",
+          "checkedAt": "2026-03-29T10:11:53Z",
+          "matchType": "no_match",
+          "resultCount": 0,
+          "results": []
+        },
+        {
+          "engine": "duckduckgo_html",
+          "query": "\"FIRMS thermal hit thermal-5\"",
+          "checkedAt": "2026-03-29T10:11:53Z",
+          "matchType": "no_match",
+          "resultCount": 0,
+          "results": []
+        }
+      ],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Event-level verification inherits from supporting records. No exact external match was used to upgrade a derived scenario event.",
+      "geospatialPrecision": "derived_geometry_anchor_with_approximate_region_overlap"
     },
     {
       "id": "event-strike-2",
-      "eventType": "probable_strike",
+      "eventType": "possible_strike",
       "startedAt": "2026-03-28T19:22:00.000Z",
       "endedAt": "2026-03-28T19:46:00.000Z",
       "geometry": {
@@ -1319,67 +2039,131 @@
         ]
       },
       "regionIds": [
-        "israel"
+        "israel",
+        "arabian-peninsula",
+        "eastern-mediterranean"
       ],
       "sourceProviders": [
-        "nasa_firms",
-        "osint_news"
+        "nasa_firms_seed_fixture",
+        "osint_seed_fixture"
       ],
       "evidence": [
         {
-          "provider": "nasa_firms",
+          "provider": "nasa_firms_seed_fixture",
           "sourceType": "thermal_anomaly",
           "sourcePayloadId": "raw-nasa_firms-thermal-4",
-          "summary": "FIRMS thermal hit thermal-4",
-          "observedAt": "2026-03-28T19:22:00.000Z"
+          "summary": "Synthetic demo evidence: FIRMS thermal hit thermal-4",
+          "observedAt": "2026-03-28T19:22:00.000Z",
+          "legacyProvider": "nasa_firms"
         },
         {
-          "provider": "nasa_firms",
+          "provider": "nasa_firms_seed_fixture",
           "sourceType": "thermal_anomaly",
           "sourcePayloadId": "raw-nasa_firms-thermal-5",
-          "summary": "FIRMS thermal hit thermal-5",
-          "observedAt": "2026-03-28T19:46:00.000Z"
+          "summary": "Synthetic demo evidence: FIRMS thermal hit thermal-5",
+          "observedAt": "2026-03-28T19:46:00.000Z",
+          "legacyProvider": "nasa_firms"
         },
         {
-          "provider": "osint_news",
+          "provider": "osint_seed_fixture",
           "sourceType": "osint_report",
           "sourcePayloadId": "raw-osint_news-osint-2",
-          "summary": "Two independent reports mention flashes near the southern Israeli corridor",
-          "observedAt": "2026-03-28T19:38:00.000Z"
+          "summary": "Synthetic demo evidence: Two independent reports mention flashes near the southern Israeli corridor",
+          "observedAt": "2026-03-28T19:38:00.000Z",
+          "legacyProvider": "osint_news"
         }
       ],
-      "confidence": 0.52,
+      "confidence": 0.13,
       "reasoning": {
-        "score": 0.52,
-        "confidenceLabel": "moderate",
+        "score": 0.13,
+        "confidenceLabel": "low",
         "signals": [
           {
-            "label": "Thermal anomaly clustering",
+            "label": "Conservative baseline",
             "effect": "increase",
-            "weight": 0.22,
-            "evidence": "2 thermal indicator(s) clustered by time and distance."
+            "weight": 0.15,
+            "evidence": "All repaired event scores start from a low baseline before provenance and external verification checks."
           },
           {
-            "label": "Multiple independent reports",
+            "label": "Multiple evidence items",
             "effect": "increase",
-            "weight": 0.12,
-            "evidence": "2 independent reports corroborate the event."
+            "weight": 0.05,
+            "evidence": "3 evidence items retained after audit."
+          },
+          {
+            "label": "Multiple source families",
+            "effect": "increase",
+            "weight": 0.05,
+            "evidence": "2 distinct source families support the scenario."
           },
           {
             "label": "Temporal clustering",
             "effect": "increase",
+            "weight": 0.04,
+            "evidence": "Evidence items fall within a 24-minute window."
+          },
+          {
+            "label": "Synthetic lineage penalty",
+            "effect": "decrease",
             "weight": 0.1,
-            "evidence": "Indicators align within a narrow time window."
+            "evidence": "Supporting evidence is explicitly marked synthetic_demo."
+          },
+          {
+            "label": "No exact external match",
+            "effect": "decrease",
+            "weight": 0.06,
+            "evidence": "Supporting records did not produce an exact public-source match."
           }
         ],
-        "explanation": "+0.22 Thermal anomaly clustering; +0.12 Multiple independent reports; +0.10 Temporal clustering"
+        "explanation": "+0.15 Conservative baseline; +0.05 Multiple evidence items; +0.05 Multiple source families; +0.04 Temporal clustering; -0.10 Synthetic lineage penalty; -0.06 No exact external match"
       },
-      "title": "Probable strike candidate 2",
-      "summary": "Probable strike candidate built from thermal clustering, independent reports, and nearby flight anomalies."
+      "title": "Synthetic demo strike-candidate scenario",
+      "summary": "Derived inference built entirely from synthetic demo sources. Retained only as a possible strike scenario for taxonomy and pipeline testing; not a verified real-world event.",
+      "legacyEventType": "probable_strike",
+      "recordStatus": "derived_inference",
+      "verificationStatus": "derived_from_synthetic_sources",
+      "verificationNotes": "Event is a derived inference assembled from synthetic_demo supporting records. It remains useful only as a conservative scenario record, not as real-world confirmation.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-nasa_firms-thermal-4",
+        "raw-nasa_firms-thermal-5",
+        "raw-osint_news-osint-2"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "inherited",
+      "externalSourcesChecked": [
+        {
+          "engine": "duckduckgo_html",
+          "query": "\"FIRMS thermal hit thermal-4\"",
+          "checkedAt": "2026-03-29T10:11:53Z",
+          "matchType": "no_match",
+          "resultCount": 0,
+          "results": []
+        },
+        {
+          "engine": "duckduckgo_html",
+          "query": "\"FIRMS thermal hit thermal-5\"",
+          "checkedAt": "2026-03-29T10:11:53Z",
+          "matchType": "no_match",
+          "resultCount": 0,
+          "results": []
+        },
+        {
+          "engine": "duckduckgo_html",
+          "query": "\"Two independent reports mention flashes near the southern Israeli corridor\"",
+          "checkedAt": "2026-03-29T10:11:53Z",
+          "matchType": "no_match",
+          "resultCount": 0,
+          "results": []
+        }
+      ],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Event-level verification inherits from supporting records. No exact external match was used to upgrade a derived scenario event.",
+      "geospatialPrecision": "derived_geometry_anchor_with_approximate_region_overlap"
     },
     {
       "id": "event-thermal-1",
-      "eventType": "thermal_anomaly",
+      "eventType": "thermal_cluster",
       "startedAt": "2026-03-28T17:41:00.000Z",
       "endedAt": "2026-03-28T18:18:00.000Z",
       "geometry": {
@@ -1390,180 +2174,344 @@
         ]
       },
       "regionIds": [
+        "israel",
         "eastern-mediterranean"
       ],
       "sourceProviders": [
-        "nasa_firms"
+        "nasa_firms_seed_fixture"
       ],
       "evidence": [
         {
-          "provider": "nasa_firms",
+          "provider": "nasa_firms_seed_fixture",
           "sourceType": "thermal_anomaly",
           "sourcePayloadId": "raw-nasa_firms-thermal-1",
-          "summary": "FIRMS thermal hit thermal-1",
-          "observedAt": "2026-03-28T17:41:00.000Z"
+          "summary": "Synthetic demo evidence: FIRMS thermal hit thermal-1",
+          "observedAt": "2026-03-28T17:41:00.000Z",
+          "legacyProvider": "nasa_firms"
         },
         {
-          "provider": "nasa_firms",
+          "provider": "nasa_firms_seed_fixture",
           "sourceType": "thermal_anomaly",
           "sourcePayloadId": "raw-nasa_firms-thermal-2",
-          "summary": "FIRMS thermal hit thermal-2",
-          "observedAt": "2026-03-28T18:02:00.000Z"
+          "summary": "Synthetic demo evidence: FIRMS thermal hit thermal-2",
+          "observedAt": "2026-03-28T18:02:00.000Z",
+          "legacyProvider": "nasa_firms"
         },
         {
-          "provider": "nasa_firms",
+          "provider": "nasa_firms_seed_fixture",
           "sourceType": "thermal_anomaly",
           "sourcePayloadId": "raw-nasa_firms-thermal-3",
-          "summary": "FIRMS thermal hit thermal-3",
-          "observedAt": "2026-03-28T18:18:00.000Z"
+          "summary": "Synthetic demo evidence: FIRMS thermal hit thermal-3",
+          "observedAt": "2026-03-28T18:18:00.000Z",
+          "legacyProvider": "nasa_firms"
         }
       ],
-      "confidence": 0.62,
+      "confidence": 0.04,
       "reasoning": {
-        "score": 0.62,
-        "confidenceLabel": "moderate",
+        "score": 0.04,
+        "confidenceLabel": "low",
         "signals": [
           {
-            "label": "Thermal cluster",
+            "label": "Conservative baseline",
             "effect": "increase",
-            "weight": 0.22,
-            "evidence": "3 thermals clustered."
-          }
-        ],
-        "explanation": "Thermal anomalies alone are not sufficient to imply a confirmed strike."
-      },
-      "title": "Thermal anomaly cluster 1",
-      "summary": "3 thermal anomalies clustered within ~35 km / 90 minutes."
-    },
-    {
-      "id": "event-strike-1",
-      "eventType": "confirmed_strike",
-      "startedAt": "2026-03-28T17:41:00.000Z",
-      "endedAt": "2026-03-28T18:18:00.000Z",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          35.58,
-          33.19
-        ]
-      },
-      "regionIds": [
-        "eastern-mediterranean"
-      ],
-      "sourceProviders": [
-        "nasa_firms",
-        "osint_news",
-        "notam_feed",
-        "opensky"
-      ],
-      "evidence": [
-        {
-          "provider": "nasa_firms",
-          "sourceType": "thermal_anomaly",
-          "sourcePayloadId": "raw-nasa_firms-thermal-1",
-          "summary": "FIRMS thermal hit thermal-1",
-          "observedAt": "2026-03-28T17:41:00.000Z"
-        },
-        {
-          "provider": "nasa_firms",
-          "sourceType": "thermal_anomaly",
-          "sourcePayloadId": "raw-nasa_firms-thermal-2",
-          "summary": "FIRMS thermal hit thermal-2",
-          "observedAt": "2026-03-28T18:02:00.000Z"
-        },
-        {
-          "provider": "nasa_firms",
-          "sourceType": "thermal_anomaly",
-          "sourcePayloadId": "raw-nasa_firms-thermal-3",
-          "summary": "FIRMS thermal hit thermal-3",
-          "observedAt": "2026-03-28T18:18:00.000Z"
-        },
-        {
-          "provider": "osint_news",
-          "sourceType": "osint_report",
-          "sourcePayloadId": "raw-osint_news-osint-1",
-          "summary": "Multiple local channels mention impact sounds east of Cyprus corridor",
-          "observedAt": "2026-03-28T17:55:00.000Z"
-        },
-        {
-          "provider": "osint_news",
-          "sourceType": "news_report",
-          "sourcePayloadId": "raw-osint_news-news-1",
-          "summary": "Regional desk reports emergency reroutes linked to suspected strike activity",
-          "observedAt": "2026-03-28T18:10:00.000Z"
-        },
-        {
-          "provider": "notam_feed",
-          "sourceType": "restriction",
-          "sourcePayloadId": "raw-notam_feed-restr-1",
-          "summary": "Seeded NOTAM-like closure affecting the Levantine maritime corridor.",
-          "observedAt": "2026-03-28T17:10:00.000Z"
-        },
-        {
-          "provider": "opensky",
-          "sourceType": "track",
-          "sourcePayloadId": "raw-opensky-obs-1a",
-          "summary": "EM9001 shows reroute/transponder anomaly",
-          "observedAt": "2026-03-28T16:31:00.000Z"
-        },
-        {
-          "provider": "opensky",
-          "sourceType": "track",
-          "sourcePayloadId": "raw-opensky-mea-1",
-          "summary": "MEA440 shows reroute/transponder anomaly",
-          "observedAt": "2026-03-28T16:31:00.000Z"
-        }
-      ],
-      "confidence": 1,
-      "reasoning": {
-        "score": 1,
-        "confidenceLabel": "high",
-        "signals": [
-          {
-            "label": "Official airspace restriction",
-            "effect": "increase",
-            "weight": 0.28,
-            "evidence": "Restriction or closure bulletin overlaps the event window and geometry."
+            "weight": 0.15,
+            "evidence": "All repaired event scores start from a low baseline before provenance and external verification checks."
           },
           {
-            "label": "Conflict-zone bulletin",
+            "label": "Multiple evidence items",
             "effect": "increase",
-            "weight": 0.24,
-            "evidence": "Conflict-zone bulletin or safety advisory corroborates elevated risk."
-          },
-          {
-            "label": "Thermal anomaly clustering",
-            "effect": "increase",
-            "weight": 0.26,
-            "evidence": "3 thermal indicator(s) clustered by time and distance."
-          },
-          {
-            "label": "Multiple independent reports",
-            "effect": "increase",
-            "weight": 0.18,
-            "evidence": "4 independent reports corroborate the event."
-          },
-          {
-            "label": "Nearby diversion cluster",
-            "effect": "increase",
-            "weight": 0.14,
-            "evidence": "2 affected aircraft show reroute/transponder anomalies nearby."
+            "weight": 0.05,
+            "evidence": "3 evidence items retained after audit."
           },
           {
             "label": "Temporal clustering",
             "effect": "increase",
+            "weight": 0.04,
+            "evidence": "Evidence items fall within a 37-minute window."
+          },
+          {
+            "label": "Synthetic lineage penalty",
+            "effect": "decrease",
             "weight": 0.1,
-            "evidence": "Indicators align within a narrow time window."
+            "evidence": "Supporting evidence is explicitly marked synthetic_demo."
+          },
+          {
+            "label": "No exact external match",
+            "effect": "decrease",
+            "weight": 0.06,
+            "evidence": "Supporting records did not produce an exact public-source match."
+          },
+          {
+            "label": "Weak corroboration penalty",
+            "effect": "decrease",
+            "weight": 0.04,
+            "evidence": "Event remains single-family or explicitly weak-source after audit."
           }
         ],
-        "explanation": "+0.28 Official airspace restriction; +0.24 Conflict-zone bulletin; +0.26 Thermal anomaly clustering; +0.18 Multiple independent reports; +0.14 Nearby diversion cluster; +0.10 Temporal clustering"
+        "explanation": "+0.15 Conservative baseline; +0.05 Multiple evidence items; +0.04 Temporal clustering; -0.10 Synthetic lineage penalty; -0.06 No exact external match; -0.04 Weak corroboration penalty"
       },
-      "title": "Confirmed strike candidate 1",
-      "summary": "Confirmed strike candidate built from thermal clustering, independent reports, and nearby flight anomalies."
+      "title": "Synthetic demo thermal cluster",
+      "summary": "Derived from synthetic thermal observations and retained only as a neutral thermal cluster scenario.",
+      "legacyEventType": "thermal_anomaly",
+      "recordStatus": "derived_inference",
+      "verificationStatus": "derived_from_synthetic_sources",
+      "verificationNotes": "Event is a derived inference assembled from synthetic_demo supporting records. It remains useful only as a conservative scenario record, not as real-world confirmation.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-nasa_firms-thermal-1",
+        "raw-nasa_firms-thermal-2",
+        "raw-nasa_firms-thermal-3"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "inherited",
+      "externalSourcesChecked": [
+        {
+          "engine": "duckduckgo_html",
+          "query": "\"FIRMS thermal hit thermal-1\"",
+          "checkedAt": "2026-03-29T10:11:53Z",
+          "matchType": "no_match",
+          "resultCount": 0,
+          "results": []
+        },
+        {
+          "engine": "duckduckgo_html",
+          "query": "\"FIRMS thermal hit thermal-2\"",
+          "checkedAt": "2026-03-29T10:11:53Z",
+          "matchType": "no_match",
+          "resultCount": 0,
+          "results": []
+        },
+        {
+          "engine": "duckduckgo_html",
+          "query": "\"FIRMS thermal hit thermal-3\"",
+          "checkedAt": "2026-03-29T10:11:53Z",
+          "matchType": "no_match",
+          "resultCount": 0,
+          "results": []
+        }
+      ],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Event-level verification inherits from supporting records. No exact external match was used to upgrade a derived scenario event.",
+      "geospatialPrecision": "derived_geometry_anchor_with_approximate_region_overlap"
+    },
+    {
+      "id": "event-strike-1",
+      "eventType": "possible_strike",
+      "startedAt": "2026-03-28T17:41:00.000Z",
+      "endedAt": "2026-03-28T18:18:00.000Z",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.58,
+          33.19
+        ]
+      },
+      "regionIds": [
+        "israel",
+        "eastern-mediterranean"
+      ],
+      "sourceProviders": [
+        "nasa_firms_seed_fixture",
+        "osint_seed_fixture",
+        "notam_seed_fixture",
+        "opensky_seed_fixture"
+      ],
+      "evidence": [
+        {
+          "provider": "nasa_firms_seed_fixture",
+          "sourceType": "thermal_anomaly",
+          "sourcePayloadId": "raw-nasa_firms-thermal-1",
+          "summary": "Synthetic demo evidence: FIRMS thermal hit thermal-1",
+          "observedAt": "2026-03-28T17:41:00.000Z",
+          "legacyProvider": "nasa_firms"
+        },
+        {
+          "provider": "nasa_firms_seed_fixture",
+          "sourceType": "thermal_anomaly",
+          "sourcePayloadId": "raw-nasa_firms-thermal-2",
+          "summary": "Synthetic demo evidence: FIRMS thermal hit thermal-2",
+          "observedAt": "2026-03-28T18:02:00.000Z",
+          "legacyProvider": "nasa_firms"
+        },
+        {
+          "provider": "nasa_firms_seed_fixture",
+          "sourceType": "thermal_anomaly",
+          "sourcePayloadId": "raw-nasa_firms-thermal-3",
+          "summary": "Synthetic demo evidence: FIRMS thermal hit thermal-3",
+          "observedAt": "2026-03-28T18:18:00.000Z",
+          "legacyProvider": "nasa_firms"
+        },
+        {
+          "provider": "osint_seed_fixture",
+          "sourceType": "osint_report",
+          "sourcePayloadId": "raw-osint_news-osint-1",
+          "summary": "Synthetic demo evidence: Multiple local channels mention impact sounds east of Cyprus corridor",
+          "observedAt": "2026-03-28T17:55:00.000Z",
+          "legacyProvider": "osint_news"
+        },
+        {
+          "provider": "osint_seed_fixture",
+          "sourceType": "news_report",
+          "sourcePayloadId": "raw-osint_news-news-1",
+          "summary": "Synthetic demo evidence: Regional desk reports emergency reroutes linked to suspected strike activity",
+          "observedAt": "2026-03-28T18:10:00.000Z",
+          "legacyProvider": "osint_news"
+        },
+        {
+          "provider": "notam_seed_fixture",
+          "sourceType": "restriction",
+          "sourcePayloadId": "raw-notam_feed-restr-1",
+          "summary": "Synthetic demo restriction evidence: Seeded NOTAM-like closure affecting the Levantine maritime corridor.",
+          "observedAt": "2026-03-28T17:10:00.000Z",
+          "legacyProvider": "notam_feed"
+        },
+        {
+          "provider": "opensky_seed_fixture",
+          "sourceType": "track",
+          "sourcePayloadId": "raw-opensky-obs-1a",
+          "summary": "Synthetic demo track evidence: EM9001 shows reroute/transponder anomaly",
+          "observedAt": "2026-03-28T16:31:00.000Z",
+          "legacyProvider": "opensky"
+        },
+        {
+          "provider": "opensky_seed_fixture",
+          "sourceType": "track",
+          "sourcePayloadId": "raw-opensky-mea-1",
+          "summary": "Synthetic demo track evidence: MEA440 shows reroute/transponder anomaly",
+          "observedAt": "2026-03-28T16:31:00.000Z",
+          "legacyProvider": "opensky"
+        }
+      ],
+      "confidence": 0.09,
+      "reasoning": {
+        "score": 0.09,
+        "confidenceLabel": "low",
+        "signals": [
+          {
+            "label": "Conservative baseline",
+            "effect": "increase",
+            "weight": 0.15,
+            "evidence": "All repaired event scores start from a low baseline before provenance and external verification checks."
+          },
+          {
+            "label": "Multiple evidence items",
+            "effect": "increase",
+            "weight": 0.05,
+            "evidence": "8 evidence items retained after audit."
+          },
+          {
+            "label": "Multiple source families",
+            "effect": "increase",
+            "weight": 0.05,
+            "evidence": "4 distinct source families support the scenario."
+          },
+          {
+            "label": "Synthetic lineage penalty",
+            "effect": "decrease",
+            "weight": 0.1,
+            "evidence": "Supporting evidence is explicitly marked synthetic_demo."
+          },
+          {
+            "label": "No exact external match",
+            "effect": "decrease",
+            "weight": 0.06,
+            "evidence": "Supporting records did not produce an exact public-source match."
+          }
+        ],
+        "explanation": "+0.15 Conservative baseline; +0.05 Multiple evidence items; +0.05 Multiple source families; -0.10 Synthetic lineage penalty; -0.06 No exact external match"
+      },
+      "title": "Synthetic demo strike-candidate scenario",
+      "summary": "Derived inference built entirely from synthetic demo sources. Retained only as a possible strike scenario for taxonomy and pipeline testing; not a verified real-world event.",
+      "legacyEventType": "confirmed_strike",
+      "recordStatus": "derived_inference",
+      "verificationStatus": "derived_from_synthetic_sources",
+      "verificationNotes": "Event is a derived inference assembled from synthetic_demo supporting records. It remains useful only as a conservative scenario record, not as real-world confirmation.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-nasa_firms-thermal-1",
+        "raw-nasa_firms-thermal-2",
+        "raw-nasa_firms-thermal-3",
+        "raw-notam_feed-restr-1",
+        "raw-opensky-mea-1",
+        "raw-opensky-obs-1a",
+        "raw-osint_news-news-1",
+        "raw-osint_news-osint-1"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "inherited",
+      "externalSourcesChecked": [
+        {
+          "engine": "duckduckgo_html",
+          "query": "\"FIRMS thermal hit thermal-1\"",
+          "checkedAt": "2026-03-29T10:11:53Z",
+          "matchType": "no_match",
+          "resultCount": 0,
+          "results": []
+        },
+        {
+          "engine": "duckduckgo_html",
+          "query": "\"FIRMS thermal hit thermal-2\"",
+          "checkedAt": "2026-03-29T10:11:53Z",
+          "matchType": "no_match",
+          "resultCount": 0,
+          "results": []
+        },
+        {
+          "engine": "duckduckgo_html",
+          "query": "\"FIRMS thermal hit thermal-3\"",
+          "checkedAt": "2026-03-29T10:11:53Z",
+          "matchType": "no_match",
+          "resultCount": 0,
+          "results": []
+        },
+        {
+          "engine": "duckduckgo_html",
+          "query": "\"Multiple local channels mention impact sounds east of Cyprus corridor\"",
+          "checkedAt": "2026-03-29T10:11:53Z",
+          "matchType": "no_match",
+          "resultCount": 0,
+          "results": []
+        },
+        {
+          "engine": "duckduckgo_html",
+          "query": "\"Regional desk reports emergency reroutes linked to suspected strike activity\"",
+          "checkedAt": "2026-03-29T10:11:53Z",
+          "matchType": "no_match",
+          "resultCount": 0,
+          "results": []
+        },
+        {
+          "engine": "duckduckgo_html",
+          "query": "\"Temporary closure east of Cyprus / Levant corridor\" \"DEMO-LEVANT-01\"",
+          "checkedAt": "2026-03-29T10:11:53Z",
+          "matchType": "no_match",
+          "resultCount": 0,
+          "results": []
+        },
+        {
+          "engine": "duckduckgo_html",
+          "query": "\"EM9001\" \"ATH\" \"TLV\" \"2026-03-28\"",
+          "checkedAt": "2026-03-29T10:11:53Z",
+          "matchType": "no_match",
+          "resultCount": 0,
+          "results": []
+        },
+        {
+          "engine": "duckduckgo_html",
+          "query": "\"MEA440\" \"BEY\" \"AUH\" \"2026-03-28\"",
+          "checkedAt": "2026-03-29T10:11:53Z",
+          "matchType": "no_match",
+          "resultCount": 0,
+          "results": []
+        }
+      ],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Event-level verification inherits from supporting records. No exact external match was used to upgrade a derived scenario event.",
+      "geospatialPrecision": "derived_geometry_anchor_with_approximate_region_overlap"
     },
     {
       "id": "event-restr-1",
-      "eventType": "airspace_closure",
+      "eventType": "airspace_restriction_notice",
       "startedAt": "2026-03-28T17:10:00.000Z",
       "endedAt": "2026-03-29T05:00:00.000Z",
       "geometry": {
@@ -1594,40 +2542,89 @@
         ]
       },
       "regionIds": [
+        "israel",
         "eastern-mediterranean"
       ],
       "sourceProviders": [
-        "notam_feed"
+        "notam_seed_fixture"
       ],
       "evidence": [
         {
-          "provider": "notam_feed",
+          "provider": "notam_seed_fixture",
           "sourceType": "restriction",
           "sourcePayloadId": "raw-notam_feed-restr-1",
-          "summary": "Seeded NOTAM-like closure affecting the Levantine maritime corridor.",
-          "observedAt": "2026-03-28T17:10:00.000Z"
+          "summary": "Synthetic demo restriction evidence: Seeded NOTAM-like closure affecting the Levantine maritime corridor.",
+          "observedAt": "2026-03-28T17:10:00.000Z",
+          "legacyProvider": "notam_feed"
         }
       ],
-      "confidence": 0.9,
+      "confidence": 0.0,
       "reasoning": {
-        "score": 0.9,
-        "confidenceLabel": "high",
+        "score": 0.0,
+        "confidenceLabel": "low",
         "signals": [
           {
-            "label": "Official restriction",
+            "label": "Conservative baseline",
             "effect": "increase",
-            "weight": 0.7,
-            "evidence": "Temporary closure east of Cyprus / Levant corridor"
+            "weight": 0.15,
+            "evidence": "All repaired event scores start from a low baseline before provenance and external verification checks."
+          },
+          {
+            "label": "Restriction semantics retained",
+            "effect": "increase",
+            "weight": 0.03,
+            "evidence": "Event remains useful as a synthetic restriction scenario reference."
+          },
+          {
+            "label": "Synthetic lineage penalty",
+            "effect": "decrease",
+            "weight": 0.1,
+            "evidence": "Supporting evidence is explicitly marked synthetic_demo."
+          },
+          {
+            "label": "No exact external match",
+            "effect": "decrease",
+            "weight": 0.06,
+            "evidence": "Supporting records did not produce an exact public-source match."
+          },
+          {
+            "label": "Weak corroboration penalty",
+            "effect": "decrease",
+            "weight": 0.04,
+            "evidence": "Event remains single-family or explicitly weak-source after audit."
           }
         ],
-        "explanation": "Restriction originates from a formal advisory or closure source."
+        "explanation": "+0.15 Conservative baseline; +0.03 Restriction semantics retained; -0.10 Synthetic lineage penalty; -0.06 No exact external match; -0.04 Weak corroboration penalty"
       },
-      "title": "Temporary closure east of Cyprus / Levant corridor",
-      "summary": "Seeded NOTAM-like closure affecting the Levantine maritime corridor."
+      "title": "Synthetic demo airspace restriction scenario",
+      "summary": "Derived from a synthetic restriction-like payload and retained only as an airspace restriction scenario reference.",
+      "legacyEventType": "airspace_closure",
+      "recordStatus": "derived_inference",
+      "verificationStatus": "derived_from_synthetic_sources",
+      "verificationNotes": "Event is a derived inference assembled from synthetic_demo supporting records. It remains useful only as a conservative scenario record, not as real-world confirmation.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-notam_feed-restr-1"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "inherited",
+      "externalSourcesChecked": [
+        {
+          "engine": "duckduckgo_html",
+          "query": "\"Temporary closure east of Cyprus / Levant corridor\" \"DEMO-LEVANT-01\"",
+          "checkedAt": "2026-03-29T10:11:53Z",
+          "matchType": "no_match",
+          "resultCount": 0,
+          "results": []
+        }
+      ],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Event-level verification inherits from supporting records. No exact external match was used to upgrade a derived scenario event.",
+      "geospatialPrecision": "derived_geometry_anchor_with_approximate_region_overlap"
     },
     {
       "id": "event-diversion-4defb183-14b2-4d4c-a9df-2a14868f82aa",
-      "eventType": "aircraft_diversion_cluster",
+      "eventType": "traffic_disruption_cluster",
       "startedAt": "2026-03-28T16:31:00.000Z",
       "endedAt": "2026-03-28T16:31:00.000Z",
       "geometry": {
@@ -1638,50 +2635,113 @@
         ]
       },
       "regionIds": [
-        "israel",
         "eastern-mediterranean"
       ],
       "sourceProviders": [
-        "opensky",
-        "adsb_exchange",
-        "flightaware"
+        "opensky_seed_fixture",
+        "adsb_exchange_seed_fixture",
+        "flightaware_seed_fixture"
       ],
       "evidence": [
         {
-          "provider": "opensky",
+          "provider": "opensky_seed_fixture",
           "sourceType": "track",
           "sourcePayloadId": "raw-opensky-obs-1a",
-          "summary": "EM9001 contributed to diversion cluster",
-          "observedAt": "2026-03-28T16:31:00.000Z"
+          "summary": "Synthetic demo track evidence: EM9001 contributed to diversion cluster",
+          "observedAt": "2026-03-28T16:31:00.000Z",
+          "legacyProvider": "opensky"
         },
         {
-          "provider": "opensky",
+          "provider": "opensky_seed_fixture",
           "sourceType": "track",
           "sourcePayloadId": "raw-opensky-mea-1",
-          "summary": "MEA440 contributed to diversion cluster",
-          "observedAt": "2026-03-28T16:31:00.000Z"
+          "summary": "Synthetic demo track evidence: MEA440 contributed to diversion cluster",
+          "observedAt": "2026-03-28T16:31:00.000Z",
+          "legacyProvider": "opensky"
         }
       ],
-      "confidence": 0.55,
+      "confidence": 0.04,
       "reasoning": {
-        "score": 0.55,
-        "confidenceLabel": "moderate",
+        "score": 0.04,
+        "confidenceLabel": "low",
         "signals": [
           {
-            "label": "Clustered reroutes",
+            "label": "Conservative baseline",
             "effect": "increase",
-            "weight": 0.18,
-            "evidence": "2 aircraft share anomalies near the same zone."
+            "weight": 0.15,
+            "evidence": "All repaired event scores start from a low baseline before provenance and external verification checks."
+          },
+          {
+            "label": "Multiple evidence items",
+            "effect": "increase",
+            "weight": 0.05,
+            "evidence": "2 evidence items retained after audit."
+          },
+          {
+            "label": "Temporal clustering",
+            "effect": "increase",
+            "weight": 0.04,
+            "evidence": "Evidence items fall within a 0-minute window."
+          },
+          {
+            "label": "Synthetic lineage penalty",
+            "effect": "decrease",
+            "weight": 0.1,
+            "evidence": "Supporting evidence is explicitly marked synthetic_demo."
+          },
+          {
+            "label": "No exact external match",
+            "effect": "decrease",
+            "weight": 0.06,
+            "evidence": "Supporting records did not produce an exact public-source match."
+          },
+          {
+            "label": "Weak corroboration penalty",
+            "effect": "decrease",
+            "weight": 0.04,
+            "evidence": "Event remains single-family or explicitly weak-source after audit."
           }
         ],
-        "explanation": "Useful conflict proxy, but not enough by itself to confirm a strike."
+        "explanation": "+0.15 Conservative baseline; +0.05 Multiple evidence items; +0.04 Temporal clustering; -0.10 Synthetic lineage penalty; -0.06 No exact external match; -0.04 Weak corroboration penalty"
       },
-      "title": "Diversion cluster 1",
-      "summary": "2 aircraft show reroute/transponder-loss behaviour in the same corridor."
+      "title": "Synthetic demo traffic disruption cluster",
+      "summary": "Derived from synthetic track-pattern changes and retained only as a traffic disruption cluster scenario.",
+      "legacyEventType": "aircraft_diversion_cluster",
+      "recordStatus": "derived_inference",
+      "verificationStatus": "derived_from_synthetic_sources",
+      "verificationNotes": "Event is a derived inference assembled from synthetic_demo supporting records. It remains useful only as a conservative scenario record, not as real-world confirmation.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-opensky-mea-1",
+        "raw-opensky-obs-1a"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "inherited",
+      "externalSourcesChecked": [
+        {
+          "engine": "duckduckgo_html",
+          "query": "\"EM9001\" \"ATH\" \"TLV\" \"2026-03-28\"",
+          "checkedAt": "2026-03-29T10:11:53Z",
+          "matchType": "no_match",
+          "resultCount": 0,
+          "results": []
+        },
+        {
+          "engine": "duckduckgo_html",
+          "query": "\"MEA440\" \"BEY\" \"AUH\" \"2026-03-28\"",
+          "checkedAt": "2026-03-29T10:11:53Z",
+          "matchType": "no_match",
+          "resultCount": 0,
+          "results": []
+        }
+      ],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Event-level verification inherits from supporting records. No exact external match was used to upgrade a derived scenario event.",
+      "geospatialPrecision": "derived_geometry_anchor_with_approximate_region_overlap"
     },
     {
       "id": "event-restr-2",
-      "eventType": "airspace_closure",
+      "eventType": "airspace_restriction_notice",
       "startedAt": "2026-03-28T12:45:00.000Z",
       "endedAt": "2026-03-29T02:00:00.000Z",
       "geometry": {
@@ -1715,33 +2775,81 @@
         "arabian-peninsula"
       ],
       "sourceProviders": [
-        "notam_feed"
+        "notam_seed_fixture"
       ],
       "evidence": [
         {
-          "provider": "notam_feed",
+          "provider": "notam_seed_fixture",
           "sourceType": "restriction",
           "sourcePayloadId": "raw-notam_feed-restr-2",
-          "summary": "Seeded advisory to avoid a narrow Gulf-to-Levant airway segment.",
-          "observedAt": "2026-03-28T12:45:00.000Z"
+          "summary": "Synthetic demo restriction evidence: Seeded advisory to avoid a narrow Gulf-to-Levant airway segment.",
+          "observedAt": "2026-03-28T12:45:00.000Z",
+          "legacyProvider": "notam_feed"
         }
       ],
-      "confidence": 0.7,
+      "confidence": 0.0,
       "reasoning": {
-        "score": 0.7,
-        "confidenceLabel": "high",
+        "score": 0.0,
+        "confidenceLabel": "low",
         "signals": [
           {
-            "label": "Official restriction",
+            "label": "Conservative baseline",
             "effect": "increase",
-            "weight": 0.7,
-            "evidence": "Avoidance advisory over northern Arabian Peninsula transit lanes"
+            "weight": 0.15,
+            "evidence": "All repaired event scores start from a low baseline before provenance and external verification checks."
+          },
+          {
+            "label": "Restriction semantics retained",
+            "effect": "increase",
+            "weight": 0.03,
+            "evidence": "Event remains useful as a synthetic restriction scenario reference."
+          },
+          {
+            "label": "Synthetic lineage penalty",
+            "effect": "decrease",
+            "weight": 0.1,
+            "evidence": "Supporting evidence is explicitly marked synthetic_demo."
+          },
+          {
+            "label": "No exact external match",
+            "effect": "decrease",
+            "weight": 0.06,
+            "evidence": "Supporting records did not produce an exact public-source match."
+          },
+          {
+            "label": "Weak corroboration penalty",
+            "effect": "decrease",
+            "weight": 0.04,
+            "evidence": "Event remains single-family or explicitly weak-source after audit."
           }
         ],
-        "explanation": "Restriction originates from a formal advisory or closure source."
+        "explanation": "+0.15 Conservative baseline; +0.03 Restriction semantics retained; -0.10 Synthetic lineage penalty; -0.06 No exact external match; -0.04 Weak corroboration penalty"
       },
-      "title": "Avoidance advisory over northern Arabian Peninsula transit lanes",
-      "summary": "Seeded advisory to avoid a narrow Gulf-to-Levant airway segment."
+      "title": "Synthetic demo airspace restriction scenario",
+      "summary": "Derived from a synthetic restriction-like payload and retained only as an airspace restriction scenario reference.",
+      "legacyEventType": "airspace_closure",
+      "recordStatus": "derived_inference",
+      "verificationStatus": "derived_from_synthetic_sources",
+      "verificationNotes": "Event is a derived inference assembled from synthetic_demo supporting records. It remains useful only as a conservative scenario record, not as real-world confirmation.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-notam_feed-restr-2"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "inherited",
+      "externalSourcesChecked": [
+        {
+          "engine": "duckduckgo_html",
+          "query": "\"Avoidance advisory over northern Arabian Peninsula transit lanes\" \"DEMO-GULF-02\"",
+          "checkedAt": "2026-03-29T10:11:53Z",
+          "matchType": "no_match",
+          "resultCount": 0,
+          "results": []
+        }
+      ],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Event-level verification inherits from supporting records. No exact external match was used to upgrade a derived scenario event.",
+      "geospatialPrecision": "derived_geometry_anchor_with_approximate_region_overlap"
     },
     {
       "id": "event-unverified-osint-3",
@@ -1759,39 +2867,81 @@
         "iran"
       ],
       "sourceProviders": [
-        "osint_news"
+        "osint_seed_fixture"
       ],
       "evidence": [
         {
-          "provider": "osint_news",
+          "provider": "osint_seed_fixture",
           "sourceType": "osint_report",
           "sourcePayloadId": "raw-osint_news-osint-3",
-          "summary": "Single channel claims blast near western Iran",
-          "observedAt": "2026-03-28T10:30:00.000Z"
+          "summary": "Synthetic demo evidence: Single channel claims blast near western Iran",
+          "observedAt": "2026-03-28T10:30:00.000Z",
+          "legacyProvider": "osint_news"
         }
       ],
-      "confidence": 0.2,
+      "confidence": 0.0,
       "reasoning": {
-        "score": 0.2,
+        "score": 0.0,
         "confidenceLabel": "low",
         "signals": [
           {
-            "label": "Single-source report",
+            "label": "Conservative baseline",
+            "effect": "increase",
+            "weight": 0.15,
+            "evidence": "All repaired event scores start from a low baseline before provenance and external verification checks."
+          },
+          {
+            "label": "Synthetic lineage penalty",
             "effect": "decrease",
-            "weight": 0.2,
-            "evidence": "Single channel claims blast near western Iran"
+            "weight": 0.1,
+            "evidence": "Supporting evidence is explicitly marked synthetic_demo."
+          },
+          {
+            "label": "No exact external match",
+            "effect": "decrease",
+            "weight": 0.06,
+            "evidence": "Supporting records did not produce an exact public-source match."
+          },
+          {
+            "label": "Weak corroboration penalty",
+            "effect": "decrease",
+            "weight": 0.04,
+            "evidence": "Event remains single-family or explicitly weak-source after audit."
           }
         ],
-        "explanation": "Preserved for visibility, but unverified due to weak sourcing."
+        "explanation": "+0.15 Conservative baseline; -0.10 Synthetic lineage penalty; -0.06 No exact external match; -0.04 Weak corroboration penalty"
       },
-      "title": "Single channel claims blast near western Iran",
-      "summary": "Weak-source report intentionally retained as unverified."
+      "title": "Synthetic demo unverified report scenario",
+      "summary": "Derived from a synthetic weak-source report fixture and intentionally remains unverified.",
+      "legacyEventType": "unverified_report",
+      "recordStatus": "derived_inference",
+      "verificationStatus": "derived_from_synthetic_sources",
+      "verificationNotes": "Event is a derived inference assembled from synthetic_demo supporting records. It remains useful only as a conservative scenario record, not as real-world confirmation.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-osint_news-osint-3"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "inherited",
+      "externalSourcesChecked": [
+        {
+          "engine": "duckduckgo_html",
+          "query": "\"Single channel claims blast near western Iran\"",
+          "checkedAt": "2026-03-29T10:11:53Z",
+          "matchType": "no_match",
+          "resultCount": 0,
+          "results": []
+        }
+      ],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Event-level verification inherits from supporting records. No exact external match was used to upgrade a derived scenario event.",
+      "geospatialPrecision": "derived_geometry_anchor_with_approximate_region_overlap"
     }
   ],
   "rawPayloads": [
     {
       "id": "raw-opensky-obs-1a",
-      "provider": "opensky",
+      "provider": "opensky_seed_fixture",
       "sourceType": "track",
       "ingestedAt": "2026-03-29T00:00:00.000Z",
       "receivedAt": "2026-03-28T16:00:00.000Z",
@@ -1804,11 +2954,31 @@
         "name": "opensky",
         "note": "Seeded provider payload for offline/demo mode.",
         "termsUrl": "https://example.invalid/terms"
-      }
+      },
+      "legacyProvider": "opensky",
+      "demoMarkersDetected": [
+        "demo",
+        "offline",
+        "sample",
+        "seed",
+        "seeded"
+      ],
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Raw payload contains seeded/sample/offline markers in attribution or content.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-opensky-obs-1a"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "not_applicable",
+      "externalSourcesChecked": [],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Raw payloads were audited for fixture markers locally; external verification is performed on downstream claims rather than on payload wrapper objects."
     },
     {
       "id": "raw-adsb_exchange-obs-1b",
-      "provider": "adsb_exchange",
+      "provider": "adsb_exchange_seed_fixture",
       "sourceType": "track",
       "ingestedAt": "2026-03-29T00:00:00.000Z",
       "receivedAt": "2026-03-28T16:02:00.000Z",
@@ -1820,11 +2990,31 @@
         "name": "adsb_exchange",
         "note": "Seeded provider payload for offline/demo mode.",
         "termsUrl": "https://example.invalid/terms"
-      }
+      },
+      "legacyProvider": "adsb_exchange",
+      "demoMarkersDetected": [
+        "demo",
+        "offline",
+        "sample",
+        "seed",
+        "seeded"
+      ],
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Raw payload contains seeded/sample/offline markers in attribution or content.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-adsb_exchange-obs-1b"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "not_applicable",
+      "externalSourcesChecked": [],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Raw payloads were audited for fixture markers locally; external verification is performed on downstream claims rather than on payload wrapper objects."
     },
     {
       "id": "raw-flightaware-obs-1c",
-      "provider": "flightaware",
+      "provider": "flightaware_seed_fixture",
       "sourceType": "track",
       "ingestedAt": "2026-03-29T00:00:00.000Z",
       "receivedAt": "2026-03-28T16:01:00.000Z",
@@ -1836,11 +3026,31 @@
         "name": "flightaware",
         "note": "Seeded provider payload for offline/demo mode.",
         "termsUrl": "https://example.invalid/terms"
-      }
+      },
+      "legacyProvider": "flightaware",
+      "demoMarkersDetected": [
+        "demo",
+        "offline",
+        "sample",
+        "seed",
+        "seeded"
+      ],
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Raw payload contains seeded/sample/offline markers in attribution or content.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-flightaware-obs-1c"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "not_applicable",
+      "externalSourcesChecked": [],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Raw payloads were audited for fixture markers locally; external verification is performed on downstream claims rather than on payload wrapper objects."
     },
     {
       "id": "raw-opensky-obs-2a",
-      "provider": "opensky",
+      "provider": "opensky_seed_fixture",
       "sourceType": "track",
       "ingestedAt": "2026-03-29T00:00:00.000Z",
       "receivedAt": "2026-03-28T16:18:00.000Z",
@@ -1853,11 +3063,31 @@
         "name": "opensky",
         "note": "Seeded provider payload for offline/demo mode.",
         "termsUrl": "https://example.invalid/terms"
-      }
+      },
+      "legacyProvider": "opensky",
+      "demoMarkersDetected": [
+        "demo",
+        "offline",
+        "sample",
+        "seed",
+        "seeded"
+      ],
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Raw payload contains seeded/sample/offline markers in attribution or content.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-opensky-obs-2a"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "not_applicable",
+      "externalSourcesChecked": [],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Raw payloads were audited for fixture markers locally; external verification is performed on downstream claims rather than on payload wrapper objects."
     },
     {
       "id": "raw-adsb_exchange-obs-2b",
-      "provider": "adsb_exchange",
+      "provider": "adsb_exchange_seed_fixture",
       "sourceType": "track",
       "ingestedAt": "2026-03-29T00:00:00.000Z",
       "receivedAt": "2026-03-28T16:19:00.000Z",
@@ -1869,11 +3099,31 @@
         "name": "adsb_exchange",
         "note": "Seeded provider payload for offline/demo mode.",
         "termsUrl": "https://example.invalid/terms"
-      }
+      },
+      "legacyProvider": "adsb_exchange",
+      "demoMarkersDetected": [
+        "demo",
+        "offline",
+        "sample",
+        "seed",
+        "seeded"
+      ],
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Raw payload contains seeded/sample/offline markers in attribution or content.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-adsb_exchange-obs-2b"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "not_applicable",
+      "externalSourcesChecked": [],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Raw payloads were audited for fixture markers locally; external verification is performed on downstream claims rather than on payload wrapper objects."
     },
     {
       "id": "raw-flightaware-obs-3c",
-      "provider": "flightaware",
+      "provider": "flightaware_seed_fixture",
       "sourceType": "track",
       "ingestedAt": "2026-03-29T00:00:00.000Z",
       "receivedAt": "2026-03-28T16:31:00.000Z",
@@ -1885,11 +3135,31 @@
         "name": "flightaware",
         "note": "Seeded provider payload for offline/demo mode.",
         "termsUrl": "https://example.invalid/terms"
-      }
+      },
+      "legacyProvider": "flightaware",
+      "demoMarkersDetected": [
+        "demo",
+        "offline",
+        "sample",
+        "seed",
+        "seeded"
+      ],
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Raw payload contains seeded/sample/offline markers in attribution or content.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-flightaware-obs-3c"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "not_applicable",
+      "externalSourcesChecked": [],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Raw payloads were audited for fixture markers locally; external verification is performed on downstream claims rather than on payload wrapper objects."
     },
     {
       "id": "raw-opensky-obs-4a",
-      "provider": "opensky",
+      "provider": "opensky_seed_fixture",
       "sourceType": "track",
       "ingestedAt": "2026-03-29T00:00:00.000Z",
       "receivedAt": "2026-03-28T16:45:00.000Z",
@@ -1902,11 +3172,31 @@
         "name": "opensky",
         "note": "Seeded provider payload for offline/demo mode.",
         "termsUrl": "https://example.invalid/terms"
-      }
+      },
+      "legacyProvider": "opensky",
+      "demoMarkersDetected": [
+        "demo",
+        "offline",
+        "sample",
+        "seed",
+        "seeded"
+      ],
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Raw payload contains seeded/sample/offline markers in attribution or content.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-opensky-obs-4a"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "not_applicable",
+      "externalSourcesChecked": [],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Raw payloads were audited for fixture markers locally; external verification is performed on downstream claims rather than on payload wrapper objects."
     },
     {
       "id": "raw-adsb_exchange-obs-5b",
-      "provider": "adsb_exchange",
+      "provider": "adsb_exchange_seed_fixture",
       "sourceType": "track",
       "ingestedAt": "2026-03-29T00:00:00.000Z",
       "receivedAt": "2026-03-28T17:09:00.000Z",
@@ -1918,11 +3208,31 @@
         "name": "adsb_exchange",
         "note": "Seeded provider payload for offline/demo mode.",
         "termsUrl": "https://example.invalid/terms"
-      }
+      },
+      "legacyProvider": "adsb_exchange",
+      "demoMarkersDetected": [
+        "demo",
+        "offline",
+        "sample",
+        "seed",
+        "seeded"
+      ],
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Raw payload contains seeded/sample/offline markers in attribution or content.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-adsb_exchange-obs-5b"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "not_applicable",
+      "externalSourcesChecked": [],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Raw payloads were audited for fixture markers locally; external verification is performed on downstream claims rather than on payload wrapper objects."
     },
     {
       "id": "raw-opensky-mea-1",
-      "provider": "opensky",
+      "provider": "opensky_seed_fixture",
       "sourceType": "track",
       "ingestedAt": "2026-03-29T00:00:00.000Z",
       "receivedAt": "2026-03-28T17:05:00.000Z",
@@ -1935,11 +3245,31 @@
         "name": "opensky",
         "note": "Seeded provider payload for offline/demo mode.",
         "termsUrl": "https://example.invalid/terms"
-      }
+      },
+      "legacyProvider": "opensky",
+      "demoMarkersDetected": [
+        "demo",
+        "offline",
+        "sample",
+        "seed",
+        "seeded"
+      ],
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Raw payload contains seeded/sample/offline markers in attribution or content.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-opensky-mea-1"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "not_applicable",
+      "externalSourcesChecked": [],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Raw payloads were audited for fixture markers locally; external verification is performed on downstream claims rather than on payload wrapper objects."
     },
     {
       "id": "raw-adsb_exchange-mea-2",
-      "provider": "adsb_exchange",
+      "provider": "adsb_exchange_seed_fixture",
       "sourceType": "track",
       "ingestedAt": "2026-03-29T00:00:00.000Z",
       "receivedAt": "2026-03-28T17:20:00.000Z",
@@ -1951,11 +3281,31 @@
         "name": "adsb_exchange",
         "note": "Seeded provider payload for offline/demo mode.",
         "termsUrl": "https://example.invalid/terms"
-      }
+      },
+      "legacyProvider": "adsb_exchange",
+      "demoMarkersDetected": [
+        "demo",
+        "offline",
+        "sample",
+        "seed",
+        "seeded"
+      ],
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Raw payload contains seeded/sample/offline markers in attribution or content.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-adsb_exchange-mea-2"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "not_applicable",
+      "externalSourcesChecked": [],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Raw payloads were audited for fixture markers locally; external verification is performed on downstream claims rather than on payload wrapper objects."
     },
     {
       "id": "raw-flightaware-mea-3",
-      "provider": "flightaware",
+      "provider": "flightaware_seed_fixture",
       "sourceType": "track",
       "ingestedAt": "2026-03-29T00:00:00.000Z",
       "receivedAt": "2026-03-28T17:51:00.000Z",
@@ -1967,11 +3317,31 @@
         "name": "flightaware",
         "note": "Seeded provider payload for offline/demo mode.",
         "termsUrl": "https://example.invalid/terms"
-      }
+      },
+      "legacyProvider": "flightaware",
+      "demoMarkersDetected": [
+        "demo",
+        "offline",
+        "sample",
+        "seed",
+        "seeded"
+      ],
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Raw payload contains seeded/sample/offline markers in attribution or content.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-flightaware-mea-3"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "not_applicable",
+      "externalSourcesChecked": [],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Raw payloads were audited for fixture markers locally; external verification is performed on downstream claims rather than on payload wrapper objects."
     },
     {
       "id": "raw-opensky-mea-4",
-      "provider": "opensky",
+      "provider": "opensky_seed_fixture",
       "sourceType": "track",
       "ingestedAt": "2026-03-29T00:00:00.000Z",
       "receivedAt": "2026-03-28T18:25:00.000Z",
@@ -1984,11 +3354,31 @@
         "name": "opensky",
         "note": "Seeded provider payload for offline/demo mode.",
         "termsUrl": "https://example.invalid/terms"
-      }
+      },
+      "legacyProvider": "opensky",
+      "demoMarkersDetected": [
+        "demo",
+        "offline",
+        "sample",
+        "seed",
+        "seeded"
+      ],
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Raw payload contains seeded/sample/offline markers in attribution or content.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-opensky-mea-4"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "not_applicable",
+      "externalSourcesChecked": [],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Raw payloads were audited for fixture markers locally; external verification is performed on downstream claims rather than on payload wrapper objects."
     },
     {
       "id": "raw-opensky-gfa-1",
-      "provider": "opensky",
+      "provider": "opensky_seed_fixture",
       "sourceType": "track",
       "ingestedAt": "2026-03-29T00:00:00.000Z",
       "receivedAt": "2026-03-28T12:00:00.000Z",
@@ -1999,11 +3389,31 @@
         "name": "opensky",
         "note": "Seeded provider payload for offline/demo mode.",
         "termsUrl": "https://example.invalid/terms"
-      }
+      },
+      "legacyProvider": "opensky",
+      "demoMarkersDetected": [
+        "demo",
+        "offline",
+        "sample",
+        "seed",
+        "seeded"
+      ],
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Raw payload contains seeded/sample/offline markers in attribution or content.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-opensky-gfa-1"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "not_applicable",
+      "externalSourcesChecked": [],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Raw payloads were audited for fixture markers locally; external verification is performed on downstream claims rather than on payload wrapper objects."
     },
     {
       "id": "raw-adsb_exchange-gfa-2",
-      "provider": "adsb_exchange",
+      "provider": "adsb_exchange_seed_fixture",
       "sourceType": "track",
       "ingestedAt": "2026-03-29T00:00:00.000Z",
       "receivedAt": "2026-03-28T12:20:00.000Z",
@@ -2014,11 +3424,31 @@
         "name": "adsb_exchange",
         "note": "Seeded provider payload for offline/demo mode.",
         "termsUrl": "https://example.invalid/terms"
-      }
+      },
+      "legacyProvider": "adsb_exchange",
+      "demoMarkersDetected": [
+        "demo",
+        "offline",
+        "sample",
+        "seed",
+        "seeded"
+      ],
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Raw payload contains seeded/sample/offline markers in attribution or content.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-adsb_exchange-gfa-2"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "not_applicable",
+      "externalSourcesChecked": [],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Raw payloads were audited for fixture markers locally; external verification is performed on downstream claims rather than on payload wrapper objects."
     },
     {
       "id": "raw-flightaware-gfa-3",
-      "provider": "flightaware",
+      "provider": "flightaware_seed_fixture",
       "sourceType": "track",
       "ingestedAt": "2026-03-29T00:00:00.000Z",
       "receivedAt": "2026-03-28T12:40:00.000Z",
@@ -2029,11 +3459,31 @@
         "name": "flightaware",
         "note": "Seeded provider payload for offline/demo mode.",
         "termsUrl": "https://example.invalid/terms"
-      }
+      },
+      "legacyProvider": "flightaware",
+      "demoMarkersDetected": [
+        "demo",
+        "offline",
+        "sample",
+        "seed",
+        "seeded"
+      ],
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Raw payload contains seeded/sample/offline markers in attribution or content.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-flightaware-gfa-3"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "not_applicable",
+      "externalSourcesChecked": [],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Raw payloads were audited for fixture markers locally; external verification is performed on downstream claims rather than on payload wrapper objects."
     },
     {
       "id": "raw-opensky-gfa-4",
-      "provider": "opensky",
+      "provider": "opensky_seed_fixture",
       "sourceType": "track",
       "ingestedAt": "2026-03-29T00:00:00.000Z",
       "receivedAt": "2026-03-28T13:00:00.000Z",
@@ -2044,11 +3494,31 @@
         "name": "opensky",
         "note": "Seeded provider payload for offline/demo mode.",
         "termsUrl": "https://example.invalid/terms"
-      }
+      },
+      "legacyProvider": "opensky",
+      "demoMarkersDetected": [
+        "demo",
+        "offline",
+        "sample",
+        "seed",
+        "seeded"
+      ],
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Raw payload contains seeded/sample/offline markers in attribution or content.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-opensky-gfa-4"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "not_applicable",
+      "externalSourcesChecked": [],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Raw payloads were audited for fixture markers locally; external verification is performed on downstream claims rather than on payload wrapper objects."
     },
     {
       "id": "raw-adsb_exchange-gfa-5",
-      "provider": "adsb_exchange",
+      "provider": "adsb_exchange_seed_fixture",
       "sourceType": "track",
       "ingestedAt": "2026-03-29T00:00:00.000Z",
       "receivedAt": "2026-03-28T13:10:00.000Z",
@@ -2059,11 +3529,31 @@
         "name": "adsb_exchange",
         "note": "Seeded provider payload for offline/demo mode.",
         "termsUrl": "https://example.invalid/terms"
-      }
+      },
+      "legacyProvider": "adsb_exchange",
+      "demoMarkersDetected": [
+        "demo",
+        "offline",
+        "sample",
+        "seed",
+        "seeded"
+      ],
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Raw payload contains seeded/sample/offline markers in attribution or content.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-adsb_exchange-gfa-5"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "not_applicable",
+      "externalSourcesChecked": [],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Raw payloads were audited for fixture markers locally; external verification is performed on downstream claims rather than on payload wrapper objects."
     },
     {
       "id": "raw-opensky-ira-1",
-      "provider": "opensky",
+      "provider": "opensky_seed_fixture",
       "sourceType": "track",
       "ingestedAt": "2026-03-29T00:00:00.000Z",
       "receivedAt": "2026-03-28T09:00:00.000Z",
@@ -2074,11 +3564,31 @@
         "name": "opensky",
         "note": "Seeded provider payload for offline/demo mode.",
         "termsUrl": "https://example.invalid/terms"
-      }
+      },
+      "legacyProvider": "opensky",
+      "demoMarkersDetected": [
+        "demo",
+        "offline",
+        "sample",
+        "seed",
+        "seeded"
+      ],
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Raw payload contains seeded/sample/offline markers in attribution or content.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-opensky-ira-1"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "not_applicable",
+      "externalSourcesChecked": [],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Raw payloads were audited for fixture markers locally; external verification is performed on downstream claims rather than on payload wrapper objects."
     },
     {
       "id": "raw-flightaware-ira-2",
-      "provider": "flightaware",
+      "provider": "flightaware_seed_fixture",
       "sourceType": "track",
       "ingestedAt": "2026-03-29T00:00:00.000Z",
       "receivedAt": "2026-03-28T09:10:00.000Z",
@@ -2089,11 +3599,31 @@
         "name": "flightaware",
         "note": "Seeded provider payload for offline/demo mode.",
         "termsUrl": "https://example.invalid/terms"
-      }
+      },
+      "legacyProvider": "flightaware",
+      "demoMarkersDetected": [
+        "demo",
+        "offline",
+        "sample",
+        "seed",
+        "seeded"
+      ],
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Raw payload contains seeded/sample/offline markers in attribution or content.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-flightaware-ira-2"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "not_applicable",
+      "externalSourcesChecked": [],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Raw payloads were audited for fixture markers locally; external verification is performed on downstream claims rather than on payload wrapper objects."
     },
     {
       "id": "raw-opensky-ira-3",
-      "provider": "opensky",
+      "provider": "opensky_seed_fixture",
       "sourceType": "track",
       "ingestedAt": "2026-03-29T00:00:00.000Z",
       "receivedAt": "2026-03-28T09:20:00.000Z",
@@ -2104,11 +3634,31 @@
         "name": "opensky",
         "note": "Seeded provider payload for offline/demo mode.",
         "termsUrl": "https://example.invalid/terms"
-      }
+      },
+      "legacyProvider": "opensky",
+      "demoMarkersDetected": [
+        "demo",
+        "offline",
+        "sample",
+        "seed",
+        "seeded"
+      ],
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Raw payload contains seeded/sample/offline markers in attribution or content.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-opensky-ira-3"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "not_applicable",
+      "externalSourcesChecked": [],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Raw payloads were audited for fixture markers locally; external verification is performed on downstream claims rather than on payload wrapper objects."
     },
     {
       "id": "raw-flightaware-ira-4",
-      "provider": "flightaware",
+      "provider": "flightaware_seed_fixture",
       "sourceType": "track",
       "ingestedAt": "2026-03-29T00:00:00.000Z",
       "receivedAt": "2026-03-28T09:50:00.000Z",
@@ -2119,11 +3669,31 @@
         "name": "flightaware",
         "note": "Seeded provider payload for offline/demo mode.",
         "termsUrl": "https://example.invalid/terms"
-      }
+      },
+      "legacyProvider": "flightaware",
+      "demoMarkersDetected": [
+        "demo",
+        "offline",
+        "sample",
+        "seed",
+        "seeded"
+      ],
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Raw payload contains seeded/sample/offline markers in attribution or content.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-flightaware-ira-4"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "not_applicable",
+      "externalSourcesChecked": [],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Raw payloads were audited for fixture markers locally; external verification is performed on downstream claims rather than on payload wrapper objects."
     },
     {
       "id": "raw-adsb_exchange-kac-1",
-      "provider": "adsb_exchange",
+      "provider": "adsb_exchange_seed_fixture",
       "sourceType": "track",
       "ingestedAt": "2026-03-29T00:00:00.000Z",
       "receivedAt": "2026-03-28T18:00:00.000Z",
@@ -2134,11 +3704,31 @@
         "name": "adsb_exchange",
         "note": "Seeded provider payload for offline/demo mode.",
         "termsUrl": "https://example.invalid/terms"
-      }
+      },
+      "legacyProvider": "adsb_exchange",
+      "demoMarkersDetected": [
+        "demo",
+        "offline",
+        "sample",
+        "seed",
+        "seeded"
+      ],
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Raw payload contains seeded/sample/offline markers in attribution or content.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-adsb_exchange-kac-1"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "not_applicable",
+      "externalSourcesChecked": [],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Raw payloads were audited for fixture markers locally; external verification is performed on downstream claims rather than on payload wrapper objects."
     },
     {
       "id": "raw-opensky-kac-2",
-      "provider": "opensky",
+      "provider": "opensky_seed_fixture",
       "sourceType": "track",
       "ingestedAt": "2026-03-29T00:00:00.000Z",
       "receivedAt": "2026-03-28T18:10:00.000Z",
@@ -2149,11 +3739,31 @@
         "name": "opensky",
         "note": "Seeded provider payload for offline/demo mode.",
         "termsUrl": "https://example.invalid/terms"
-      }
+      },
+      "legacyProvider": "opensky",
+      "demoMarkersDetected": [
+        "demo",
+        "offline",
+        "sample",
+        "seed",
+        "seeded"
+      ],
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Raw payload contains seeded/sample/offline markers in attribution or content.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-opensky-kac-2"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "not_applicable",
+      "externalSourcesChecked": [],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Raw payloads were audited for fixture markers locally; external verification is performed on downstream claims rather than on payload wrapper objects."
     },
     {
       "id": "raw-adsb_exchange-kac-3",
-      "provider": "adsb_exchange",
+      "provider": "adsb_exchange_seed_fixture",
       "sourceType": "track",
       "ingestedAt": "2026-03-29T00:00:00.000Z",
       "receivedAt": "2026-03-28T18:20:00.000Z",
@@ -2164,11 +3774,31 @@
         "name": "adsb_exchange",
         "note": "Seeded provider payload for offline/demo mode.",
         "termsUrl": "https://example.invalid/terms"
-      }
+      },
+      "legacyProvider": "adsb_exchange",
+      "demoMarkersDetected": [
+        "demo",
+        "offline",
+        "sample",
+        "seed",
+        "seeded"
+      ],
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Raw payload contains seeded/sample/offline markers in attribution or content.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-adsb_exchange-kac-3"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "not_applicable",
+      "externalSourcesChecked": [],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Raw payloads were audited for fixture markers locally; external verification is performed on downstream claims rather than on payload wrapper objects."
     },
     {
       "id": "raw-opensky-kac-4",
-      "provider": "opensky",
+      "provider": "opensky_seed_fixture",
       "sourceType": "track",
       "ingestedAt": "2026-03-29T00:00:00.000Z",
       "receivedAt": "2026-03-28T18:55:00.000Z",
@@ -2179,11 +3809,31 @@
         "name": "opensky",
         "note": "Seeded provider payload for offline/demo mode.",
         "termsUrl": "https://example.invalid/terms"
-      }
+      },
+      "legacyProvider": "opensky",
+      "demoMarkersDetected": [
+        "demo",
+        "offline",
+        "sample",
+        "seed",
+        "seeded"
+      ],
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Raw payload contains seeded/sample/offline markers in attribution or content.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-opensky-kac-4"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "not_applicable",
+      "externalSourcesChecked": [],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Raw payloads were audited for fixture markers locally; external verification is performed on downstream claims rather than on payload wrapper objects."
     },
     {
       "id": "raw-flightaware-axy-1",
-      "provider": "flightaware",
+      "provider": "flightaware_seed_fixture",
       "sourceType": "track",
       "ingestedAt": "2026-03-29T00:00:00.000Z",
       "receivedAt": "2026-03-28T19:00:00.000Z",
@@ -2194,11 +3844,31 @@
         "name": "flightaware",
         "note": "Seeded provider payload for offline/demo mode.",
         "termsUrl": "https://example.invalid/terms"
-      }
+      },
+      "legacyProvider": "flightaware",
+      "demoMarkersDetected": [
+        "demo",
+        "offline",
+        "sample",
+        "seed",
+        "seeded"
+      ],
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Raw payload contains seeded/sample/offline markers in attribution or content.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-flightaware-axy-1"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "not_applicable",
+      "externalSourcesChecked": [],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Raw payloads were audited for fixture markers locally; external verification is performed on downstream claims rather than on payload wrapper objects."
     },
     {
       "id": "raw-opensky-axy-2",
-      "provider": "opensky",
+      "provider": "opensky_seed_fixture",
       "sourceType": "track",
       "ingestedAt": "2026-03-29T00:00:00.000Z",
       "receivedAt": "2026-03-28T19:10:00.000Z",
@@ -2209,11 +3879,31 @@
         "name": "opensky",
         "note": "Seeded provider payload for offline/demo mode.",
         "termsUrl": "https://example.invalid/terms"
-      }
+      },
+      "legacyProvider": "opensky",
+      "demoMarkersDetected": [
+        "demo",
+        "offline",
+        "sample",
+        "seed",
+        "seeded"
+      ],
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Raw payload contains seeded/sample/offline markers in attribution or content.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-opensky-axy-2"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "not_applicable",
+      "externalSourcesChecked": [],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Raw payloads were audited for fixture markers locally; external verification is performed on downstream claims rather than on payload wrapper objects."
     },
     {
       "id": "raw-flightaware-axy-3",
-      "provider": "flightaware",
+      "provider": "flightaware_seed_fixture",
       "sourceType": "track",
       "ingestedAt": "2026-03-29T00:00:00.000Z",
       "receivedAt": "2026-03-28T19:20:00.000Z",
@@ -2224,11 +3914,31 @@
         "name": "flightaware",
         "note": "Seeded provider payload for offline/demo mode.",
         "termsUrl": "https://example.invalid/terms"
-      }
+      },
+      "legacyProvider": "flightaware",
+      "demoMarkersDetected": [
+        "demo",
+        "offline",
+        "sample",
+        "seed",
+        "seeded"
+      ],
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Raw payload contains seeded/sample/offline markers in attribution or content.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-flightaware-axy-3"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "not_applicable",
+      "externalSourcesChecked": [],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Raw payloads were audited for fixture markers locally; external verification is performed on downstream claims rather than on payload wrapper objects."
     },
     {
       "id": "raw-opensky-axy-4",
-      "provider": "opensky",
+      "provider": "opensky_seed_fixture",
       "sourceType": "track",
       "ingestedAt": "2026-03-29T00:00:00.000Z",
       "receivedAt": "2026-03-28T19:30:00.000Z",
@@ -2239,11 +3949,31 @@
         "name": "opensky",
         "note": "Seeded provider payload for offline/demo mode.",
         "termsUrl": "https://example.invalid/terms"
-      }
+      },
+      "legacyProvider": "opensky",
+      "demoMarkersDetected": [
+        "demo",
+        "offline",
+        "sample",
+        "seed",
+        "seeded"
+      ],
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Raw payload contains seeded/sample/offline markers in attribution or content.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-opensky-axy-4"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "not_applicable",
+      "externalSourcesChecked": [],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Raw payloads were audited for fixture markers locally; external verification is performed on downstream claims rather than on payload wrapper objects."
     },
     {
       "id": "raw-flightaware-axy-5",
-      "provider": "flightaware",
+      "provider": "flightaware_seed_fixture",
       "sourceType": "track",
       "ingestedAt": "2026-03-29T00:00:00.000Z",
       "receivedAt": "2026-03-28T19:40:00.000Z",
@@ -2254,11 +3984,31 @@
         "name": "flightaware",
         "note": "Seeded provider payload for offline/demo mode.",
         "termsUrl": "https://example.invalid/terms"
-      }
+      },
+      "legacyProvider": "flightaware",
+      "demoMarkersDetected": [
+        "demo",
+        "offline",
+        "sample",
+        "seed",
+        "seeded"
+      ],
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Raw payload contains seeded/sample/offline markers in attribution or content.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-flightaware-axy-5"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "not_applicable",
+      "externalSourcesChecked": [],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Raw payloads were audited for fixture markers locally; external verification is performed on downstream claims rather than on payload wrapper objects."
     },
     {
       "id": "raw-flightaware-lowcov-1",
-      "provider": "flightaware",
+      "provider": "flightaware_seed_fixture",
       "sourceType": "track",
       "ingestedAt": "2026-03-29T00:00:00.000Z",
       "receivedAt": "2026-03-27T22:30:00.000Z",
@@ -2269,11 +4019,31 @@
         "name": "flightaware",
         "note": "Seeded provider payload for offline/demo mode.",
         "termsUrl": "https://example.invalid/terms"
-      }
+      },
+      "legacyProvider": "flightaware",
+      "demoMarkersDetected": [
+        "demo",
+        "offline",
+        "sample",
+        "seed",
+        "seeded"
+      ],
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Raw payload contains seeded/sample/offline markers in attribution or content.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-flightaware-lowcov-1"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "not_applicable",
+      "externalSourcesChecked": [],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Raw payloads were audited for fixture markers locally; external verification is performed on downstream claims rather than on payload wrapper objects."
     },
     {
       "id": "raw-flightaware-lowcov-2",
-      "provider": "flightaware",
+      "provider": "flightaware_seed_fixture",
       "sourceType": "track",
       "ingestedAt": "2026-03-29T00:00:00.000Z",
       "receivedAt": "2026-03-27T22:58:00.000Z",
@@ -2284,11 +4054,31 @@
         "name": "flightaware",
         "note": "Seeded provider payload for offline/demo mode.",
         "termsUrl": "https://example.invalid/terms"
-      }
+      },
+      "legacyProvider": "flightaware",
+      "demoMarkersDetected": [
+        "demo",
+        "offline",
+        "sample",
+        "seed",
+        "seeded"
+      ],
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Raw payload contains seeded/sample/offline markers in attribution or content.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-flightaware-lowcov-2"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "not_applicable",
+      "externalSourcesChecked": [],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Raw payloads were audited for fixture markers locally; external verification is performed on downstream claims rather than on payload wrapper objects."
     },
     {
       "id": "raw-notam_feed-restr-1",
-      "provider": "notam_feed",
+      "provider": "notam_seed_fixture",
       "sourceType": "restriction",
       "ingestedAt": "2026-03-29T00:00:00.000Z",
       "receivedAt": "2026-03-28T17:10:00.000Z",
@@ -2300,11 +4090,30 @@
         "name": "notam_feed",
         "note": "Seeded restriction payload for offline/demo mode.",
         "termsUrl": "https://example.invalid/terms"
-      }
+      },
+      "legacyProvider": "notam_feed",
+      "demoMarkersDetected": [
+        "demo",
+        "offline",
+        "seed",
+        "seeded"
+      ],
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Raw payload contains seeded/sample/offline markers in attribution or content.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-notam_feed-restr-1"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "not_applicable",
+      "externalSourcesChecked": [],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Raw payloads were audited for fixture markers locally; external verification is performed on downstream claims rather than on payload wrapper objects."
     },
     {
       "id": "raw-notam_feed-restr-2",
-      "provider": "notam_feed",
+      "provider": "notam_seed_fixture",
       "sourceType": "restriction",
       "ingestedAt": "2026-03-29T00:00:00.000Z",
       "receivedAt": "2026-03-28T12:45:00.000Z",
@@ -2316,11 +4125,30 @@
         "name": "notam_feed",
         "note": "Seeded restriction payload for offline/demo mode.",
         "termsUrl": "https://example.invalid/terms"
-      }
+      },
+      "legacyProvider": "notam_feed",
+      "demoMarkersDetected": [
+        "demo",
+        "offline",
+        "seed",
+        "seeded"
+      ],
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Raw payload contains seeded/sample/offline markers in attribution or content.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-notam_feed-restr-2"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "not_applicable",
+      "externalSourcesChecked": [],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Raw payloads were audited for fixture markers locally; external verification is performed on downstream claims rather than on payload wrapper objects."
     },
     {
       "id": "raw-icao_bulletins-bulletin-1",
-      "provider": "icao_bulletins",
+      "provider": "icao_seed_bulletin_fixture",
       "sourceType": "bulletin",
       "ingestedAt": "2026-03-29T00:00:00.000Z",
       "receivedAt": "2026-03-28T16:50:00.000Z",
@@ -2332,11 +4160,30 @@
         "name": "icao_bulletins",
         "note": "Seeded bulletin/indicator payload for offline/demo mode.",
         "termsUrl": "https://example.invalid/terms"
-      }
+      },
+      "legacyProvider": "icao_bulletins",
+      "demoMarkersDetected": [
+        "demo",
+        "offline",
+        "seed",
+        "seeded"
+      ],
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Raw payload contains seeded/sample/offline markers in attribution or content.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-icao_bulletins-bulletin-1"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "not_applicable",
+      "externalSourcesChecked": [],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Raw payloads were audited for fixture markers locally; external verification is performed on downstream claims rather than on payload wrapper objects."
     },
     {
       "id": "raw-easa_bulletins-bulletin-2",
-      "provider": "easa_bulletins",
+      "provider": "easa_seed_bulletin_fixture",
       "sourceType": "bulletin",
       "ingestedAt": "2026-03-29T00:00:00.000Z",
       "receivedAt": "2026-03-28T12:35:00.000Z",
@@ -2348,11 +4195,30 @@
         "name": "easa_bulletins",
         "note": "Seeded bulletin/indicator payload for offline/demo mode.",
         "termsUrl": "https://example.invalid/terms"
-      }
+      },
+      "legacyProvider": "easa_bulletins",
+      "demoMarkersDetected": [
+        "demo",
+        "offline",
+        "seed",
+        "seeded"
+      ],
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Raw payload contains seeded/sample/offline markers in attribution or content.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-easa_bulletins-bulletin-2"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "not_applicable",
+      "externalSourcesChecked": [],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Raw payloads were audited for fixture markers locally; external verification is performed on downstream claims rather than on payload wrapper objects."
     },
     {
       "id": "raw-nasa_firms-thermal-1",
-      "provider": "nasa_firms",
+      "provider": "nasa_firms_seed_fixture",
       "sourceType": "conflict_indicator",
       "ingestedAt": "2026-03-29T00:00:00.000Z",
       "receivedAt": "2026-03-28T17:41:00.000Z",
@@ -2364,11 +4230,30 @@
         "name": "nasa_firms",
         "note": "Seeded bulletin/indicator payload for offline/demo mode.",
         "termsUrl": "https://example.invalid/terms"
-      }
+      },
+      "legacyProvider": "nasa_firms",
+      "demoMarkersDetected": [
+        "demo",
+        "offline",
+        "seed",
+        "seeded"
+      ],
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Raw payload contains seeded/sample/offline markers in attribution or content.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-nasa_firms-thermal-1"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "not_applicable",
+      "externalSourcesChecked": [],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Raw payloads were audited for fixture markers locally; external verification is performed on downstream claims rather than on payload wrapper objects."
     },
     {
       "id": "raw-nasa_firms-thermal-2",
-      "provider": "nasa_firms",
+      "provider": "nasa_firms_seed_fixture",
       "sourceType": "conflict_indicator",
       "ingestedAt": "2026-03-29T00:00:00.000Z",
       "receivedAt": "2026-03-28T18:02:00.000Z",
@@ -2380,11 +4265,30 @@
         "name": "nasa_firms",
         "note": "Seeded bulletin/indicator payload for offline/demo mode.",
         "termsUrl": "https://example.invalid/terms"
-      }
+      },
+      "legacyProvider": "nasa_firms",
+      "demoMarkersDetected": [
+        "demo",
+        "offline",
+        "seed",
+        "seeded"
+      ],
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Raw payload contains seeded/sample/offline markers in attribution or content.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-nasa_firms-thermal-2"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "not_applicable",
+      "externalSourcesChecked": [],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Raw payloads were audited for fixture markers locally; external verification is performed on downstream claims rather than on payload wrapper objects."
     },
     {
       "id": "raw-nasa_firms-thermal-3",
-      "provider": "nasa_firms",
+      "provider": "nasa_firms_seed_fixture",
       "sourceType": "conflict_indicator",
       "ingestedAt": "2026-03-29T00:00:00.000Z",
       "receivedAt": "2026-03-28T18:18:00.000Z",
@@ -2396,11 +4300,30 @@
         "name": "nasa_firms",
         "note": "Seeded bulletin/indicator payload for offline/demo mode.",
         "termsUrl": "https://example.invalid/terms"
-      }
+      },
+      "legacyProvider": "nasa_firms",
+      "demoMarkersDetected": [
+        "demo",
+        "offline",
+        "seed",
+        "seeded"
+      ],
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Raw payload contains seeded/sample/offline markers in attribution or content.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-nasa_firms-thermal-3"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "not_applicable",
+      "externalSourcesChecked": [],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Raw payloads were audited for fixture markers locally; external verification is performed on downstream claims rather than on payload wrapper objects."
     },
     {
       "id": "raw-nasa_firms-thermal-4",
-      "provider": "nasa_firms",
+      "provider": "nasa_firms_seed_fixture",
       "sourceType": "conflict_indicator",
       "ingestedAt": "2026-03-29T00:00:00.000Z",
       "receivedAt": "2026-03-28T19:22:00.000Z",
@@ -2412,11 +4335,30 @@
         "name": "nasa_firms",
         "note": "Seeded bulletin/indicator payload for offline/demo mode.",
         "termsUrl": "https://example.invalid/terms"
-      }
+      },
+      "legacyProvider": "nasa_firms",
+      "demoMarkersDetected": [
+        "demo",
+        "offline",
+        "seed",
+        "seeded"
+      ],
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Raw payload contains seeded/sample/offline markers in attribution or content.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-nasa_firms-thermal-4"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "not_applicable",
+      "externalSourcesChecked": [],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Raw payloads were audited for fixture markers locally; external verification is performed on downstream claims rather than on payload wrapper objects."
     },
     {
       "id": "raw-nasa_firms-thermal-5",
-      "provider": "nasa_firms",
+      "provider": "nasa_firms_seed_fixture",
       "sourceType": "conflict_indicator",
       "ingestedAt": "2026-03-29T00:00:00.000Z",
       "receivedAt": "2026-03-28T19:46:00.000Z",
@@ -2428,11 +4370,30 @@
         "name": "nasa_firms",
         "note": "Seeded bulletin/indicator payload for offline/demo mode.",
         "termsUrl": "https://example.invalid/terms"
-      }
+      },
+      "legacyProvider": "nasa_firms",
+      "demoMarkersDetected": [
+        "demo",
+        "offline",
+        "seed",
+        "seeded"
+      ],
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Raw payload contains seeded/sample/offline markers in attribution or content.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-nasa_firms-thermal-5"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "not_applicable",
+      "externalSourcesChecked": [],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Raw payloads were audited for fixture markers locally; external verification is performed on downstream claims rather than on payload wrapper objects."
     },
     {
       "id": "raw-osint_news-osint-1",
-      "provider": "osint_news",
+      "provider": "osint_seed_fixture",
       "sourceType": "bulletin",
       "ingestedAt": "2026-03-29T00:00:00.000Z",
       "receivedAt": "2026-03-28T17:55:00.000Z",
@@ -2447,11 +4408,30 @@
         "name": "osint_news",
         "note": "Seeded bulletin/indicator payload for offline/demo mode.",
         "termsUrl": "https://example.invalid/terms"
-      }
+      },
+      "legacyProvider": "osint_news",
+      "demoMarkersDetected": [
+        "demo",
+        "offline",
+        "seed",
+        "seeded"
+      ],
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Raw payload contains seeded/sample/offline markers in attribution or content.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-osint_news-osint-1"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "not_applicable",
+      "externalSourcesChecked": [],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Raw payloads were audited for fixture markers locally; external verification is performed on downstream claims rather than on payload wrapper objects."
     },
     {
       "id": "raw-osint_news-news-1",
-      "provider": "osint_news",
+      "provider": "osint_seed_fixture",
       "sourceType": "bulletin",
       "ingestedAt": "2026-03-29T00:00:00.000Z",
       "receivedAt": "2026-03-28T18:10:00.000Z",
@@ -2466,11 +4446,30 @@
         "name": "osint_news",
         "note": "Seeded bulletin/indicator payload for offline/demo mode.",
         "termsUrl": "https://example.invalid/terms"
-      }
+      },
+      "legacyProvider": "osint_news",
+      "demoMarkersDetected": [
+        "demo",
+        "offline",
+        "seed",
+        "seeded"
+      ],
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Raw payload contains seeded/sample/offline markers in attribution or content.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-osint_news-news-1"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "not_applicable",
+      "externalSourcesChecked": [],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Raw payloads were audited for fixture markers locally; external verification is performed on downstream claims rather than on payload wrapper objects."
     },
     {
       "id": "raw-osint_news-osint-2",
-      "provider": "osint_news",
+      "provider": "osint_seed_fixture",
       "sourceType": "bulletin",
       "ingestedAt": "2026-03-29T00:00:00.000Z",
       "receivedAt": "2026-03-28T19:38:00.000Z",
@@ -2485,11 +4484,30 @@
         "name": "osint_news",
         "note": "Seeded bulletin/indicator payload for offline/demo mode.",
         "termsUrl": "https://example.invalid/terms"
-      }
+      },
+      "legacyProvider": "osint_news",
+      "demoMarkersDetected": [
+        "demo",
+        "offline",
+        "seed",
+        "seeded"
+      ],
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Raw payload contains seeded/sample/offline markers in attribution or content.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-osint_news-osint-2"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "not_applicable",
+      "externalSourcesChecked": [],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Raw payloads were audited for fixture markers locally; external verification is performed on downstream claims rather than on payload wrapper objects."
     },
     {
       "id": "raw-osint_news-osint-3",
-      "provider": "osint_news",
+      "provider": "osint_seed_fixture",
       "sourceType": "bulletin",
       "ingestedAt": "2026-03-29T00:00:00.000Z",
       "receivedAt": "2026-03-28T10:30:00.000Z",
@@ -2503,7 +4521,26 @@
         "name": "osint_news",
         "note": "Seeded bulletin/indicator payload for offline/demo mode.",
         "termsUrl": "https://example.invalid/terms"
-      }
+      },
+      "legacyProvider": "osint_news",
+      "demoMarkersDetected": [
+        "demo",
+        "offline",
+        "seed",
+        "seeded"
+      ],
+      "recordStatus": "synthetic_demo",
+      "verificationStatus": "synthetic_fixture_detected",
+      "verificationNotes": "Raw payload contains seeded/sample/offline markers in attribution or content.",
+      "sourceTrustLevel": "low",
+      "derivedFrom": [
+        "raw-osint_news-osint-3"
+      ],
+      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "externalVerificationStatus": "not_applicable",
+      "externalSourcesChecked": [],
+      "externalMatchType": "no_match",
+      "externalVerificationNotes": "Raw payloads were audited for fixture markers locally; external verification is performed on downstream claims rather than on payload wrapper objects."
     }
   ],
   "analytics": {
@@ -2542,49 +4579,13 @@
       }
     ],
     "deviations": {
-      "routeDeviationCount": 6,
-      "abruptAltitudeChangeCount": 2,
-      "holdingPatternCount": 2,
-      "transponderLossCount": 5,
-      "corridorShiftCount": 0
+      "routeRevectoringCandidateCount": 6,
+      "altitudeChangeCandidateCount": 2,
+      "holdingPatternCandidateCount": 2,
+      "coverageGapCount": 1,
+      "trackingDiscontinuityCount": 4,
+      "airspaceExitReentryCandidateCount": 0
     },
-    "transponderLossWindows": [
-      {
-        "start": "2026-03-28T17:31:00.000Z",
-        "end": "2026-03-28T17:51:00.000Z",
-        "impactedAircraft": [
-          "MEA440"
-        ]
-      },
-      {
-        "start": "2026-03-28T18:05:00.000Z",
-        "end": "2026-03-28T18:25:00.000Z",
-        "impactedAircraft": [
-          "MEA440"
-        ]
-      },
-      {
-        "start": "2026-03-28T09:30:00.000Z",
-        "end": "2026-03-28T09:50:00.000Z",
-        "impactedAircraft": [
-          "IRA781"
-        ]
-      },
-      {
-        "start": "2026-03-28T18:35:00.000Z",
-        "end": "2026-03-28T18:55:00.000Z",
-        "impactedAircraft": [
-          "KAC778"
-        ]
-      },
-      {
-        "start": "2026-03-27T22:38:00.000Z",
-        "end": "2026-03-27T22:58:00.000Z",
-        "impactedAircraft": [
-          "DMS102"
-        ]
-      }
-    ],
     "rerouteClusters": [
       {
         "regionId": "israel",
@@ -2655,18 +4656,154 @@
       }
     ],
     "eventCorrelationStats": {
-      "confirmed_strike": 1,
-      "probable_strike": 1,
-      "airspace_closure": 2,
-      "aircraft_diversion_cluster": 1,
-      "thermal_anomaly": 2,
+      "airspace_restriction_notice": 2,
+      "possible_strike": 2,
+      "thermal_cluster": 2,
+      "traffic_disruption_cluster": 1,
       "unverified_report": 1
-    }
+    },
+    "trackingDiscontinuityWindows": [
+      {
+        "start": "2026-03-28T17:31:00.000Z",
+        "end": "2026-03-28T17:51:00.000Z",
+        "impactedAircraft": [
+          "DEMO-MEA440"
+        ]
+      },
+      {
+        "start": "2026-03-28T18:05:00.000Z",
+        "end": "2026-03-28T18:25:00.000Z",
+        "impactedAircraft": [
+          "DEMO-MEA440"
+        ]
+      },
+      {
+        "start": "2026-03-28T09:30:00.000Z",
+        "end": "2026-03-28T09:50:00.000Z",
+        "impactedAircraft": [
+          "DEMO-IRA781"
+        ]
+      },
+      {
+        "start": "2026-03-28T18:35:00.000Z",
+        "end": "2026-03-28T18:55:00.000Z",
+        "impactedAircraft": [
+          "DEMO-KAC778"
+        ]
+      },
+      {
+        "start": "2026-03-27T22:38:00.000Z",
+        "end": "2026-03-27T22:58:00.000Z",
+        "impactedAircraft": [
+          "DEMO-DMS102"
+        ]
+      }
+    ]
   },
   "stats": {
     "providerFailures": 0,
     "ingestionLagSeconds": 90,
     "dedupeRate": 0.094,
     "eventVolume": 8
+  },
+  "datasetMetadata": {
+    "integrityReviewVersion": "2026-03-integrity-repair-v1",
+    "reviewedAt": "2026-03-29T10:11:53Z",
+    "datasetSuitability": "demo only",
+    "productionSafe": false,
+    "productionSafetyStatement": "NOT PRODUCTION SAFE: this snapshot contains demo fixtures, approximate geometries, and derived scenario records with no exact external matches.",
+    "summary": "Operational-looking provider names and event claims were reclassified so synthetic fixtures and derived scenario records cannot be mistaken for verified real-world events.",
+    "recordStatusVocabulary": [
+      "verified_real",
+      "partially_verified",
+      "synthetic_demo",
+      "unverified_claim",
+      "derived_inference"
+    ],
+    "providerIdentityPolicy": "Original provider names are preserved only as legacyProvider fields. Active provider fields are renamed to fixture identifiers when payload lineage is synthetic or seeded.",
+    "regionTaggingPolicy": {
+      "method": "geometry intersection against coarse built-in polygons",
+      "note": "Region assignments are approximate because the built-in regions use simplified polygons that overlap. Recomputed regionIds preserve all geometric overlaps and mark them as approximate.",
+      "affectedRegionIds": [
+        "iran",
+        "israel",
+        "arabian-peninsula",
+        "eastern-mediterranean"
+      ]
+    },
+    "confidenceModel": {
+      "name": "integrity_repair_claim_confidence_v1",
+      "semanticMeaning": "Confidence estimates the defensibility of a real-world claim after provenance and external-verification penalties, not internal fixture coherence alone.",
+      "weights": {
+        "baseline": 0.15,
+        "multipleEvidenceItems": 0.05,
+        "multipleSourceFamilies": 0.05,
+        "temporalClustering": 0.04,
+        "restrictionSemanticsRetained": 0.03,
+        "syntheticLineagePenalty": -0.1,
+        "noExactExternalMatchPenalty": -0.06,
+        "weakCorroborationPenalty": -0.04
+      },
+      "labelRanges": [
+        {
+          "label": "low",
+          "minInclusive": 0.0,
+          "maxInclusive": 0.24
+        },
+        {
+          "label": "moderate",
+          "minInclusive": 0.25,
+          "maxInclusive": 0.49
+        },
+        {
+          "label": "high",
+          "minInclusive": 0.5,
+          "maxInclusive": 0.74
+        },
+        {
+          "label": "very_high",
+          "minInclusive": 0.75,
+          "maxInclusive": 1.0
+        }
+      ]
+    },
+    "eventTaxonomy": {
+      "controlledVocabulary": [
+        {
+          "eventType": "possible_strike",
+          "thresholdRule": "Use only when multi-signal evidence suggests a strike-like scenario but no authoritative confirmation exists.",
+          "evidenceRule": "Must not be used as verified real-world confirmation; synthetic lineage or missing exact external match keeps recordStatus below verified_real."
+        },
+        {
+          "eventType": "airspace_restriction_notice",
+          "thresholdRule": "Use for restriction-like records that remain useful structurally but are not validated as authoritative live restrictions.",
+          "evidenceRule": "Synthetic or seeded restriction payloads must remain synthetic_demo and carry advisory wording."
+        },
+        {
+          "eventType": "traffic_disruption_cluster",
+          "thresholdRule": "Use for clustered traffic-pattern changes without claiming cause certainty.",
+          "evidenceRule": "Do not describe sparse or interrupted coverage as transponder loss unless independently supported."
+        },
+        {
+          "eventType": "thermal_cluster",
+          "thresholdRule": "Use for grouped thermal observations without attributing cause.",
+          "evidenceRule": "Thermal-only observations cannot imply strike confirmation by themselves."
+        },
+        {
+          "eventType": "unverified_report",
+          "thresholdRule": "Use when a report remains weakly sourced or unmatched externally.",
+          "evidenceRule": "Single-source or no-match claims stay explicitly unverified."
+        }
+      ],
+      "removedTerms": [
+        "confirmed_strike"
+      ]
+    },
+    "suitableFor": {
+      "demoOnly": true,
+      "internalTesting": true,
+      "mixedQualityAnalysis": false,
+      "productionUse": false
+    }
   }
 }
