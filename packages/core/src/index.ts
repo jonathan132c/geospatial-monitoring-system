@@ -6,6 +6,7 @@ export * from './ingestion/build-snapshot';
 export * from './normalization/tracks';
 export * from './providers/adapters';
 export * from './providers/cache';
+export * from './providers/live-opensky';
 export * from './providers/retry';
 export * from './reporting/markdown';
 export * from './scoring/confidence';

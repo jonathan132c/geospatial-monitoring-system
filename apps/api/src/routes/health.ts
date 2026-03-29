@@ -14,22 +14,31 @@ export const registerHealthRoutes = (app: FastifyInstance, repository: SnapshotR
       snapshotAgeSeconds = null;
     }
 
+    const snapshotMode = snapshot.sourceMetadata?.mode ?? config.snapshotMode;
+    const activeProviders = snapshot.sourceMetadata?.activeProviders ?? [];
+
     return {
       status: 'ok',
-      mode: config.postgresUrl ? 'postgres-scaffolded' : 'file-backed-demo',
+      mode: config.postgresUrl ? `postgres-scaffolded-${snapshotMode}` : `file-backed-${snapshotMode}`,
       generatedAt: snapshot.generatedAt,
       snapshotAgeSeconds,
+      sourceMetadata: snapshot.sourceMetadata,
       safetyProfile: {
-        mode: 'non-operational-public-source-analytical-demo',
-        delayed: true,
+        mode: snapshotMode === 'live'
+          ? 'non-operational-public-source-analytical-live'
+          : 'non-operational-public-source-analytical-demo',
+        delayed: snapshotMode !== 'live',
         coordinatePrecision: 'coarsened public display',
         tacticalUseProhibited: true,
-        notice: 'Historical/seeded or delayed analytical output only. No live tactical guidance, no precision strike attribution, and no direct missile-tracking claims.'
+        notice: snapshotMode === 'live'
+          ? 'Live public-source inputs may be present, but this output remains non-operational, coarsened for public display, and unsuitable for tactical guidance or precision attribution.'
+          : 'Historical/seeded or delayed analytical output only. No live tactical guidance, no precision strike attribution, and no direct missile-tracking claims.'
       },
       dependencies: {
         postgresConfigured: Boolean(config.postgresUrl),
         redisConfigured: Boolean(config.redisUrl)
-      }
+      },
+      activeProviders
     };
   });
 };

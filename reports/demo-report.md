@@ -1,7 +1,7 @@
 # Conflict-monitoring dataset integrity report
 
 ## Executive summary
-- Reviewed at: 2026-03-29T10:11:53Z
+- Reviewed at: 2026-03-29T16:29:51Z
 - Dataset suitability: demo only
 - Production safe: no
 - Bottom line: the original snapshot mixed seeded/demo fixtures with real-looking provider names, event labels, and confidence scores. The repaired snapshot explicitly marks synthetic lineage, downgrades overstated labels, and prevents downstream consumers from mistaking fixture data for verified operational truth.

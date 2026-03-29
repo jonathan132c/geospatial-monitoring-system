@@ -19,7 +19,7 @@ export const registerTrackRoutes = (app: FastifyInstance, repository: SnapshotRe
           ? { min: parsed.minAltitude, max: parsed.maxAltitude }
           : undefined
       }).map(toPublicTrack),
-      meta: publicResponseMeta('tracks')
+      meta: publicResponseMeta(snapshot, 'tracks')
     };
   });
 };

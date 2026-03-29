@@ -12,7 +12,7 @@ beforeAll(async () => {
   const dir = await fs.mkdtemp(path.join(os.tmpdir(), 'geo-api-test-'));
   snapshotPath = path.join(dir, 'demo-snapshot.json');
   process.env.SNAPSHOT_PATH = snapshotPath;
-  const snapshot = await buildMonitoringSnapshot({ logger });
+  const snapshot = await buildMonitoringSnapshot({ logger, sourceMode: 'demo' });
   await fs.writeFile(snapshotPath, JSON.stringify(snapshot, null, 2), 'utf8');
 });
 

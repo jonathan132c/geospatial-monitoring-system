@@ -1,6 +1,117 @@
 {
   "generatedAt": "2026-03-29T00:00:00.000Z",
   "windowHours": 72,
+  "sourceMetadata": {
+    "mode": "demo",
+    "liveData": false,
+    "honestLivePath": false,
+    "fixtureBacked": true,
+    "activeProviders": [
+      "opensky",
+      "adsb_exchange",
+      "flightaware",
+      "notam_feed",
+      "icao_bulletins",
+      "easa_bulletins",
+      "nasa_firms",
+      "osint_news"
+    ],
+    "notes": [
+      "Demo mode uses offline fixtures for all providers.",
+      "No network calls are made in demo mode.",
+      "Use SNAPSHOT_MODE=live to fetch actual public live tracks where implemented."
+    ],
+    "providerStatuses": [
+      {
+        "provider": "opensky",
+        "kind": "track",
+        "access": "fixture",
+        "status": "success",
+        "enabled": true,
+        "liveCapable": false,
+        "recordCount": 13,
+        "rawPayloadCount": 13,
+        "reason": "Offline fixture provider used for demo mode."
+      },
+      {
+        "provider": "adsb_exchange",
+        "kind": "track",
+        "access": "fixture",
+        "status": "success",
+        "enabled": true,
+        "liveCapable": false,
+        "recordCount": 8,
+        "rawPayloadCount": 8,
+        "reason": "Offline fixture provider used for demo mode."
+      },
+      {
+        "provider": "flightaware",
+        "kind": "track",
+        "access": "fixture",
+        "status": "success",
+        "enabled": true,
+        "liveCapable": false,
+        "recordCount": 11,
+        "rawPayloadCount": 11,
+        "reason": "Offline fixture provider used for demo mode."
+      },
+      {
+        "provider": "notam_feed",
+        "kind": "restriction",
+        "access": "fixture",
+        "status": "success",
+        "enabled": true,
+        "liveCapable": false,
+        "recordCount": 2,
+        "rawPayloadCount": 2,
+        "reason": "Offline fixture provider used for demo mode."
+      },
+      {
+        "provider": "icao_bulletins",
+        "kind": "conflict",
+        "access": "fixture",
+        "status": "success",
+        "enabled": true,
+        "liveCapable": false,
+        "recordCount": 1,
+        "rawPayloadCount": 1,
+        "reason": "Offline fixture provider used for demo mode."
+      },
+      {
+        "provider": "easa_bulletins",
+        "kind": "conflict",
+        "access": "fixture",
+        "status": "success",
+        "enabled": true,
+        "liveCapable": false,
+        "recordCount": 1,
+        "rawPayloadCount": 1,
+        "reason": "Offline fixture provider used for demo mode."
+      },
+      {
+        "provider": "nasa_firms",
+        "kind": "conflict",
+        "access": "fixture",
+        "status": "success",
+        "enabled": true,
+        "liveCapable": false,
+        "recordCount": 5,
+        "rawPayloadCount": 5,
+        "reason": "Offline fixture provider used for demo mode."
+      },
+      {
+        "provider": "osint_news",
+        "kind": "conflict",
+        "access": "fixture",
+        "status": "success",
+        "enabled": true,
+        "liveCapable": false,
+        "recordCount": 4,
+        "rawPayloadCount": 4,
+        "reason": "Offline fixture provider used for demo mode."
+      }
+    ]
+  },
   "regions": [
     {
       "id": "iran",
@@ -52,13 +163,13 @@
       "derivedFrom": [
         "builtin_simplified_geometry"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "completed",
       "externalSourcesChecked": [
         {
           "engine": "manual_geography_review",
           "query": "Iran",
-          "checkedAt": "2026-03-29T10:11:53Z",
+          "checkedAt": "2026-03-29T16:29:51Z",
           "matchType": "context_only",
           "resultCount": 1,
           "results": []
@@ -118,13 +229,13 @@
       "derivedFrom": [
         "builtin_simplified_geometry"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "completed",
       "externalSourcesChecked": [
         {
           "engine": "manual_geography_review",
           "query": "Israel",
-          "checkedAt": "2026-03-29T10:11:53Z",
+          "checkedAt": "2026-03-29T16:29:51Z",
           "matchType": "context_only",
           "resultCount": 1,
           "results": []
@@ -184,13 +295,13 @@
       "derivedFrom": [
         "builtin_simplified_geometry"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "completed",
       "externalSourcesChecked": [
         {
           "engine": "manual_geography_review",
           "query": "Arabian Peninsula",
-          "checkedAt": "2026-03-29T10:11:53Z",
+          "checkedAt": "2026-03-29T16:29:51Z",
           "matchType": "context_only",
           "resultCount": 1,
           "results": []
@@ -250,13 +361,13 @@
       "derivedFrom": [
         "builtin_simplified_geometry"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "completed",
       "externalSourcesChecked": [
         {
           "engine": "manual_geography_review",
           "query": "Eastern Mediterranean",
-          "checkedAt": "2026-03-29T10:11:53Z",
+          "checkedAt": "2026-03-29T16:29:51Z",
           "matchType": "context_only",
           "resultCount": 1,
           "results": []
@@ -318,16 +429,17 @@
       "derivedFrom": [
         "raw-notam_feed-restr-1"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "completed",
       "externalSourcesChecked": [
         {
           "engine": "duckduckgo_html",
           "query": "\"Temporary closure east of Cyprus / Levant corridor\" \"DEMO-LEVANT-01\"",
-          "checkedAt": "2026-03-29T10:11:53Z",
+          "checkedAt": "2026-03-29T16:29:51Z",
           "matchType": "no_match",
           "resultCount": 0,
-          "results": []
+          "results": [],
+          "error": "HTTPError: HTTP Error 403: Forbidden"
         }
       ],
       "externalMatchType": "no_match",
@@ -383,16 +495,17 @@
       "derivedFrom": [
         "raw-notam_feed-restr-2"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "completed",
       "externalSourcesChecked": [
         {
           "engine": "duckduckgo_html",
           "query": "\"Avoidance advisory over northern Arabian Peninsula transit lanes\" \"DEMO-GULF-02\"",
-          "checkedAt": "2026-03-29T10:11:53Z",
+          "checkedAt": "2026-03-29T16:29:51Z",
           "matchType": "no_match",
           "resultCount": 0,
-          "results": []
+          "results": [],
+          "error": "HTTPError: HTTP Error 403: Forbidden"
         }
       ],
       "externalMatchType": "no_match",
@@ -527,16 +640,17 @@
         "raw-opensky-obs-2a",
         "raw-opensky-obs-4a"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "completed",
       "externalSourcesChecked": [
         {
           "engine": "duckduckgo_html",
           "query": "\"EM9001\" \"ATH\" \"TLV\" \"2026-03-28\"",
-          "checkedAt": "2026-03-29T10:11:53Z",
+          "checkedAt": "2026-03-29T16:29:51Z",
           "matchType": "no_match",
           "resultCount": 0,
-          "results": []
+          "results": [],
+          "error": "HTTPError: HTTP Error 403: Forbidden"
         }
       ],
       "externalMatchType": "no_match",
@@ -676,16 +790,17 @@
         "raw-opensky-mea-1",
         "raw-opensky-mea-4"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "completed",
       "externalSourcesChecked": [
         {
           "engine": "duckduckgo_html",
           "query": "\"MEA440\" \"BEY\" \"AUH\" \"2026-03-28\"",
-          "checkedAt": "2026-03-29T10:11:53Z",
+          "checkedAt": "2026-03-29T16:29:51Z",
           "matchType": "no_match",
           "resultCount": 0,
-          "results": []
+          "results": [],
+          "error": "HTTPError: HTTP Error 403: Forbidden"
         }
       ],
       "externalMatchType": "no_match",
@@ -800,16 +915,17 @@
         "raw-opensky-gfa-1",
         "raw-opensky-gfa-4"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "completed",
       "externalSourcesChecked": [
         {
           "engine": "duckduckgo_html",
           "query": "\"GFA221\" \"DOH\" \"AMM\" \"2026-03-28\"",
-          "checkedAt": "2026-03-29T10:11:53Z",
+          "checkedAt": "2026-03-29T16:29:51Z",
           "matchType": "no_match",
           "resultCount": 0,
-          "results": []
+          "results": [],
+          "error": "HTTPError: HTTP Error 403: Forbidden"
         }
       ],
       "externalMatchType": "no_match",
@@ -926,16 +1042,17 @@
         "raw-opensky-ira-1",
         "raw-opensky-ira-3"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "completed",
       "externalSourcesChecked": [
         {
           "engine": "duckduckgo_html",
           "query": "\"IRA781\" \"THR\" \"BGW\" \"2026-03-28\"",
-          "checkedAt": "2026-03-29T10:11:53Z",
+          "checkedAt": "2026-03-29T16:29:51Z",
           "matchType": "no_match",
           "resultCount": 0,
-          "results": []
+          "results": [],
+          "error": "HTTPError: HTTP Error 403: Forbidden"
         }
       ],
       "externalMatchType": "no_match",
@@ -1037,16 +1154,17 @@
         "raw-opensky-kac-2",
         "raw-opensky-kac-4"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "completed",
       "externalSourcesChecked": [
         {
           "engine": "duckduckgo_html",
           "query": "\"KAC778\" \"KWI\" \"CAI\" \"2026-03-28\"",
-          "checkedAt": "2026-03-29T10:11:53Z",
+          "checkedAt": "2026-03-29T16:29:51Z",
           "matchType": "no_match",
           "resultCount": 0,
-          "results": []
+          "results": [],
+          "error": "HTTPError: HTTP Error 403: Forbidden"
         }
       ],
       "externalMatchType": "no_match",
@@ -1237,16 +1355,17 @@
         "raw-opensky-axy-2",
         "raw-opensky-axy-4"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "completed",
       "externalSourcesChecked": [
         {
           "engine": "duckduckgo_html",
           "query": "\"AXY330\" \"TLV\" \"LCA\" \"2026-03-28\"",
-          "checkedAt": "2026-03-29T10:11:53Z",
+          "checkedAt": "2026-03-29T16:29:51Z",
           "matchType": "no_match",
           "resultCount": 0,
-          "results": []
+          "results": [],
+          "error": "HTTPError: HTTP Error 403: Forbidden"
         }
       ],
       "externalMatchType": "no_match",
@@ -1322,16 +1441,17 @@
         "raw-flightaware-lowcov-1",
         "raw-flightaware-lowcov-2"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "completed",
       "externalSourcesChecked": [
         {
           "engine": "duckduckgo_html",
           "query": "\"DMS102\" \"JED\" \"MCT\" \"2026-03-27\"",
-          "checkedAt": "2026-03-29T10:11:53Z",
+          "checkedAt": "2026-03-29T16:29:51Z",
           "matchType": "no_match",
           "resultCount": 0,
-          "results": []
+          "results": [],
+          "error": "HTTPError: HTTP Error 403: Forbidden"
         }
       ],
       "externalMatchType": "no_match",
@@ -1374,16 +1494,17 @@
       "derivedFrom": [
         "raw-icao_bulletins-bulletin-1"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "completed",
       "externalSourcesChecked": [
         {
           "engine": "duckduckgo_html",
           "query": "\"ICAO-DEMO-17\" \"ICAO conflict-zone advisory references tactical disruption in the Eastern Mediterranean corridor\"",
-          "checkedAt": "2026-03-29T10:11:53Z",
+          "checkedAt": "2026-03-29T16:29:51Z",
           "matchType": "no_match",
           "resultCount": 0,
-          "results": []
+          "results": [],
+          "error": "HTTPError: HTTP Error 403: Forbidden"
         }
       ],
       "externalMatchType": "no_match",
@@ -1423,16 +1544,17 @@
       "derivedFrom": [
         "raw-easa_bulletins-bulletin-2"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "completed",
       "externalSourcesChecked": [
         {
           "engine": "duckduckgo_html",
           "query": "\"EASA-DEMO-9\" \"EASA conflict-zone bulletin notes tactical risk for northern Arabian transit lanes\"",
-          "checkedAt": "2026-03-29T10:11:53Z",
+          "checkedAt": "2026-03-29T16:29:51Z",
           "matchType": "no_match",
           "resultCount": 0,
-          "results": []
+          "results": [],
+          "error": "HTTPError: HTTP Error 403: Forbidden"
         }
       ],
       "externalMatchType": "no_match",
@@ -1474,16 +1596,17 @@
       "derivedFrom": [
         "raw-nasa_firms-thermal-1"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "completed",
       "externalSourcesChecked": [
         {
           "engine": "duckduckgo_html",
           "query": "\"FIRMS thermal hit thermal-1\"",
-          "checkedAt": "2026-03-29T10:11:53Z",
+          "checkedAt": "2026-03-29T16:29:51Z",
           "matchType": "no_match",
           "resultCount": 0,
-          "results": []
+          "results": [],
+          "error": "HTTPError: HTTP Error 403: Forbidden"
         }
       ],
       "externalMatchType": "no_match",
@@ -1525,16 +1648,17 @@
       "derivedFrom": [
         "raw-nasa_firms-thermal-2"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "completed",
       "externalSourcesChecked": [
         {
           "engine": "duckduckgo_html",
           "query": "\"FIRMS thermal hit thermal-2\"",
-          "checkedAt": "2026-03-29T10:11:53Z",
+          "checkedAt": "2026-03-29T16:29:51Z",
           "matchType": "no_match",
           "resultCount": 0,
-          "results": []
+          "results": [],
+          "error": "HTTPError: HTTP Error 403: Forbidden"
         }
       ],
       "externalMatchType": "no_match",
@@ -1576,16 +1700,17 @@
       "derivedFrom": [
         "raw-nasa_firms-thermal-3"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "completed",
       "externalSourcesChecked": [
         {
           "engine": "duckduckgo_html",
           "query": "\"FIRMS thermal hit thermal-3\"",
-          "checkedAt": "2026-03-29T10:11:53Z",
+          "checkedAt": "2026-03-29T16:29:51Z",
           "matchType": "no_match",
           "resultCount": 0,
-          "results": []
+          "results": [],
+          "error": "HTTPError: HTTP Error 403: Forbidden"
         }
       ],
       "externalMatchType": "no_match",
@@ -1628,16 +1753,17 @@
       "derivedFrom": [
         "raw-nasa_firms-thermal-4"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "completed",
       "externalSourcesChecked": [
         {
           "engine": "duckduckgo_html",
           "query": "\"FIRMS thermal hit thermal-4\"",
-          "checkedAt": "2026-03-29T10:11:53Z",
+          "checkedAt": "2026-03-29T16:29:51Z",
           "matchType": "no_match",
           "resultCount": 0,
-          "results": []
+          "results": [],
+          "error": "HTTPError: HTTP Error 403: Forbidden"
         }
       ],
       "externalMatchType": "no_match",
@@ -1680,16 +1806,17 @@
       "derivedFrom": [
         "raw-nasa_firms-thermal-5"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "completed",
       "externalSourcesChecked": [
         {
           "engine": "duckduckgo_html",
           "query": "\"FIRMS thermal hit thermal-5\"",
-          "checkedAt": "2026-03-29T10:11:53Z",
+          "checkedAt": "2026-03-29T16:29:51Z",
           "matchType": "no_match",
           "resultCount": 0,
-          "results": []
+          "results": [],
+          "error": "HTTPError: HTTP Error 403: Forbidden"
         }
       ],
       "externalMatchType": "no_match",
@@ -1733,16 +1860,17 @@
       "derivedFrom": [
         "raw-osint_news-osint-1"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "completed",
       "externalSourcesChecked": [
         {
           "engine": "duckduckgo_html",
           "query": "\"Multiple local channels mention impact sounds east of Cyprus corridor\"",
-          "checkedAt": "2026-03-29T10:11:53Z",
+          "checkedAt": "2026-03-29T16:29:51Z",
           "matchType": "no_match",
           "resultCount": 0,
-          "results": []
+          "results": [],
+          "error": "HTTPError: HTTP Error 403: Forbidden"
         }
       ],
       "externalMatchType": "no_match",
@@ -1786,16 +1914,17 @@
       "derivedFrom": [
         "raw-osint_news-news-1"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "completed",
       "externalSourcesChecked": [
         {
           "engine": "duckduckgo_html",
           "query": "\"Regional desk reports emergency reroutes linked to suspected strike activity\"",
-          "checkedAt": "2026-03-29T10:11:53Z",
+          "checkedAt": "2026-03-29T16:29:51Z",
           "matchType": "no_match",
           "resultCount": 0,
-          "results": []
+          "results": [],
+          "error": "HTTPError: HTTP Error 403: Forbidden"
         }
       ],
       "externalMatchType": "no_match",
@@ -1840,16 +1969,17 @@
       "derivedFrom": [
         "raw-osint_news-osint-2"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "completed",
       "externalSourcesChecked": [
         {
           "engine": "duckduckgo_html",
           "query": "\"Two independent reports mention flashes near the southern Israeli corridor\"",
-          "checkedAt": "2026-03-29T10:11:53Z",
+          "checkedAt": "2026-03-29T16:29:51Z",
           "matchType": "no_match",
           "resultCount": 0,
-          "results": []
+          "results": [],
+          "error": "HTTPError: HTTP Error 403: Forbidden"
         }
       ],
       "externalMatchType": "no_match",
@@ -1891,16 +2021,17 @@
       "derivedFrom": [
         "raw-osint_news-osint-3"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "completed",
       "externalSourcesChecked": [
         {
           "engine": "duckduckgo_html",
           "query": "\"Single channel claims blast near western Iran\"",
-          "checkedAt": "2026-03-29T10:11:53Z",
+          "checkedAt": "2026-03-29T16:29:51Z",
           "matchType": "no_match",
           "resultCount": 0,
-          "results": []
+          "results": [],
+          "error": "HTTPError: HTTP Error 403: Forbidden"
         }
       ],
       "externalMatchType": "no_match",
@@ -2002,24 +2133,26 @@
         "raw-nasa_firms-thermal-4",
         "raw-nasa_firms-thermal-5"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "inherited",
       "externalSourcesChecked": [
         {
           "engine": "duckduckgo_html",
           "query": "\"FIRMS thermal hit thermal-4\"",
-          "checkedAt": "2026-03-29T10:11:53Z",
+          "checkedAt": "2026-03-29T16:29:51Z",
           "matchType": "no_match",
           "resultCount": 0,
-          "results": []
+          "results": [],
+          "error": "HTTPError: HTTP Error 403: Forbidden"
         },
         {
           "engine": "duckduckgo_html",
           "query": "\"FIRMS thermal hit thermal-5\"",
-          "checkedAt": "2026-03-29T10:11:53Z",
+          "checkedAt": "2026-03-29T16:29:51Z",
           "matchType": "no_match",
           "resultCount": 0,
-          "results": []
+          "results": [],
+          "error": "HTTPError: HTTP Error 403: Forbidden"
         }
       ],
       "externalMatchType": "no_match",
@@ -2129,32 +2262,35 @@
         "raw-nasa_firms-thermal-5",
         "raw-osint_news-osint-2"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "inherited",
       "externalSourcesChecked": [
         {
           "engine": "duckduckgo_html",
           "query": "\"FIRMS thermal hit thermal-4\"",
-          "checkedAt": "2026-03-29T10:11:53Z",
+          "checkedAt": "2026-03-29T16:29:51Z",
           "matchType": "no_match",
           "resultCount": 0,
-          "results": []
+          "results": [],
+          "error": "HTTPError: HTTP Error 403: Forbidden"
         },
         {
           "engine": "duckduckgo_html",
           "query": "\"FIRMS thermal hit thermal-5\"",
-          "checkedAt": "2026-03-29T10:11:53Z",
+          "checkedAt": "2026-03-29T16:29:51Z",
           "matchType": "no_match",
           "resultCount": 0,
-          "results": []
+          "results": [],
+          "error": "HTTPError: HTTP Error 403: Forbidden"
         },
         {
           "engine": "duckduckgo_html",
           "query": "\"Two independent reports mention flashes near the southern Israeli corridor\"",
-          "checkedAt": "2026-03-29T10:11:53Z",
+          "checkedAt": "2026-03-29T16:29:51Z",
           "matchType": "no_match",
           "resultCount": 0,
-          "results": []
+          "results": [],
+          "error": "HTTPError: HTTP Error 403: Forbidden"
         }
       ],
       "externalMatchType": "no_match",
@@ -2262,32 +2398,35 @@
         "raw-nasa_firms-thermal-2",
         "raw-nasa_firms-thermal-3"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "inherited",
       "externalSourcesChecked": [
         {
           "engine": "duckduckgo_html",
           "query": "\"FIRMS thermal hit thermal-1\"",
-          "checkedAt": "2026-03-29T10:11:53Z",
+          "checkedAt": "2026-03-29T16:29:51Z",
           "matchType": "no_match",
           "resultCount": 0,
-          "results": []
+          "results": [],
+          "error": "HTTPError: HTTP Error 403: Forbidden"
         },
         {
           "engine": "duckduckgo_html",
           "query": "\"FIRMS thermal hit thermal-2\"",
-          "checkedAt": "2026-03-29T10:11:53Z",
+          "checkedAt": "2026-03-29T16:29:51Z",
           "matchType": "no_match",
           "resultCount": 0,
-          "results": []
+          "results": [],
+          "error": "HTTPError: HTTP Error 403: Forbidden"
         },
         {
           "engine": "duckduckgo_html",
           "query": "\"FIRMS thermal hit thermal-3\"",
-          "checkedAt": "2026-03-29T10:11:53Z",
+          "checkedAt": "2026-03-29T16:29:51Z",
           "matchType": "no_match",
           "resultCount": 0,
-          "results": []
+          "results": [],
+          "error": "HTTPError: HTTP Error 403: Forbidden"
         }
       ],
       "externalMatchType": "no_match",
@@ -2437,72 +2576,80 @@
         "raw-osint_news-news-1",
         "raw-osint_news-osint-1"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "inherited",
       "externalSourcesChecked": [
         {
           "engine": "duckduckgo_html",
           "query": "\"FIRMS thermal hit thermal-1\"",
-          "checkedAt": "2026-03-29T10:11:53Z",
+          "checkedAt": "2026-03-29T16:29:51Z",
           "matchType": "no_match",
           "resultCount": 0,
-          "results": []
+          "results": [],
+          "error": "HTTPError: HTTP Error 403: Forbidden"
         },
         {
           "engine": "duckduckgo_html",
           "query": "\"FIRMS thermal hit thermal-2\"",
-          "checkedAt": "2026-03-29T10:11:53Z",
+          "checkedAt": "2026-03-29T16:29:51Z",
           "matchType": "no_match",
           "resultCount": 0,
-          "results": []
+          "results": [],
+          "error": "HTTPError: HTTP Error 403: Forbidden"
         },
         {
           "engine": "duckduckgo_html",
           "query": "\"FIRMS thermal hit thermal-3\"",
-          "checkedAt": "2026-03-29T10:11:53Z",
+          "checkedAt": "2026-03-29T16:29:51Z",
           "matchType": "no_match",
           "resultCount": 0,
-          "results": []
+          "results": [],
+          "error": "HTTPError: HTTP Error 403: Forbidden"
         },
         {
           "engine": "duckduckgo_html",
           "query": "\"Multiple local channels mention impact sounds east of Cyprus corridor\"",
-          "checkedAt": "2026-03-29T10:11:53Z",
+          "checkedAt": "2026-03-29T16:29:51Z",
           "matchType": "no_match",
           "resultCount": 0,
-          "results": []
+          "results": [],
+          "error": "HTTPError: HTTP Error 403: Forbidden"
         },
         {
           "engine": "duckduckgo_html",
           "query": "\"Regional desk reports emergency reroutes linked to suspected strike activity\"",
-          "checkedAt": "2026-03-29T10:11:53Z",
+          "checkedAt": "2026-03-29T16:29:51Z",
           "matchType": "no_match",
           "resultCount": 0,
-          "results": []
+          "results": [],
+          "error": "HTTPError: HTTP Error 403: Forbidden"
         },
         {
           "engine": "duckduckgo_html",
           "query": "\"Temporary closure east of Cyprus / Levant corridor\" \"DEMO-LEVANT-01\"",
-          "checkedAt": "2026-03-29T10:11:53Z",
+          "checkedAt": "2026-03-29T16:29:51Z",
           "matchType": "no_match",
           "resultCount": 0,
-          "results": []
+          "results": [],
+          "error": "HTTPError: HTTP Error 403: Forbidden"
         },
         {
           "engine": "duckduckgo_html",
           "query": "\"EM9001\" \"ATH\" \"TLV\" \"2026-03-28\"",
-          "checkedAt": "2026-03-29T10:11:53Z",
+          "checkedAt": "2026-03-29T16:29:51Z",
           "matchType": "no_match",
           "resultCount": 0,
-          "results": []
+          "results": [],
+          "error": "HTTPError: HTTP Error 403: Forbidden"
         },
         {
           "engine": "duckduckgo_html",
           "query": "\"MEA440\" \"BEY\" \"AUH\" \"2026-03-28\"",
-          "checkedAt": "2026-03-29T10:11:53Z",
+          "checkedAt": "2026-03-29T16:29:51Z",
           "matchType": "no_match",
           "resultCount": 0,
-          "results": []
+          "results": [],
+          "error": "HTTPError: HTTP Error 403: Forbidden"
         }
       ],
       "externalMatchType": "no_match",
@@ -2606,16 +2753,17 @@
       "derivedFrom": [
         "raw-notam_feed-restr-1"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "inherited",
       "externalSourcesChecked": [
         {
           "engine": "duckduckgo_html",
           "query": "\"Temporary closure east of Cyprus / Levant corridor\" \"DEMO-LEVANT-01\"",
-          "checkedAt": "2026-03-29T10:11:53Z",
+          "checkedAt": "2026-03-29T16:29:51Z",
           "matchType": "no_match",
           "resultCount": 0,
-          "results": []
+          "results": [],
+          "error": "HTTPError: HTTP Error 403: Forbidden"
         }
       ],
       "externalMatchType": "no_match",
@@ -2623,7 +2771,7 @@
       "geospatialPrecision": "derived_geometry_anchor_with_approximate_region_overlap"
     },
     {
-      "id": "event-diversion-4defb183-14b2-4d4c-a9df-2a14868f82aa",
+      "id": "event-diversion-644de497-2c02-41d6-b293-b4883cc07569",
       "eventType": "traffic_disruption_cluster",
       "startedAt": "2026-03-28T16:31:00.000Z",
       "endedAt": "2026-03-28T16:31:00.000Z",
@@ -2715,24 +2863,26 @@
         "raw-opensky-mea-1",
         "raw-opensky-obs-1a"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "inherited",
       "externalSourcesChecked": [
         {
           "engine": "duckduckgo_html",
           "query": "\"EM9001\" \"ATH\" \"TLV\" \"2026-03-28\"",
-          "checkedAt": "2026-03-29T10:11:53Z",
+          "checkedAt": "2026-03-29T16:29:51Z",
           "matchType": "no_match",
           "resultCount": 0,
-          "results": []
+          "results": [],
+          "error": "HTTPError: HTTP Error 403: Forbidden"
         },
         {
           "engine": "duckduckgo_html",
           "query": "\"MEA440\" \"BEY\" \"AUH\" \"2026-03-28\"",
-          "checkedAt": "2026-03-29T10:11:53Z",
+          "checkedAt": "2026-03-29T16:29:51Z",
           "matchType": "no_match",
           "resultCount": 0,
-          "results": []
+          "results": [],
+          "error": "HTTPError: HTTP Error 403: Forbidden"
         }
       ],
       "externalMatchType": "no_match",
@@ -2835,16 +2985,17 @@
       "derivedFrom": [
         "raw-notam_feed-restr-2"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "inherited",
       "externalSourcesChecked": [
         {
           "engine": "duckduckgo_html",
           "query": "\"Avoidance advisory over northern Arabian Peninsula transit lanes\" \"DEMO-GULF-02\"",
-          "checkedAt": "2026-03-29T10:11:53Z",
+          "checkedAt": "2026-03-29T16:29:51Z",
           "matchType": "no_match",
           "resultCount": 0,
-          "results": []
+          "results": [],
+          "error": "HTTPError: HTTP Error 403: Forbidden"
         }
       ],
       "externalMatchType": "no_match",
@@ -2921,16 +3072,17 @@
       "derivedFrom": [
         "raw-osint_news-osint-3"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "inherited",
       "externalSourcesChecked": [
         {
           "engine": "duckduckgo_html",
           "query": "\"Single channel claims blast near western Iran\"",
-          "checkedAt": "2026-03-29T10:11:53Z",
+          "checkedAt": "2026-03-29T16:29:51Z",
           "matchType": "no_match",
           "resultCount": 0,
-          "results": []
+          "results": [],
+          "error": "HTTPError: HTTP Error 403: Forbidden"
         }
       ],
       "externalMatchType": "no_match",
@@ -2970,7 +3122,7 @@
       "derivedFrom": [
         "raw-opensky-obs-1a"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "not_applicable",
       "externalSourcesChecked": [],
       "externalMatchType": "no_match",
@@ -3006,7 +3158,7 @@
       "derivedFrom": [
         "raw-adsb_exchange-obs-1b"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "not_applicable",
       "externalSourcesChecked": [],
       "externalMatchType": "no_match",
@@ -3042,7 +3194,7 @@
       "derivedFrom": [
         "raw-flightaware-obs-1c"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "not_applicable",
       "externalSourcesChecked": [],
       "externalMatchType": "no_match",
@@ -3079,7 +3231,7 @@
       "derivedFrom": [
         "raw-opensky-obs-2a"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "not_applicable",
       "externalSourcesChecked": [],
       "externalMatchType": "no_match",
@@ -3115,7 +3267,7 @@
       "derivedFrom": [
         "raw-adsb_exchange-obs-2b"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "not_applicable",
       "externalSourcesChecked": [],
       "externalMatchType": "no_match",
@@ -3151,7 +3303,7 @@
       "derivedFrom": [
         "raw-flightaware-obs-3c"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "not_applicable",
       "externalSourcesChecked": [],
       "externalMatchType": "no_match",
@@ -3188,7 +3340,7 @@
       "derivedFrom": [
         "raw-opensky-obs-4a"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "not_applicable",
       "externalSourcesChecked": [],
       "externalMatchType": "no_match",
@@ -3224,7 +3376,7 @@
       "derivedFrom": [
         "raw-adsb_exchange-obs-5b"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "not_applicable",
       "externalSourcesChecked": [],
       "externalMatchType": "no_match",
@@ -3261,7 +3413,7 @@
       "derivedFrom": [
         "raw-opensky-mea-1"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "not_applicable",
       "externalSourcesChecked": [],
       "externalMatchType": "no_match",
@@ -3297,7 +3449,7 @@
       "derivedFrom": [
         "raw-adsb_exchange-mea-2"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "not_applicable",
       "externalSourcesChecked": [],
       "externalMatchType": "no_match",
@@ -3333,7 +3485,7 @@
       "derivedFrom": [
         "raw-flightaware-mea-3"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "not_applicable",
       "externalSourcesChecked": [],
       "externalMatchType": "no_match",
@@ -3370,7 +3522,7 @@
       "derivedFrom": [
         "raw-opensky-mea-4"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "not_applicable",
       "externalSourcesChecked": [],
       "externalMatchType": "no_match",
@@ -3405,7 +3557,7 @@
       "derivedFrom": [
         "raw-opensky-gfa-1"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "not_applicable",
       "externalSourcesChecked": [],
       "externalMatchType": "no_match",
@@ -3440,7 +3592,7 @@
       "derivedFrom": [
         "raw-adsb_exchange-gfa-2"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "not_applicable",
       "externalSourcesChecked": [],
       "externalMatchType": "no_match",
@@ -3475,7 +3627,7 @@
       "derivedFrom": [
         "raw-flightaware-gfa-3"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "not_applicable",
       "externalSourcesChecked": [],
       "externalMatchType": "no_match",
@@ -3510,7 +3662,7 @@
       "derivedFrom": [
         "raw-opensky-gfa-4"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "not_applicable",
       "externalSourcesChecked": [],
       "externalMatchType": "no_match",
@@ -3545,7 +3697,7 @@
       "derivedFrom": [
         "raw-adsb_exchange-gfa-5"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "not_applicable",
       "externalSourcesChecked": [],
       "externalMatchType": "no_match",
@@ -3580,7 +3732,7 @@
       "derivedFrom": [
         "raw-opensky-ira-1"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "not_applicable",
       "externalSourcesChecked": [],
       "externalMatchType": "no_match",
@@ -3615,7 +3767,7 @@
       "derivedFrom": [
         "raw-flightaware-ira-2"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "not_applicable",
       "externalSourcesChecked": [],
       "externalMatchType": "no_match",
@@ -3650,7 +3802,7 @@
       "derivedFrom": [
         "raw-opensky-ira-3"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "not_applicable",
       "externalSourcesChecked": [],
       "externalMatchType": "no_match",
@@ -3685,7 +3837,7 @@
       "derivedFrom": [
         "raw-flightaware-ira-4"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "not_applicable",
       "externalSourcesChecked": [],
       "externalMatchType": "no_match",
@@ -3720,7 +3872,7 @@
       "derivedFrom": [
         "raw-adsb_exchange-kac-1"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "not_applicable",
       "externalSourcesChecked": [],
       "externalMatchType": "no_match",
@@ -3755,7 +3907,7 @@
       "derivedFrom": [
         "raw-opensky-kac-2"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "not_applicable",
       "externalSourcesChecked": [],
       "externalMatchType": "no_match",
@@ -3790,7 +3942,7 @@
       "derivedFrom": [
         "raw-adsb_exchange-kac-3"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "not_applicable",
       "externalSourcesChecked": [],
       "externalMatchType": "no_match",
@@ -3825,7 +3977,7 @@
       "derivedFrom": [
         "raw-opensky-kac-4"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "not_applicable",
       "externalSourcesChecked": [],
       "externalMatchType": "no_match",
@@ -3860,7 +4012,7 @@
       "derivedFrom": [
         "raw-flightaware-axy-1"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "not_applicable",
       "externalSourcesChecked": [],
       "externalMatchType": "no_match",
@@ -3895,7 +4047,7 @@
       "derivedFrom": [
         "raw-opensky-axy-2"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "not_applicable",
       "externalSourcesChecked": [],
       "externalMatchType": "no_match",
@@ -3930,7 +4082,7 @@
       "derivedFrom": [
         "raw-flightaware-axy-3"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "not_applicable",
       "externalSourcesChecked": [],
       "externalMatchType": "no_match",
@@ -3965,7 +4117,7 @@
       "derivedFrom": [
         "raw-opensky-axy-4"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "not_applicable",
       "externalSourcesChecked": [],
       "externalMatchType": "no_match",
@@ -4000,7 +4152,7 @@
       "derivedFrom": [
         "raw-flightaware-axy-5"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "not_applicable",
       "externalSourcesChecked": [],
       "externalMatchType": "no_match",
@@ -4035,7 +4187,7 @@
       "derivedFrom": [
         "raw-flightaware-lowcov-1"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "not_applicable",
       "externalSourcesChecked": [],
       "externalMatchType": "no_match",
@@ -4070,7 +4222,7 @@
       "derivedFrom": [
         "raw-flightaware-lowcov-2"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "not_applicable",
       "externalSourcesChecked": [],
       "externalMatchType": "no_match",
@@ -4105,7 +4257,7 @@
       "derivedFrom": [
         "raw-notam_feed-restr-1"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "not_applicable",
       "externalSourcesChecked": [],
       "externalMatchType": "no_match",
@@ -4140,7 +4292,7 @@
       "derivedFrom": [
         "raw-notam_feed-restr-2"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "not_applicable",
       "externalSourcesChecked": [],
       "externalMatchType": "no_match",
@@ -4175,7 +4327,7 @@
       "derivedFrom": [
         "raw-icao_bulletins-bulletin-1"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "not_applicable",
       "externalSourcesChecked": [],
       "externalMatchType": "no_match",
@@ -4210,7 +4362,7 @@
       "derivedFrom": [
         "raw-easa_bulletins-bulletin-2"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "not_applicable",
       "externalSourcesChecked": [],
       "externalMatchType": "no_match",
@@ -4245,7 +4397,7 @@
       "derivedFrom": [
         "raw-nasa_firms-thermal-1"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "not_applicable",
       "externalSourcesChecked": [],
       "externalMatchType": "no_match",
@@ -4280,7 +4432,7 @@
       "derivedFrom": [
         "raw-nasa_firms-thermal-2"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "not_applicable",
       "externalSourcesChecked": [],
       "externalMatchType": "no_match",
@@ -4315,7 +4467,7 @@
       "derivedFrom": [
         "raw-nasa_firms-thermal-3"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "not_applicable",
       "externalSourcesChecked": [],
       "externalMatchType": "no_match",
@@ -4350,7 +4502,7 @@
       "derivedFrom": [
         "raw-nasa_firms-thermal-4"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "not_applicable",
       "externalSourcesChecked": [],
       "externalMatchType": "no_match",
@@ -4385,7 +4537,7 @@
       "derivedFrom": [
         "raw-nasa_firms-thermal-5"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "not_applicable",
       "externalSourcesChecked": [],
       "externalMatchType": "no_match",
@@ -4423,7 +4575,7 @@
       "derivedFrom": [
         "raw-osint_news-osint-1"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "not_applicable",
       "externalSourcesChecked": [],
       "externalMatchType": "no_match",
@@ -4461,7 +4613,7 @@
       "derivedFrom": [
         "raw-osint_news-news-1"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "not_applicable",
       "externalSourcesChecked": [],
       "externalMatchType": "no_match",
@@ -4499,7 +4651,7 @@
       "derivedFrom": [
         "raw-osint_news-osint-2"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "not_applicable",
       "externalSourcesChecked": [],
       "externalMatchType": "no_match",
@@ -4536,7 +4688,7 @@
       "derivedFrom": [
         "raw-osint_news-osint-3"
       ],
-      "lastReviewedAt": "2026-03-29T10:11:53Z",
+      "lastReviewedAt": "2026-03-29T16:29:51Z",
       "externalVerificationStatus": "not_applicable",
       "externalSourcesChecked": [],
       "externalMatchType": "no_match",
@@ -4708,7 +4860,7 @@
   },
   "datasetMetadata": {
     "integrityReviewVersion": "2026-03-integrity-repair-v1",
-    "reviewedAt": "2026-03-29T10:11:53Z",
+    "reviewedAt": "2026-03-29T16:29:51Z",
     "datasetSuitability": "demo only",
     "productionSafe": false,
     "productionSafetyStatement": "NOT PRODUCTION SAFE: this snapshot contains demo fixtures, approximate geometries, and derived scenario records with no exact external matches.",
