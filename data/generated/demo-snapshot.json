@@ -1,0 +1,2672 @@
+{
+  "generatedAt": "2026-03-29T00:00:00.000Z",
+  "windowHours": 72,
+  "regions": [
+    {
+      "id": "iran",
+      "name": "Iran",
+      "description": "Built-in monitoring polygon for Iranian territory (simplified bounding geometry for seeded demo usage).",
+      "source": "built_in",
+      "createdAt": "2026-03-29T00:00:00.000Z",
+      "tags": [
+        "country",
+        "default"
+      ],
+      "bbox": {
+        "minLon": 44,
+        "minLat": 25,
+        "maxLon": 63.5,
+        "maxLat": 39.8
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              44,
+              25
+            ],
+            [
+              63.5,
+              25
+            ],
+            [
+              63.5,
+              39.8
+            ],
+            [
+              44,
+              39.8
+            ],
+            [
+              44,
+              25
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "id": "israel",
+      "name": "Israel",
+      "description": "Built-in monitoring polygon for Israel (simplified seeded geometry).",
+      "source": "built_in",
+      "createdAt": "2026-03-29T00:00:00.000Z",
+      "tags": [
+        "country",
+        "default"
+      ],
+      "bbox": {
+        "minLon": 34.2,
+        "minLat": 29.4,
+        "maxLon": 35.9,
+        "maxLat": 33.5
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              34.2,
+              29.4
+            ],
+            [
+              35.9,
+              29.4
+            ],
+            [
+              35.9,
+              33.5
+            ],
+            [
+              34.2,
+              33.5
+            ],
+            [
+              34.2,
+              29.4
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arabian-peninsula",
+      "name": "Arabian Peninsula",
+      "description": "Built-in polygon covering the Arabian Peninsula monitoring zone.",
+      "source": "built_in",
+      "createdAt": "2026-03-29T00:00:00.000Z",
+      "tags": [
+        "region",
+        "default"
+      ],
+      "bbox": {
+        "minLon": 34,
+        "minLat": 12,
+        "maxLon": 60,
+        "maxLat": 32
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              34,
+              12
+            ],
+            [
+              60,
+              12
+            ],
+            [
+              60,
+              32
+            ],
+            [
+              34,
+              32
+            ],
+            [
+              34,
+              12
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "id": "eastern-mediterranean",
+      "name": "Eastern Mediterranean",
+      "description": "Built-in polygon covering the Eastern Mediterranean maritime monitoring zone.",
+      "source": "built_in",
+      "createdAt": "2026-03-29T00:00:00.000Z",
+      "tags": [
+        "region",
+        "default"
+      ],
+      "bbox": {
+        "minLon": 24,
+        "minLat": 30,
+        "maxLon": 37,
+        "maxLat": 38
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              24,
+              30
+            ],
+            [
+              37,
+              30
+            ],
+            [
+              37,
+              38
+            ],
+            [
+              24,
+              38
+            ],
+            [
+              24,
+              30
+            ]
+          ]
+        ]
+      }
+    }
+  ],
+  "restrictions": [
+    {
+      "id": "restr-1",
+      "title": "Temporary closure east of Cyprus / Levant corridor",
+      "observedAt": "2026-03-28T17:10:00.000Z",
+      "expiresAt": "2026-03-29T05:00:00.000Z",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              35.35,
+              32.9
+            ],
+            [
+              36.1,
+              32.9
+            ],
+            [
+              36.1,
+              33.45
+            ],
+            [
+              35.35,
+              33.45
+            ],
+            [
+              35.35,
+              32.9
+            ]
+          ]
+        ]
+      },
+      "regionIds": [
+        "eastern-mediterranean"
+      ],
+      "restrictionLevel": "closure",
+      "summary": "Seeded NOTAM-like closure affecting the Levantine maritime corridor.",
+      "provider": "notam_feed",
+      "sourcePayloadId": "raw-notam_feed-restr-1"
+    },
+    {
+      "id": "restr-2",
+      "title": "Avoidance advisory over northern Arabian Peninsula transit lanes",
+      "observedAt": "2026-03-28T12:45:00.000Z",
+      "expiresAt": "2026-03-29T02:00:00.000Z",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              42.5,
+              22.4
+            ],
+            [
+              45,
+              22.4
+            ],
+            [
+              45,
+              24.6
+            ],
+            [
+              42.5,
+              24.6
+            ],
+            [
+              42.5,
+              22.4
+            ]
+          ]
+        ]
+      },
+      "regionIds": [
+        "arabian-peninsula"
+      ],
+      "restrictionLevel": "avoidance",
+      "summary": "Seeded advisory to avoid a narrow Gulf-to-Levant airway segment.",
+      "provider": "notam_feed",
+      "sourcePayloadId": "raw-notam_feed-restr-2"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "track-abc001",
+      "icao24": "abc001",
+      "callsign": "EM9001",
+      "squawk": "4312",
+      "origin": "ATH",
+      "destination": "TLV",
+      "aircraftType": "A320",
+      "providers": [
+        "opensky",
+        "adsb_exchange",
+        "flightaware"
+      ],
+      "startTime": "2026-03-28T16:00:00.000Z",
+      "endTime": "2026-03-28T17:09:00.000Z",
+      "points": [
+        {
+          "observedAt": "2026-03-28T16:00:00.000Z",
+          "latitude": 33.18,
+          "longitude": 35.42,
+          "altitudeFt": 33000,
+          "heading": 178,
+          "speedKts": 451,
+          "provider": "opensky",
+          "sourcePayloadId": "raw-opensky-obs-1a"
+        },
+        {
+          "observedAt": "2026-03-28T16:18:00.000Z",
+          "latitude": 33.08,
+          "longitude": 35.78,
+          "altitudeFt": 33000,
+          "heading": 186,
+          "speedKts": 449,
+          "provider": "opensky",
+          "sourcePayloadId": "raw-opensky-obs-2a"
+        },
+        {
+          "observedAt": "2026-03-28T16:31:00.000Z",
+          "latitude": 33.02,
+          "longitude": 36.18,
+          "altitudeFt": 32800,
+          "heading": 94,
+          "speedKts": 447,
+          "provider": "flightaware",
+          "sourcePayloadId": "raw-flightaware-obs-3c"
+        },
+        {
+          "observedAt": "2026-03-28T16:45:00.000Z",
+          "latitude": 33.19,
+          "longitude": 35.91,
+          "altitudeFt": 28000,
+          "heading": 242,
+          "speedKts": 398,
+          "provider": "opensky",
+          "sourcePayloadId": "raw-opensky-obs-4a"
+        },
+        {
+          "observedAt": "2026-03-28T17:09:00.000Z",
+          "latitude": 33.41,
+          "longitude": 35.58,
+          "altitudeFt": 26100,
+          "heading": 260,
+          "speedKts": 381,
+          "provider": "adsb_exchange",
+          "sourcePayloadId": "raw-adsb_exchange-obs-5b"
+        }
+      ],
+      "anomalies": [
+        {
+          "type": "route_deviation",
+          "observedAt": "2026-03-28T16:31:00.000Z",
+          "severity": "medium",
+          "explanation": "Heading changed by 92° over 13 minutes",
+          "relatedRegionIds": [
+            "israel",
+            "eastern-mediterranean"
+          ],
+          "point": {
+            "type": "Point",
+            "coordinates": [
+              36.18,
+              33.02
+            ]
+          }
+        },
+        {
+          "type": "route_deviation",
+          "observedAt": "2026-03-28T16:45:00.000Z",
+          "severity": "high",
+          "explanation": "Heading changed by 148° over 14 minutes",
+          "relatedRegionIds": [
+            "israel",
+            "eastern-mediterranean"
+          ],
+          "point": {
+            "type": "Point",
+            "coordinates": [
+              35.91,
+              33.19
+            ]
+          }
+        }
+      ],
+      "regionIds": [
+        "israel",
+        "eastern-mediterranean"
+      ]
+    },
+    {
+      "id": "track-def002",
+      "icao24": "def002",
+      "callsign": "MEA440",
+      "squawk": "5531",
+      "origin": "BEY",
+      "destination": "AUH",
+      "aircraftType": "B738",
+      "providers": [
+        "opensky",
+        "adsb_exchange",
+        "flightaware"
+      ],
+      "startTime": "2026-03-28T17:05:00.000Z",
+      "endTime": "2026-03-28T18:25:00.000Z",
+      "points": [
+        {
+          "observedAt": "2026-03-28T17:05:00.000Z",
+          "latitude": 33.12,
+          "longitude": 35.71,
+          "altitudeFt": 34000,
+          "heading": 193,
+          "speedKts": 463,
+          "provider": "opensky",
+          "sourcePayloadId": "raw-opensky-mea-1"
+        },
+        {
+          "observedAt": "2026-03-28T17:20:00.000Z",
+          "latitude": 33.01,
+          "longitude": 35.95,
+          "altitudeFt": 34020,
+          "heading": 205,
+          "speedKts": 461,
+          "provider": "adsb_exchange",
+          "sourcePayloadId": "raw-adsb_exchange-mea-2"
+        },
+        {
+          "observedAt": "2026-03-28T17:51:00.000Z",
+          "latitude": 32.86,
+          "longitude": 36.11,
+          "altitudeFt": 33980,
+          "heading": 210,
+          "speedKts": 458,
+          "provider": "flightaware",
+          "sourcePayloadId": "raw-flightaware-mea-3"
+        },
+        {
+          "observedAt": "2026-03-28T18:25:00.000Z",
+          "latitude": 33.04,
+          "longitude": 35.79,
+          "altitudeFt": 26200,
+          "heading": 318,
+          "speedKts": 355,
+          "provider": "opensky",
+          "sourcePayloadId": "raw-opensky-mea-4"
+        }
+      ],
+      "anomalies": [
+        {
+          "type": "transponder_loss",
+          "observedAt": "2026-03-28T17:51:00.000Z",
+          "severity": "medium",
+          "explanation": "Signal gap of 31 minutes detected between observations",
+          "relatedRegionIds": [
+            "israel",
+            "eastern-mediterranean"
+          ],
+          "point": {
+            "type": "Point",
+            "coordinates": [
+              36.11,
+              32.86
+            ]
+          }
+        },
+        {
+          "type": "transponder_loss",
+          "observedAt": "2026-03-28T18:25:00.000Z",
+          "severity": "medium",
+          "explanation": "Signal gap of 34 minutes detected between observations",
+          "relatedRegionIds": [
+            "israel",
+            "eastern-mediterranean"
+          ],
+          "point": {
+            "type": "Point",
+            "coordinates": [
+              35.79,
+              33.04
+            ]
+          }
+        },
+        {
+          "type": "holding_pattern",
+          "observedAt": "2026-03-28T18:25:00.000Z",
+          "severity": "medium",
+          "explanation": "Track loop stayed within 11.6 km radius",
+          "relatedRegionIds": [
+            "israel",
+            "eastern-mediterranean"
+          ],
+          "point": {
+            "type": "Point",
+            "coordinates": [
+              35.79,
+              33.04
+            ]
+          }
+        }
+      ],
+      "regionIds": [
+        "israel",
+        "eastern-mediterranean"
+      ]
+    },
+    {
+      "id": "track-ghi003",
+      "icao24": "ghi003",
+      "callsign": "GFA221",
+      "squawk": "4421",
+      "origin": "DOH",
+      "destination": "AMM",
+      "aircraftType": "A321",
+      "providers": [
+        "opensky",
+        "adsb_exchange",
+        "flightaware"
+      ],
+      "startTime": "2026-03-28T12:00:00.000Z",
+      "endTime": "2026-03-28T13:10:00.000Z",
+      "points": [
+        {
+          "observedAt": "2026-03-28T12:00:00.000Z",
+          "latitude": 25.31,
+          "longitude": 51.61,
+          "altitudeFt": 36000,
+          "heading": 268,
+          "speedKts": 472,
+          "provider": "opensky",
+          "sourcePayloadId": "raw-opensky-gfa-1"
+        },
+        {
+          "observedAt": "2026-03-28T12:20:00.000Z",
+          "latitude": 24.7,
+          "longitude": 49.2,
+          "altitudeFt": 36000,
+          "heading": 266,
+          "speedKts": 471,
+          "provider": "adsb_exchange",
+          "sourcePayloadId": "raw-adsb_exchange-gfa-2"
+        },
+        {
+          "observedAt": "2026-03-28T12:40:00.000Z",
+          "latitude": 24.1,
+          "longitude": 46.8,
+          "altitudeFt": 36020,
+          "heading": 265,
+          "speedKts": 470,
+          "provider": "flightaware",
+          "sourcePayloadId": "raw-flightaware-gfa-3"
+        },
+        {
+          "observedAt": "2026-03-28T13:00:00.000Z",
+          "latitude": 23.5,
+          "longitude": 44.2,
+          "altitudeFt": 30000,
+          "heading": 257,
+          "speedKts": 428,
+          "provider": "opensky",
+          "sourcePayloadId": "raw-opensky-gfa-4"
+        },
+        {
+          "observedAt": "2026-03-28T13:10:00.000Z",
+          "latitude": 23.1,
+          "longitude": 42.9,
+          "altitudeFt": 22000,
+          "heading": 254,
+          "speedKts": 382,
+          "provider": "adsb_exchange",
+          "sourcePayloadId": "raw-adsb_exchange-gfa-5"
+        }
+      ],
+      "anomalies": [
+        {
+          "type": "abrupt_altitude_change",
+          "observedAt": "2026-03-28T13:10:00.000Z",
+          "severity": "medium",
+          "explanation": "Altitude shifted by 8000 ft within 10 minutes",
+          "relatedRegionIds": [
+            "iran",
+            "arabian-peninsula"
+          ],
+          "point": {
+            "type": "Point",
+            "coordinates": [
+              42.9,
+              23.1
+            ]
+          }
+        }
+      ],
+      "regionIds": [
+        "iran",
+        "arabian-peninsula"
+      ]
+    },
+    {
+      "id": "track-jkl004",
+      "icao24": "jkl004",
+      "callsign": "IRA781",
+      "squawk": "6701",
+      "origin": "THR",
+      "destination": "BGW",
+      "aircraftType": "B742",
+      "providers": [
+        "opensky",
+        "flightaware"
+      ],
+      "startTime": "2026-03-28T09:00:00.000Z",
+      "endTime": "2026-03-28T09:50:00.000Z",
+      "points": [
+        {
+          "observedAt": "2026-03-28T09:00:00.000Z",
+          "latitude": 35.7,
+          "longitude": 51.4,
+          "altitudeFt": 32000,
+          "heading": 275,
+          "speedKts": 418,
+          "provider": "opensky",
+          "sourcePayloadId": "raw-opensky-ira-1"
+        },
+        {
+          "observedAt": "2026-03-28T09:10:00.000Z",
+          "latitude": 35.6,
+          "longitude": 50.8,
+          "altitudeFt": 32050,
+          "heading": 274,
+          "speedKts": 419,
+          "provider": "flightaware",
+          "sourcePayloadId": "raw-flightaware-ira-2"
+        },
+        {
+          "observedAt": "2026-03-28T09:20:00.000Z",
+          "latitude": 35.5,
+          "longitude": 50.1,
+          "altitudeFt": 24900,
+          "heading": 270,
+          "speedKts": 392,
+          "provider": "opensky",
+          "sourcePayloadId": "raw-opensky-ira-3"
+        },
+        {
+          "observedAt": "2026-03-28T09:50:00.000Z",
+          "latitude": 35.7,
+          "longitude": 49.7,
+          "altitudeFt": 24880,
+          "heading": 12,
+          "speedKts": 390,
+          "provider": "flightaware",
+          "sourcePayloadId": "raw-flightaware-ira-4"
+        }
+      ],
+      "anomalies": [
+        {
+          "type": "abrupt_altitude_change",
+          "observedAt": "2026-03-28T09:20:00.000Z",
+          "severity": "medium",
+          "explanation": "Altitude shifted by 7150 ft within 10 minutes",
+          "relatedRegionIds": [
+            "iran"
+          ],
+          "point": {
+            "type": "Point",
+            "coordinates": [
+              50.1,
+              35.5
+            ]
+          }
+        },
+        {
+          "type": "transponder_loss",
+          "observedAt": "2026-03-28T09:50:00.000Z",
+          "severity": "medium",
+          "explanation": "Signal gap of 30 minutes detected between observations",
+          "relatedRegionIds": [
+            "iran"
+          ],
+          "point": {
+            "type": "Point",
+            "coordinates": [
+              49.7,
+              35.7
+            ]
+          }
+        }
+      ],
+      "regionIds": [
+        "iran"
+      ]
+    },
+    {
+      "id": "track-mno005",
+      "icao24": "mno005",
+      "callsign": "KAC778",
+      "squawk": "5112",
+      "origin": "KWI",
+      "destination": "CAI",
+      "aircraftType": "A320",
+      "providers": [
+        "opensky",
+        "adsb_exchange"
+      ],
+      "startTime": "2026-03-28T18:00:00.000Z",
+      "endTime": "2026-03-28T18:55:00.000Z",
+      "points": [
+        {
+          "observedAt": "2026-03-28T18:00:00.000Z",
+          "latitude": 29.5,
+          "longitude": 47.8,
+          "altitudeFt": 33000,
+          "heading": 232,
+          "speedKts": 455,
+          "provider": "adsb_exchange",
+          "sourcePayloadId": "raw-adsb_exchange-kac-1"
+        },
+        {
+          "observedAt": "2026-03-28T18:10:00.000Z",
+          "latitude": 28.8,
+          "longitude": 46.5,
+          "altitudeFt": 33010,
+          "heading": 230,
+          "speedKts": 454,
+          "provider": "opensky",
+          "sourcePayloadId": "raw-opensky-kac-2"
+        },
+        {
+          "observedAt": "2026-03-28T18:20:00.000Z",
+          "latitude": 27.9,
+          "longitude": 45.2,
+          "altitudeFt": 32990,
+          "heading": 228,
+          "speedKts": 453,
+          "provider": "adsb_exchange",
+          "sourcePayloadId": "raw-adsb_exchange-kac-3"
+        },
+        {
+          "observedAt": "2026-03-28T18:55:00.000Z",
+          "latitude": 27.3,
+          "longitude": 43.5,
+          "altitudeFt": 32980,
+          "heading": 225,
+          "speedKts": 451,
+          "provider": "opensky",
+          "sourcePayloadId": "raw-opensky-kac-4"
+        }
+      ],
+      "anomalies": [
+        {
+          "type": "transponder_loss",
+          "observedAt": "2026-03-28T18:55:00.000Z",
+          "severity": "medium",
+          "explanation": "Signal gap of 35 minutes detected between observations",
+          "relatedRegionIds": [
+            "iran",
+            "arabian-peninsula"
+          ],
+          "point": {
+            "type": "Point",
+            "coordinates": [
+              43.5,
+              27.3
+            ]
+          }
+        }
+      ],
+      "regionIds": [
+        "iran",
+        "arabian-peninsula"
+      ]
+    },
+    {
+      "id": "track-pqr006",
+      "icao24": "pqr006",
+      "callsign": "AXY330",
+      "squawk": "4107",
+      "origin": "TLV",
+      "destination": "LCA",
+      "aircraftType": "B737",
+      "providers": [
+        "opensky",
+        "flightaware"
+      ],
+      "startTime": "2026-03-28T19:00:00.000Z",
+      "endTime": "2026-03-28T19:40:00.000Z",
+      "points": [
+        {
+          "observedAt": "2026-03-28T19:00:00.000Z",
+          "latitude": 32,
+          "longitude": 34.7,
+          "altitudeFt": 12000,
+          "heading": 90,
+          "speedKts": 205,
+          "provider": "flightaware",
+          "sourcePayloadId": "raw-flightaware-axy-1"
+        },
+        {
+          "observedAt": "2026-03-28T19:10:00.000Z",
+          "latitude": 32.05,
+          "longitude": 34.8,
+          "altitudeFt": 12020,
+          "heading": 180,
+          "speedKts": 198,
+          "provider": "opensky",
+          "sourcePayloadId": "raw-opensky-axy-2"
+        },
+        {
+          "observedAt": "2026-03-28T19:20:00.000Z",
+          "latitude": 32,
+          "longitude": 34.9,
+          "altitudeFt": 12010,
+          "heading": 270,
+          "speedKts": 200,
+          "provider": "flightaware",
+          "sourcePayloadId": "raw-flightaware-axy-3"
+        },
+        {
+          "observedAt": "2026-03-28T19:30:00.000Z",
+          "latitude": 31.95,
+          "longitude": 34.8,
+          "altitudeFt": 11980,
+          "heading": 0,
+          "speedKts": 195,
+          "provider": "opensky",
+          "sourcePayloadId": "raw-opensky-axy-4"
+        },
+        {
+          "observedAt": "2026-03-28T19:40:00.000Z",
+          "latitude": 32,
+          "longitude": 34.7,
+          "altitudeFt": 12000,
+          "heading": 90,
+          "speedKts": 198,
+          "provider": "flightaware",
+          "sourcePayloadId": "raw-flightaware-axy-5"
+        }
+      ],
+      "anomalies": [
+        {
+          "type": "route_deviation",
+          "observedAt": "2026-03-28T19:10:00.000Z",
+          "severity": "medium",
+          "explanation": "Heading changed by 90° over 10 minutes",
+          "relatedRegionIds": [
+            "israel",
+            "eastern-mediterranean",
+            "arabian-peninsula"
+          ],
+          "point": {
+            "type": "Point",
+            "coordinates": [
+              34.8,
+              32.05
+            ]
+          }
+        },
+        {
+          "type": "route_deviation",
+          "observedAt": "2026-03-28T19:20:00.000Z",
+          "severity": "medium",
+          "explanation": "Heading changed by 90° over 10 minutes",
+          "relatedRegionIds": [
+            "israel",
+            "eastern-mediterranean",
+            "arabian-peninsula"
+          ],
+          "point": {
+            "type": "Point",
+            "coordinates": [
+              34.9,
+              32
+            ]
+          }
+        },
+        {
+          "type": "route_deviation",
+          "observedAt": "2026-03-28T19:30:00.000Z",
+          "severity": "high",
+          "explanation": "Heading changed by 270° over 10 minutes",
+          "relatedRegionIds": [
+            "israel",
+            "eastern-mediterranean",
+            "arabian-peninsula"
+          ],
+          "point": {
+            "type": "Point",
+            "coordinates": [
+              34.8,
+              31.95
+            ]
+          }
+        },
+        {
+          "type": "route_deviation",
+          "observedAt": "2026-03-28T19:40:00.000Z",
+          "severity": "medium",
+          "explanation": "Heading changed by 90° over 10 minutes",
+          "relatedRegionIds": [
+            "israel",
+            "eastern-mediterranean",
+            "arabian-peninsula"
+          ],
+          "point": {
+            "type": "Point",
+            "coordinates": [
+              34.7,
+              32
+            ]
+          }
+        },
+        {
+          "type": "holding_pattern",
+          "observedAt": "2026-03-28T19:40:00.000Z",
+          "severity": "medium",
+          "explanation": "Track loop stayed within 0.0 km radius",
+          "relatedRegionIds": [
+            "israel",
+            "eastern-mediterranean",
+            "arabian-peninsula"
+          ],
+          "point": {
+            "type": "Point",
+            "coordinates": [
+              34.7,
+              32
+            ]
+          }
+        }
+      ],
+      "regionIds": [
+        "israel",
+        "eastern-mediterranean",
+        "arabian-peninsula"
+      ]
+    },
+    {
+      "id": "track-stu007",
+      "icao24": "stu007",
+      "callsign": "DMS102",
+      "squawk": "6021",
+      "origin": "JED",
+      "destination": "MCT",
+      "aircraftType": "B752",
+      "providers": [
+        "flightaware"
+      ],
+      "startTime": "2026-03-27T22:30:00.000Z",
+      "endTime": "2026-03-27T22:58:00.000Z",
+      "points": [
+        {
+          "observedAt": "2026-03-27T22:30:00.000Z",
+          "latitude": 15.2,
+          "longitude": 44.4,
+          "altitudeFt": 28000,
+          "heading": 120,
+          "speedKts": 340,
+          "provider": "flightaware",
+          "sourcePayloadId": "raw-flightaware-lowcov-1"
+        },
+        {
+          "observedAt": "2026-03-27T22:58:00.000Z",
+          "latitude": 15.1,
+          "longitude": 46.2,
+          "altitudeFt": 27950,
+          "heading": 118,
+          "speedKts": 338,
+          "provider": "flightaware",
+          "sourcePayloadId": "raw-flightaware-lowcov-2"
+        }
+      ],
+      "anomalies": [
+        {
+          "type": "transponder_loss",
+          "observedAt": "2026-03-27T22:58:00.000Z",
+          "severity": "medium",
+          "explanation": "Signal gap of 28 minutes detected between observations",
+          "relatedRegionIds": [
+            "arabian-peninsula"
+          ],
+          "point": {
+            "type": "Point",
+            "coordinates": [
+              46.2,
+              15.1
+            ]
+          }
+        }
+      ],
+      "regionIds": [
+        "arabian-peninsula"
+      ]
+    }
+  ],
+  "indicators": [
+    {
+      "id": "bulletin-1",
+      "type": "icao_bulletin",
+      "observedAt": "2026-03-28T16:50:00.000Z",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.74,
+          33.18
+        ]
+      },
+      "regionIds": [
+        "eastern-mediterranean"
+      ],
+      "headline": "ICAO conflict-zone advisory references tactical disruption in the Eastern Mediterranean corridor",
+      "description": "Seeded ICAO-style bulletin highlighting elevated tactical disruption risk and rerouting instructions.",
+      "severity": "warning",
+      "independentSourceCount": 1,
+      "metadata": {
+        "bulletinId": "ICAO-DEMO-17"
+      },
+      "provider": "icao_bulletins",
+      "sourcePayloadId": "raw-icao_bulletins-bulletin-1"
+    },
+    {
+      "id": "bulletin-2",
+      "type": "easa_bulletin",
+      "observedAt": "2026-03-28T12:35:00.000Z",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.7,
+          23.6
+        ]
+      },
+      "regionIds": [
+        "arabian-peninsula"
+      ],
+      "headline": "EASA conflict-zone bulletin notes tactical risk for northern Arabian transit lanes",
+      "description": "Seeded EASA-style advisory coinciding with a cautionary reroute corridor.",
+      "severity": "advisory",
+      "independentSourceCount": 1,
+      "metadata": {
+        "bulletinId": "EASA-DEMO-9"
+      },
+      "provider": "easa_bulletins",
+      "sourcePayloadId": "raw-easa_bulletins-bulletin-2"
+    },
+    {
+      "id": "thermal-1",
+      "type": "thermal_anomaly",
+      "observedAt": "2026-03-28T17:41:00.000Z",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.58,
+          33.19
+        ]
+      },
+      "regionIds": [
+        "eastern-mediterranean"
+      ],
+      "headline": "FIRMS thermal hit thermal-1",
+      "description": "Seeded thermal anomaly used for offline clustering and strike inference demos.",
+      "severity": "warning",
+      "independentSourceCount": 1,
+      "metadata": {
+        "brightness": 336,
+        "confidence": "nominal"
+      },
+      "provider": "nasa_firms",
+      "sourcePayloadId": "raw-nasa_firms-thermal-1"
+    },
+    {
+      "id": "thermal-2",
+      "type": "thermal_anomaly",
+      "observedAt": "2026-03-28T18:02:00.000Z",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.62,
+          33.22
+        ]
+      },
+      "regionIds": [
+        "eastern-mediterranean"
+      ],
+      "headline": "FIRMS thermal hit thermal-2",
+      "description": "Seeded thermal anomaly used for offline clustering and strike inference demos.",
+      "severity": "warning",
+      "independentSourceCount": 1,
+      "metadata": {
+        "brightness": 336,
+        "confidence": "nominal"
+      },
+      "provider": "nasa_firms",
+      "sourcePayloadId": "raw-nasa_firms-thermal-2"
+    },
+    {
+      "id": "thermal-3",
+      "type": "thermal_anomaly",
+      "observedAt": "2026-03-28T18:18:00.000Z",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.67,
+          33.16
+        ]
+      },
+      "regionIds": [
+        "eastern-mediterranean"
+      ],
+      "headline": "FIRMS thermal hit thermal-3",
+      "description": "Seeded thermal anomaly used for offline clustering and strike inference demos.",
+      "severity": "warning",
+      "independentSourceCount": 1,
+      "metadata": {
+        "brightness": 336,
+        "confidence": "nominal"
+      },
+      "provider": "nasa_firms",
+      "sourcePayloadId": "raw-nasa_firms-thermal-3"
+    },
+    {
+      "id": "thermal-4",
+      "type": "thermal_anomaly",
+      "observedAt": "2026-03-28T19:22:00.000Z",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.87,
+          31.96
+        ]
+      },
+      "regionIds": [
+        "israel"
+      ],
+      "headline": "FIRMS thermal hit thermal-4",
+      "description": "Seeded thermal anomaly used for offline clustering and strike inference demos.",
+      "severity": "warning",
+      "independentSourceCount": 1,
+      "metadata": {
+        "brightness": 336,
+        "confidence": "nominal"
+      },
+      "provider": "nasa_firms",
+      "sourcePayloadId": "raw-nasa_firms-thermal-4"
+    },
+    {
+      "id": "thermal-5",
+      "type": "thermal_anomaly",
+      "observedAt": "2026-03-28T19:46:00.000Z",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.84,
+          31.98
+        ]
+      },
+      "regionIds": [
+        "israel"
+      ],
+      "headline": "FIRMS thermal hit thermal-5",
+      "description": "Seeded thermal anomaly used for offline clustering and strike inference demos.",
+      "severity": "warning",
+      "independentSourceCount": 1,
+      "metadata": {
+        "brightness": 336,
+        "confidence": "nominal"
+      },
+      "provider": "nasa_firms",
+      "sourcePayloadId": "raw-nasa_firms-thermal-5"
+    },
+    {
+      "id": "osint-1",
+      "type": "osint_report",
+      "observedAt": "2026-03-28T17:55:00.000Z",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.61,
+          33.2
+        ]
+      },
+      "regionIds": [
+        "eastern-mediterranean"
+      ],
+      "headline": "Multiple local channels mention impact sounds east of Cyprus corridor",
+      "description": "Cross-posted local observer reports aligned with maritime reroutes.",
+      "severity": "warning",
+      "independentSourceCount": 2,
+      "metadata": {
+        "citations": [
+          "source-a",
+          "source-b"
+        ]
+      },
+      "provider": "osint_news",
+      "sourcePayloadId": "raw-osint_news-osint-1"
+    },
+    {
+      "id": "news-1",
+      "type": "news_report",
+      "observedAt": "2026-03-28T18:10:00.000Z",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.63,
+          33.18
+        ]
+      },
+      "regionIds": [
+        "eastern-mediterranean"
+      ],
+      "headline": "Regional desk reports emergency reroutes linked to suspected strike activity",
+      "description": "Seeded news aggregation item used to corroborate the cluster.",
+      "severity": "warning",
+      "independentSourceCount": 2,
+      "metadata": {
+        "citations": [
+          "desk-1",
+          "desk-2"
+        ]
+      },
+      "provider": "osint_news",
+      "sourcePayloadId": "raw-osint_news-news-1"
+    },
+    {
+      "id": "osint-2",
+      "type": "osint_report",
+      "observedAt": "2026-03-28T19:38:00.000Z",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.85,
+          31.97
+        ]
+      },
+      "regionIds": [
+        "israel"
+      ],
+      "headline": "Two independent reports mention flashes near the southern Israeli corridor",
+      "description": "Seeded dual-source OSINT report with no official corroboration.",
+      "severity": "warning",
+      "independentSourceCount": 2,
+      "metadata": {
+        "citations": [
+          "observer-1",
+          "observer-2"
+        ]
+      },
+      "provider": "osint_news",
+      "sourcePayloadId": "raw-osint_news-osint-2"
+    },
+    {
+      "id": "osint-3",
+      "type": "osint_report",
+      "observedAt": "2026-03-28T10:30:00.000Z",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.2,
+          35.6
+        ]
+      },
+      "regionIds": [
+        "iran"
+      ],
+      "headline": "Single channel claims blast near western Iran",
+      "description": "Weak-source report intentionally retained as unverified.",
+      "severity": "info",
+      "independentSourceCount": 1,
+      "metadata": {
+        "citations": [
+          "single-channel"
+        ]
+      },
+      "provider": "osint_news",
+      "sourcePayloadId": "raw-osint_news-osint-3"
+    }
+  ],
+  "events": [
+    {
+      "id": "event-thermal-2",
+      "eventType": "thermal_anomaly",
+      "startedAt": "2026-03-28T19:22:00.000Z",
+      "endedAt": "2026-03-28T19:46:00.000Z",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.87,
+          31.96
+        ]
+      },
+      "regionIds": [
+        "israel"
+      ],
+      "sourceProviders": [
+        "nasa_firms"
+      ],
+      "evidence": [
+        {
+          "provider": "nasa_firms",
+          "sourceType": "thermal_anomaly",
+          "sourcePayloadId": "raw-nasa_firms-thermal-4",
+          "summary": "FIRMS thermal hit thermal-4",
+          "observedAt": "2026-03-28T19:22:00.000Z"
+        },
+        {
+          "provider": "nasa_firms",
+          "sourceType": "thermal_anomaly",
+          "sourcePayloadId": "raw-nasa_firms-thermal-5",
+          "summary": "FIRMS thermal hit thermal-5",
+          "observedAt": "2026-03-28T19:46:00.000Z"
+        }
+      ],
+      "confidence": 0.62,
+      "reasoning": {
+        "score": 0.62,
+        "confidenceLabel": "moderate",
+        "signals": [
+          {
+            "label": "Thermal cluster",
+            "effect": "increase",
+            "weight": 0.22,
+            "evidence": "2 thermals clustered."
+          }
+        ],
+        "explanation": "Thermal anomalies alone are not sufficient to imply a confirmed strike."
+      },
+      "title": "Thermal anomaly cluster 2",
+      "summary": "2 thermal anomalies clustered within ~35 km / 90 minutes."
+    },
+    {
+      "id": "event-strike-2",
+      "eventType": "probable_strike",
+      "startedAt": "2026-03-28T19:22:00.000Z",
+      "endedAt": "2026-03-28T19:46:00.000Z",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.87,
+          31.96
+        ]
+      },
+      "regionIds": [
+        "israel"
+      ],
+      "sourceProviders": [
+        "nasa_firms",
+        "osint_news"
+      ],
+      "evidence": [
+        {
+          "provider": "nasa_firms",
+          "sourceType": "thermal_anomaly",
+          "sourcePayloadId": "raw-nasa_firms-thermal-4",
+          "summary": "FIRMS thermal hit thermal-4",
+          "observedAt": "2026-03-28T19:22:00.000Z"
+        },
+        {
+          "provider": "nasa_firms",
+          "sourceType": "thermal_anomaly",
+          "sourcePayloadId": "raw-nasa_firms-thermal-5",
+          "summary": "FIRMS thermal hit thermal-5",
+          "observedAt": "2026-03-28T19:46:00.000Z"
+        },
+        {
+          "provider": "osint_news",
+          "sourceType": "osint_report",
+          "sourcePayloadId": "raw-osint_news-osint-2",
+          "summary": "Two independent reports mention flashes near the southern Israeli corridor",
+          "observedAt": "2026-03-28T19:38:00.000Z"
+        }
+      ],
+      "confidence": 0.52,
+      "reasoning": {
+        "score": 0.52,
+        "confidenceLabel": "moderate",
+        "signals": [
+          {
+            "label": "Thermal anomaly clustering",
+            "effect": "increase",
+            "weight": 0.22,
+            "evidence": "2 thermal indicator(s) clustered by time and distance."
+          },
+          {
+            "label": "Multiple independent reports",
+            "effect": "increase",
+            "weight": 0.12,
+            "evidence": "2 independent reports corroborate the event."
+          },
+          {
+            "label": "Temporal clustering",
+            "effect": "increase",
+            "weight": 0.1,
+            "evidence": "Indicators align within a narrow time window."
+          }
+        ],
+        "explanation": "+0.22 Thermal anomaly clustering; +0.12 Multiple independent reports; +0.10 Temporal clustering"
+      },
+      "title": "Probable strike candidate 2",
+      "summary": "Probable strike candidate built from thermal clustering, independent reports, and nearby flight anomalies."
+    },
+    {
+      "id": "event-thermal-1",
+      "eventType": "thermal_anomaly",
+      "startedAt": "2026-03-28T17:41:00.000Z",
+      "endedAt": "2026-03-28T18:18:00.000Z",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.58,
+          33.19
+        ]
+      },
+      "regionIds": [
+        "eastern-mediterranean"
+      ],
+      "sourceProviders": [
+        "nasa_firms"
+      ],
+      "evidence": [
+        {
+          "provider": "nasa_firms",
+          "sourceType": "thermal_anomaly",
+          "sourcePayloadId": "raw-nasa_firms-thermal-1",
+          "summary": "FIRMS thermal hit thermal-1",
+          "observedAt": "2026-03-28T17:41:00.000Z"
+        },
+        {
+          "provider": "nasa_firms",
+          "sourceType": "thermal_anomaly",
+          "sourcePayloadId": "raw-nasa_firms-thermal-2",
+          "summary": "FIRMS thermal hit thermal-2",
+          "observedAt": "2026-03-28T18:02:00.000Z"
+        },
+        {
+          "provider": "nasa_firms",
+          "sourceType": "thermal_anomaly",
+          "sourcePayloadId": "raw-nasa_firms-thermal-3",
+          "summary": "FIRMS thermal hit thermal-3",
+          "observedAt": "2026-03-28T18:18:00.000Z"
+        }
+      ],
+      "confidence": 0.62,
+      "reasoning": {
+        "score": 0.62,
+        "confidenceLabel": "moderate",
+        "signals": [
+          {
+            "label": "Thermal cluster",
+            "effect": "increase",
+            "weight": 0.22,
+            "evidence": "3 thermals clustered."
+          }
+        ],
+        "explanation": "Thermal anomalies alone are not sufficient to imply a confirmed strike."
+      },
+      "title": "Thermal anomaly cluster 1",
+      "summary": "3 thermal anomalies clustered within ~35 km / 90 minutes."
+    },
+    {
+      "id": "event-strike-1",
+      "eventType": "confirmed_strike",
+      "startedAt": "2026-03-28T17:41:00.000Z",
+      "endedAt": "2026-03-28T18:18:00.000Z",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.58,
+          33.19
+        ]
+      },
+      "regionIds": [
+        "eastern-mediterranean"
+      ],
+      "sourceProviders": [
+        "nasa_firms",
+        "osint_news",
+        "notam_feed",
+        "opensky"
+      ],
+      "evidence": [
+        {
+          "provider": "nasa_firms",
+          "sourceType": "thermal_anomaly",
+          "sourcePayloadId": "raw-nasa_firms-thermal-1",
+          "summary": "FIRMS thermal hit thermal-1",
+          "observedAt": "2026-03-28T17:41:00.000Z"
+        },
+        {
+          "provider": "nasa_firms",
+          "sourceType": "thermal_anomaly",
+          "sourcePayloadId": "raw-nasa_firms-thermal-2",
+          "summary": "FIRMS thermal hit thermal-2",
+          "observedAt": "2026-03-28T18:02:00.000Z"
+        },
+        {
+          "provider": "nasa_firms",
+          "sourceType": "thermal_anomaly",
+          "sourcePayloadId": "raw-nasa_firms-thermal-3",
+          "summary": "FIRMS thermal hit thermal-3",
+          "observedAt": "2026-03-28T18:18:00.000Z"
+        },
+        {
+          "provider": "osint_news",
+          "sourceType": "osint_report",
+          "sourcePayloadId": "raw-osint_news-osint-1",
+          "summary": "Multiple local channels mention impact sounds east of Cyprus corridor",
+          "observedAt": "2026-03-28T17:55:00.000Z"
+        },
+        {
+          "provider": "osint_news",
+          "sourceType": "news_report",
+          "sourcePayloadId": "raw-osint_news-news-1",
+          "summary": "Regional desk reports emergency reroutes linked to suspected strike activity",
+          "observedAt": "2026-03-28T18:10:00.000Z"
+        },
+        {
+          "provider": "notam_feed",
+          "sourceType": "restriction",
+          "sourcePayloadId": "raw-notam_feed-restr-1",
+          "summary": "Seeded NOTAM-like closure affecting the Levantine maritime corridor.",
+          "observedAt": "2026-03-28T17:10:00.000Z"
+        },
+        {
+          "provider": "opensky",
+          "sourceType": "track",
+          "sourcePayloadId": "raw-opensky-obs-1a",
+          "summary": "EM9001 shows reroute/transponder anomaly",
+          "observedAt": "2026-03-28T16:31:00.000Z"
+        },
+        {
+          "provider": "opensky",
+          "sourceType": "track",
+          "sourcePayloadId": "raw-opensky-mea-1",
+          "summary": "MEA440 shows reroute/transponder anomaly",
+          "observedAt": "2026-03-28T16:31:00.000Z"
+        }
+      ],
+      "confidence": 1,
+      "reasoning": {
+        "score": 1,
+        "confidenceLabel": "high",
+        "signals": [
+          {
+            "label": "Official airspace restriction",
+            "effect": "increase",
+            "weight": 0.28,
+            "evidence": "Restriction or closure bulletin overlaps the event window and geometry."
+          },
+          {
+            "label": "Conflict-zone bulletin",
+            "effect": "increase",
+            "weight": 0.24,
+            "evidence": "Conflict-zone bulletin or safety advisory corroborates elevated risk."
+          },
+          {
+            "label": "Thermal anomaly clustering",
+            "effect": "increase",
+            "weight": 0.26,
+            "evidence": "3 thermal indicator(s) clustered by time and distance."
+          },
+          {
+            "label": "Multiple independent reports",
+            "effect": "increase",
+            "weight": 0.18,
+            "evidence": "4 independent reports corroborate the event."
+          },
+          {
+            "label": "Nearby diversion cluster",
+            "effect": "increase",
+            "weight": 0.14,
+            "evidence": "2 affected aircraft show reroute/transponder anomalies nearby."
+          },
+          {
+            "label": "Temporal clustering",
+            "effect": "increase",
+            "weight": 0.1,
+            "evidence": "Indicators align within a narrow time window."
+          }
+        ],
+        "explanation": "+0.28 Official airspace restriction; +0.24 Conflict-zone bulletin; +0.26 Thermal anomaly clustering; +0.18 Multiple independent reports; +0.14 Nearby diversion cluster; +0.10 Temporal clustering"
+      },
+      "title": "Confirmed strike candidate 1",
+      "summary": "Confirmed strike candidate built from thermal clustering, independent reports, and nearby flight anomalies."
+    },
+    {
+      "id": "event-restr-1",
+      "eventType": "airspace_closure",
+      "startedAt": "2026-03-28T17:10:00.000Z",
+      "endedAt": "2026-03-29T05:00:00.000Z",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              35.35,
+              32.9
+            ],
+            [
+              36.1,
+              32.9
+            ],
+            [
+              36.1,
+              33.45
+            ],
+            [
+              35.35,
+              33.45
+            ],
+            [
+              35.35,
+              32.9
+            ]
+          ]
+        ]
+      },
+      "regionIds": [
+        "eastern-mediterranean"
+      ],
+      "sourceProviders": [
+        "notam_feed"
+      ],
+      "evidence": [
+        {
+          "provider": "notam_feed",
+          "sourceType": "restriction",
+          "sourcePayloadId": "raw-notam_feed-restr-1",
+          "summary": "Seeded NOTAM-like closure affecting the Levantine maritime corridor.",
+          "observedAt": "2026-03-28T17:10:00.000Z"
+        }
+      ],
+      "confidence": 0.9,
+      "reasoning": {
+        "score": 0.9,
+        "confidenceLabel": "high",
+        "signals": [
+          {
+            "label": "Official restriction",
+            "effect": "increase",
+            "weight": 0.7,
+            "evidence": "Temporary closure east of Cyprus / Levant corridor"
+          }
+        ],
+        "explanation": "Restriction originates from a formal advisory or closure source."
+      },
+      "title": "Temporary closure east of Cyprus / Levant corridor",
+      "summary": "Seeded NOTAM-like closure affecting the Levantine maritime corridor."
+    },
+    {
+      "id": "event-diversion-4defb183-14b2-4d4c-a9df-2a14868f82aa",
+      "eventType": "aircraft_diversion_cluster",
+      "startedAt": "2026-03-28T16:31:00.000Z",
+      "endedAt": "2026-03-28T16:31:00.000Z",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.18,
+          33.02
+        ]
+      },
+      "regionIds": [
+        "israel",
+        "eastern-mediterranean"
+      ],
+      "sourceProviders": [
+        "opensky",
+        "adsb_exchange",
+        "flightaware"
+      ],
+      "evidence": [
+        {
+          "provider": "opensky",
+          "sourceType": "track",
+          "sourcePayloadId": "raw-opensky-obs-1a",
+          "summary": "EM9001 contributed to diversion cluster",
+          "observedAt": "2026-03-28T16:31:00.000Z"
+        },
+        {
+          "provider": "opensky",
+          "sourceType": "track",
+          "sourcePayloadId": "raw-opensky-mea-1",
+          "summary": "MEA440 contributed to diversion cluster",
+          "observedAt": "2026-03-28T16:31:00.000Z"
+        }
+      ],
+      "confidence": 0.55,
+      "reasoning": {
+        "score": 0.55,
+        "confidenceLabel": "moderate",
+        "signals": [
+          {
+            "label": "Clustered reroutes",
+            "effect": "increase",
+            "weight": 0.18,
+            "evidence": "2 aircraft share anomalies near the same zone."
+          }
+        ],
+        "explanation": "Useful conflict proxy, but not enough by itself to confirm a strike."
+      },
+      "title": "Diversion cluster 1",
+      "summary": "2 aircraft show reroute/transponder-loss behaviour in the same corridor."
+    },
+    {
+      "id": "event-restr-2",
+      "eventType": "airspace_closure",
+      "startedAt": "2026-03-28T12:45:00.000Z",
+      "endedAt": "2026-03-29T02:00:00.000Z",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              42.5,
+              22.4
+            ],
+            [
+              45,
+              22.4
+            ],
+            [
+              45,
+              24.6
+            ],
+            [
+              42.5,
+              24.6
+            ],
+            [
+              42.5,
+              22.4
+            ]
+          ]
+        ]
+      },
+      "regionIds": [
+        "arabian-peninsula"
+      ],
+      "sourceProviders": [
+        "notam_feed"
+      ],
+      "evidence": [
+        {
+          "provider": "notam_feed",
+          "sourceType": "restriction",
+          "sourcePayloadId": "raw-notam_feed-restr-2",
+          "summary": "Seeded advisory to avoid a narrow Gulf-to-Levant airway segment.",
+          "observedAt": "2026-03-28T12:45:00.000Z"
+        }
+      ],
+      "confidence": 0.7,
+      "reasoning": {
+        "score": 0.7,
+        "confidenceLabel": "high",
+        "signals": [
+          {
+            "label": "Official restriction",
+            "effect": "increase",
+            "weight": 0.7,
+            "evidence": "Avoidance advisory over northern Arabian Peninsula transit lanes"
+          }
+        ],
+        "explanation": "Restriction originates from a formal advisory or closure source."
+      },
+      "title": "Avoidance advisory over northern Arabian Peninsula transit lanes",
+      "summary": "Seeded advisory to avoid a narrow Gulf-to-Levant airway segment."
+    },
+    {
+      "id": "event-unverified-osint-3",
+      "eventType": "unverified_report",
+      "startedAt": "2026-03-28T10:30:00.000Z",
+      "endedAt": "2026-03-28T10:30:00.000Z",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.2,
+          35.6
+        ]
+      },
+      "regionIds": [
+        "iran"
+      ],
+      "sourceProviders": [
+        "osint_news"
+      ],
+      "evidence": [
+        {
+          "provider": "osint_news",
+          "sourceType": "osint_report",
+          "sourcePayloadId": "raw-osint_news-osint-3",
+          "summary": "Single channel claims blast near western Iran",
+          "observedAt": "2026-03-28T10:30:00.000Z"
+        }
+      ],
+      "confidence": 0.2,
+      "reasoning": {
+        "score": 0.2,
+        "confidenceLabel": "low",
+        "signals": [
+          {
+            "label": "Single-source report",
+            "effect": "decrease",
+            "weight": 0.2,
+            "evidence": "Single channel claims blast near western Iran"
+          }
+        ],
+        "explanation": "Preserved for visibility, but unverified due to weak sourcing."
+      },
+      "title": "Single channel claims blast near western Iran",
+      "summary": "Weak-source report intentionally retained as unverified."
+    }
+  ],
+  "rawPayloads": [
+    {
+      "id": "raw-opensky-obs-1a",
+      "provider": "opensky",
+      "sourceType": "track",
+      "ingestedAt": "2026-03-29T00:00:00.000Z",
+      "receivedAt": "2026-03-28T16:00:00.000Z",
+      "raw": {
+        "source": "opensky-live-sample",
+        "lat": 33.18,
+        "lon": 35.42
+      },
+      "attribution": {
+        "name": "opensky",
+        "note": "Seeded provider payload for offline/demo mode.",
+        "termsUrl": "https://example.invalid/terms"
+      }
+    },
+    {
+      "id": "raw-adsb_exchange-obs-1b",
+      "provider": "adsb_exchange",
+      "sourceType": "track",
+      "ingestedAt": "2026-03-29T00:00:00.000Z",
+      "receivedAt": "2026-03-28T16:02:00.000Z",
+      "raw": {
+        "source": "adsb-sample",
+        "hex": "abc001"
+      },
+      "attribution": {
+        "name": "adsb_exchange",
+        "note": "Seeded provider payload for offline/demo mode.",
+        "termsUrl": "https://example.invalid/terms"
+      }
+    },
+    {
+      "id": "raw-flightaware-obs-1c",
+      "provider": "flightaware",
+      "sourceType": "track",
+      "ingestedAt": "2026-03-29T00:00:00.000Z",
+      "receivedAt": "2026-03-28T16:01:00.000Z",
+      "raw": {
+        "source": "flightaware-sample",
+        "ident": "EM9001"
+      },
+      "attribution": {
+        "name": "flightaware",
+        "note": "Seeded provider payload for offline/demo mode.",
+        "termsUrl": "https://example.invalid/terms"
+      }
+    },
+    {
+      "id": "raw-opensky-obs-2a",
+      "provider": "opensky",
+      "sourceType": "track",
+      "ingestedAt": "2026-03-29T00:00:00.000Z",
+      "receivedAt": "2026-03-28T16:18:00.000Z",
+      "raw": {
+        "source": "opensky-live-sample",
+        "lat": 33.08,
+        "lon": 35.78
+      },
+      "attribution": {
+        "name": "opensky",
+        "note": "Seeded provider payload for offline/demo mode.",
+        "termsUrl": "https://example.invalid/terms"
+      }
+    },
+    {
+      "id": "raw-adsb_exchange-obs-2b",
+      "provider": "adsb_exchange",
+      "sourceType": "track",
+      "ingestedAt": "2026-03-29T00:00:00.000Z",
+      "receivedAt": "2026-03-28T16:19:00.000Z",
+      "raw": {
+        "source": "adsb-sample",
+        "hex": "abc001"
+      },
+      "attribution": {
+        "name": "adsb_exchange",
+        "note": "Seeded provider payload for offline/demo mode.",
+        "termsUrl": "https://example.invalid/terms"
+      }
+    },
+    {
+      "id": "raw-flightaware-obs-3c",
+      "provider": "flightaware",
+      "sourceType": "track",
+      "ingestedAt": "2026-03-29T00:00:00.000Z",
+      "receivedAt": "2026-03-28T16:31:00.000Z",
+      "raw": {
+        "source": "flightaware-sample",
+        "ident": "EM9001"
+      },
+      "attribution": {
+        "name": "flightaware",
+        "note": "Seeded provider payload for offline/demo mode.",
+        "termsUrl": "https://example.invalid/terms"
+      }
+    },
+    {
+      "id": "raw-opensky-obs-4a",
+      "provider": "opensky",
+      "sourceType": "track",
+      "ingestedAt": "2026-03-29T00:00:00.000Z",
+      "receivedAt": "2026-03-28T16:45:00.000Z",
+      "raw": {
+        "source": "opensky-live-sample",
+        "lat": 33.19,
+        "lon": 35.91
+      },
+      "attribution": {
+        "name": "opensky",
+        "note": "Seeded provider payload for offline/demo mode.",
+        "termsUrl": "https://example.invalid/terms"
+      }
+    },
+    {
+      "id": "raw-adsb_exchange-obs-5b",
+      "provider": "adsb_exchange",
+      "sourceType": "track",
+      "ingestedAt": "2026-03-29T00:00:00.000Z",
+      "receivedAt": "2026-03-28T17:09:00.000Z",
+      "raw": {
+        "source": "adsb-sample",
+        "hex": "abc001"
+      },
+      "attribution": {
+        "name": "adsb_exchange",
+        "note": "Seeded provider payload for offline/demo mode.",
+        "termsUrl": "https://example.invalid/terms"
+      }
+    },
+    {
+      "id": "raw-opensky-mea-1",
+      "provider": "opensky",
+      "sourceType": "track",
+      "ingestedAt": "2026-03-29T00:00:00.000Z",
+      "receivedAt": "2026-03-28T17:05:00.000Z",
+      "raw": {
+        "source": "opensky-live-sample",
+        "lat": 33.12,
+        "lon": 35.71
+      },
+      "attribution": {
+        "name": "opensky",
+        "note": "Seeded provider payload for offline/demo mode.",
+        "termsUrl": "https://example.invalid/terms"
+      }
+    },
+    {
+      "id": "raw-adsb_exchange-mea-2",
+      "provider": "adsb_exchange",
+      "sourceType": "track",
+      "ingestedAt": "2026-03-29T00:00:00.000Z",
+      "receivedAt": "2026-03-28T17:20:00.000Z",
+      "raw": {
+        "source": "adsb-sample",
+        "hex": "def002"
+      },
+      "attribution": {
+        "name": "adsb_exchange",
+        "note": "Seeded provider payload for offline/demo mode.",
+        "termsUrl": "https://example.invalid/terms"
+      }
+    },
+    {
+      "id": "raw-flightaware-mea-3",
+      "provider": "flightaware",
+      "sourceType": "track",
+      "ingestedAt": "2026-03-29T00:00:00.000Z",
+      "receivedAt": "2026-03-28T17:51:00.000Z",
+      "raw": {
+        "source": "flightaware-sample",
+        "ident": "MEA440"
+      },
+      "attribution": {
+        "name": "flightaware",
+        "note": "Seeded provider payload for offline/demo mode.",
+        "termsUrl": "https://example.invalid/terms"
+      }
+    },
+    {
+      "id": "raw-opensky-mea-4",
+      "provider": "opensky",
+      "sourceType": "track",
+      "ingestedAt": "2026-03-29T00:00:00.000Z",
+      "receivedAt": "2026-03-28T18:25:00.000Z",
+      "raw": {
+        "source": "opensky-live-sample",
+        "lat": 33.04,
+        "lon": 35.79
+      },
+      "attribution": {
+        "name": "opensky",
+        "note": "Seeded provider payload for offline/demo mode.",
+        "termsUrl": "https://example.invalid/terms"
+      }
+    },
+    {
+      "id": "raw-opensky-gfa-1",
+      "provider": "opensky",
+      "sourceType": "track",
+      "ingestedAt": "2026-03-29T00:00:00.000Z",
+      "receivedAt": "2026-03-28T12:00:00.000Z",
+      "raw": {
+        "source": "opensky-live-sample"
+      },
+      "attribution": {
+        "name": "opensky",
+        "note": "Seeded provider payload for offline/demo mode.",
+        "termsUrl": "https://example.invalid/terms"
+      }
+    },
+    {
+      "id": "raw-adsb_exchange-gfa-2",
+      "provider": "adsb_exchange",
+      "sourceType": "track",
+      "ingestedAt": "2026-03-29T00:00:00.000Z",
+      "receivedAt": "2026-03-28T12:20:00.000Z",
+      "raw": {
+        "source": "adsb-sample"
+      },
+      "attribution": {
+        "name": "adsb_exchange",
+        "note": "Seeded provider payload for offline/demo mode.",
+        "termsUrl": "https://example.invalid/terms"
+      }
+    },
+    {
+      "id": "raw-flightaware-gfa-3",
+      "provider": "flightaware",
+      "sourceType": "track",
+      "ingestedAt": "2026-03-29T00:00:00.000Z",
+      "receivedAt": "2026-03-28T12:40:00.000Z",
+      "raw": {
+        "source": "flightaware-sample"
+      },
+      "attribution": {
+        "name": "flightaware",
+        "note": "Seeded provider payload for offline/demo mode.",
+        "termsUrl": "https://example.invalid/terms"
+      }
+    },
+    {
+      "id": "raw-opensky-gfa-4",
+      "provider": "opensky",
+      "sourceType": "track",
+      "ingestedAt": "2026-03-29T00:00:00.000Z",
+      "receivedAt": "2026-03-28T13:00:00.000Z",
+      "raw": {
+        "source": "opensky-live-sample"
+      },
+      "attribution": {
+        "name": "opensky",
+        "note": "Seeded provider payload for offline/demo mode.",
+        "termsUrl": "https://example.invalid/terms"
+      }
+    },
+    {
+      "id": "raw-adsb_exchange-gfa-5",
+      "provider": "adsb_exchange",
+      "sourceType": "track",
+      "ingestedAt": "2026-03-29T00:00:00.000Z",
+      "receivedAt": "2026-03-28T13:10:00.000Z",
+      "raw": {
+        "source": "adsb-sample"
+      },
+      "attribution": {
+        "name": "adsb_exchange",
+        "note": "Seeded provider payload for offline/demo mode.",
+        "termsUrl": "https://example.invalid/terms"
+      }
+    },
+    {
+      "id": "raw-opensky-ira-1",
+      "provider": "opensky",
+      "sourceType": "track",
+      "ingestedAt": "2026-03-29T00:00:00.000Z",
+      "receivedAt": "2026-03-28T09:00:00.000Z",
+      "raw": {
+        "source": "opensky-live-sample"
+      },
+      "attribution": {
+        "name": "opensky",
+        "note": "Seeded provider payload for offline/demo mode.",
+        "termsUrl": "https://example.invalid/terms"
+      }
+    },
+    {
+      "id": "raw-flightaware-ira-2",
+      "provider": "flightaware",
+      "sourceType": "track",
+      "ingestedAt": "2026-03-29T00:00:00.000Z",
+      "receivedAt": "2026-03-28T09:10:00.000Z",
+      "raw": {
+        "source": "flightaware-sample"
+      },
+      "attribution": {
+        "name": "flightaware",
+        "note": "Seeded provider payload for offline/demo mode.",
+        "termsUrl": "https://example.invalid/terms"
+      }
+    },
+    {
+      "id": "raw-opensky-ira-3",
+      "provider": "opensky",
+      "sourceType": "track",
+      "ingestedAt": "2026-03-29T00:00:00.000Z",
+      "receivedAt": "2026-03-28T09:20:00.000Z",
+      "raw": {
+        "source": "opensky-live-sample"
+      },
+      "attribution": {
+        "name": "opensky",
+        "note": "Seeded provider payload for offline/demo mode.",
+        "termsUrl": "https://example.invalid/terms"
+      }
+    },
+    {
+      "id": "raw-flightaware-ira-4",
+      "provider": "flightaware",
+      "sourceType": "track",
+      "ingestedAt": "2026-03-29T00:00:00.000Z",
+      "receivedAt": "2026-03-28T09:50:00.000Z",
+      "raw": {
+        "source": "flightaware-sample"
+      },
+      "attribution": {
+        "name": "flightaware",
+        "note": "Seeded provider payload for offline/demo mode.",
+        "termsUrl": "https://example.invalid/terms"
+      }
+    },
+    {
+      "id": "raw-adsb_exchange-kac-1",
+      "provider": "adsb_exchange",
+      "sourceType": "track",
+      "ingestedAt": "2026-03-29T00:00:00.000Z",
+      "receivedAt": "2026-03-28T18:00:00.000Z",
+      "raw": {
+        "source": "adsb-sample"
+      },
+      "attribution": {
+        "name": "adsb_exchange",
+        "note": "Seeded provider payload for offline/demo mode.",
+        "termsUrl": "https://example.invalid/terms"
+      }
+    },
+    {
+      "id": "raw-opensky-kac-2",
+      "provider": "opensky",
+      "sourceType": "track",
+      "ingestedAt": "2026-03-29T00:00:00.000Z",
+      "receivedAt": "2026-03-28T18:10:00.000Z",
+      "raw": {
+        "source": "opensky-live-sample"
+      },
+      "attribution": {
+        "name": "opensky",
+        "note": "Seeded provider payload for offline/demo mode.",
+        "termsUrl": "https://example.invalid/terms"
+      }
+    },
+    {
+      "id": "raw-adsb_exchange-kac-3",
+      "provider": "adsb_exchange",
+      "sourceType": "track",
+      "ingestedAt": "2026-03-29T00:00:00.000Z",
+      "receivedAt": "2026-03-28T18:20:00.000Z",
+      "raw": {
+        "source": "adsb-sample"
+      },
+      "attribution": {
+        "name": "adsb_exchange",
+        "note": "Seeded provider payload for offline/demo mode.",
+        "termsUrl": "https://example.invalid/terms"
+      }
+    },
+    {
+      "id": "raw-opensky-kac-4",
+      "provider": "opensky",
+      "sourceType": "track",
+      "ingestedAt": "2026-03-29T00:00:00.000Z",
+      "receivedAt": "2026-03-28T18:55:00.000Z",
+      "raw": {
+        "source": "opensky-live-sample"
+      },
+      "attribution": {
+        "name": "opensky",
+        "note": "Seeded provider payload for offline/demo mode.",
+        "termsUrl": "https://example.invalid/terms"
+      }
+    },
+    {
+      "id": "raw-flightaware-axy-1",
+      "provider": "flightaware",
+      "sourceType": "track",
+      "ingestedAt": "2026-03-29T00:00:00.000Z",
+      "receivedAt": "2026-03-28T19:00:00.000Z",
+      "raw": {
+        "source": "flightaware-sample"
+      },
+      "attribution": {
+        "name": "flightaware",
+        "note": "Seeded provider payload for offline/demo mode.",
+        "termsUrl": "https://example.invalid/terms"
+      }
+    },
+    {
+      "id": "raw-opensky-axy-2",
+      "provider": "opensky",
+      "sourceType": "track",
+      "ingestedAt": "2026-03-29T00:00:00.000Z",
+      "receivedAt": "2026-03-28T19:10:00.000Z",
+      "raw": {
+        "source": "opensky-live-sample"
+      },
+      "attribution": {
+        "name": "opensky",
+        "note": "Seeded provider payload for offline/demo mode.",
+        "termsUrl": "https://example.invalid/terms"
+      }
+    },
+    {
+      "id": "raw-flightaware-axy-3",
+      "provider": "flightaware",
+      "sourceType": "track",
+      "ingestedAt": "2026-03-29T00:00:00.000Z",
+      "receivedAt": "2026-03-28T19:20:00.000Z",
+      "raw": {
+        "source": "flightaware-sample"
+      },
+      "attribution": {
+        "name": "flightaware",
+        "note": "Seeded provider payload for offline/demo mode.",
+        "termsUrl": "https://example.invalid/terms"
+      }
+    },
+    {
+      "id": "raw-opensky-axy-4",
+      "provider": "opensky",
+      "sourceType": "track",
+      "ingestedAt": "2026-03-29T00:00:00.000Z",
+      "receivedAt": "2026-03-28T19:30:00.000Z",
+      "raw": {
+        "source": "opensky-live-sample"
+      },
+      "attribution": {
+        "name": "opensky",
+        "note": "Seeded provider payload for offline/demo mode.",
+        "termsUrl": "https://example.invalid/terms"
+      }
+    },
+    {
+      "id": "raw-flightaware-axy-5",
+      "provider": "flightaware",
+      "sourceType": "track",
+      "ingestedAt": "2026-03-29T00:00:00.000Z",
+      "receivedAt": "2026-03-28T19:40:00.000Z",
+      "raw": {
+        "source": "flightaware-sample"
+      },
+      "attribution": {
+        "name": "flightaware",
+        "note": "Seeded provider payload for offline/demo mode.",
+        "termsUrl": "https://example.invalid/terms"
+      }
+    },
+    {
+      "id": "raw-flightaware-lowcov-1",
+      "provider": "flightaware",
+      "sourceType": "track",
+      "ingestedAt": "2026-03-29T00:00:00.000Z",
+      "receivedAt": "2026-03-27T22:30:00.000Z",
+      "raw": {
+        "source": "flightaware-sample"
+      },
+      "attribution": {
+        "name": "flightaware",
+        "note": "Seeded provider payload for offline/demo mode.",
+        "termsUrl": "https://example.invalid/terms"
+      }
+    },
+    {
+      "id": "raw-flightaware-lowcov-2",
+      "provider": "flightaware",
+      "sourceType": "track",
+      "ingestedAt": "2026-03-29T00:00:00.000Z",
+      "receivedAt": "2026-03-27T22:58:00.000Z",
+      "raw": {
+        "source": "flightaware-sample"
+      },
+      "attribution": {
+        "name": "flightaware",
+        "note": "Seeded provider payload for offline/demo mode.",
+        "termsUrl": "https://example.invalid/terms"
+      }
+    },
+    {
+      "id": "raw-notam_feed-restr-1",
+      "provider": "notam_feed",
+      "sourceType": "restriction",
+      "ingestedAt": "2026-03-29T00:00:00.000Z",
+      "receivedAt": "2026-03-28T17:10:00.000Z",
+      "raw": {
+        "notam": "DEMO-LEVANT-01",
+        "purpose": "seeded-demo"
+      },
+      "attribution": {
+        "name": "notam_feed",
+        "note": "Seeded restriction payload for offline/demo mode.",
+        "termsUrl": "https://example.invalid/terms"
+      }
+    },
+    {
+      "id": "raw-notam_feed-restr-2",
+      "provider": "notam_feed",
+      "sourceType": "restriction",
+      "ingestedAt": "2026-03-29T00:00:00.000Z",
+      "receivedAt": "2026-03-28T12:45:00.000Z",
+      "raw": {
+        "notam": "DEMO-GULF-02",
+        "purpose": "seeded-demo"
+      },
+      "attribution": {
+        "name": "notam_feed",
+        "note": "Seeded restriction payload for offline/demo mode.",
+        "termsUrl": "https://example.invalid/terms"
+      }
+    },
+    {
+      "id": "raw-icao_bulletins-bulletin-1",
+      "provider": "icao_bulletins",
+      "sourceType": "bulletin",
+      "ingestedAt": "2026-03-29T00:00:00.000Z",
+      "receivedAt": "2026-03-28T16:50:00.000Z",
+      "raw": {
+        "bulletinId": "ICAO-DEMO-17",
+        "severity": "warning"
+      },
+      "attribution": {
+        "name": "icao_bulletins",
+        "note": "Seeded bulletin/indicator payload for offline/demo mode.",
+        "termsUrl": "https://example.invalid/terms"
+      }
+    },
+    {
+      "id": "raw-easa_bulletins-bulletin-2",
+      "provider": "easa_bulletins",
+      "sourceType": "bulletin",
+      "ingestedAt": "2026-03-29T00:00:00.000Z",
+      "receivedAt": "2026-03-28T12:35:00.000Z",
+      "raw": {
+        "bulletinId": "EASA-DEMO-9",
+        "severity": "advisory"
+      },
+      "attribution": {
+        "name": "easa_bulletins",
+        "note": "Seeded bulletin/indicator payload for offline/demo mode.",
+        "termsUrl": "https://example.invalid/terms"
+      }
+    },
+    {
+      "id": "raw-nasa_firms-thermal-1",
+      "provider": "nasa_firms",
+      "sourceType": "conflict_indicator",
+      "ingestedAt": "2026-03-29T00:00:00.000Z",
+      "receivedAt": "2026-03-28T17:41:00.000Z",
+      "raw": {
+        "firmsId": "thermal-1",
+        "brightness": 336
+      },
+      "attribution": {
+        "name": "nasa_firms",
+        "note": "Seeded bulletin/indicator payload for offline/demo mode.",
+        "termsUrl": "https://example.invalid/terms"
+      }
+    },
+    {
+      "id": "raw-nasa_firms-thermal-2",
+      "provider": "nasa_firms",
+      "sourceType": "conflict_indicator",
+      "ingestedAt": "2026-03-29T00:00:00.000Z",
+      "receivedAt": "2026-03-28T18:02:00.000Z",
+      "raw": {
+        "firmsId": "thermal-2",
+        "brightness": 336
+      },
+      "attribution": {
+        "name": "nasa_firms",
+        "note": "Seeded bulletin/indicator payload for offline/demo mode.",
+        "termsUrl": "https://example.invalid/terms"
+      }
+    },
+    {
+      "id": "raw-nasa_firms-thermal-3",
+      "provider": "nasa_firms",
+      "sourceType": "conflict_indicator",
+      "ingestedAt": "2026-03-29T00:00:00.000Z",
+      "receivedAt": "2026-03-28T18:18:00.000Z",
+      "raw": {
+        "firmsId": "thermal-3",
+        "brightness": 336
+      },
+      "attribution": {
+        "name": "nasa_firms",
+        "note": "Seeded bulletin/indicator payload for offline/demo mode.",
+        "termsUrl": "https://example.invalid/terms"
+      }
+    },
+    {
+      "id": "raw-nasa_firms-thermal-4",
+      "provider": "nasa_firms",
+      "sourceType": "conflict_indicator",
+      "ingestedAt": "2026-03-29T00:00:00.000Z",
+      "receivedAt": "2026-03-28T19:22:00.000Z",
+      "raw": {
+        "firmsId": "thermal-4",
+        "brightness": 336
+      },
+      "attribution": {
+        "name": "nasa_firms",
+        "note": "Seeded bulletin/indicator payload for offline/demo mode.",
+        "termsUrl": "https://example.invalid/terms"
+      }
+    },
+    {
+      "id": "raw-nasa_firms-thermal-5",
+      "provider": "nasa_firms",
+      "sourceType": "conflict_indicator",
+      "ingestedAt": "2026-03-29T00:00:00.000Z",
+      "receivedAt": "2026-03-28T19:46:00.000Z",
+      "raw": {
+        "firmsId": "thermal-5",
+        "brightness": 336
+      },
+      "attribution": {
+        "name": "nasa_firms",
+        "note": "Seeded bulletin/indicator payload for offline/demo mode.",
+        "termsUrl": "https://example.invalid/terms"
+      }
+    },
+    {
+      "id": "raw-osint_news-osint-1",
+      "provider": "osint_news",
+      "sourceType": "bulletin",
+      "ingestedAt": "2026-03-29T00:00:00.000Z",
+      "receivedAt": "2026-03-28T17:55:00.000Z",
+      "raw": {
+        "headline": "Multiple local channels mention impact sounds east of Cyprus corridor",
+        "citations": [
+          "source-a",
+          "source-b"
+        ]
+      },
+      "attribution": {
+        "name": "osint_news",
+        "note": "Seeded bulletin/indicator payload for offline/demo mode.",
+        "termsUrl": "https://example.invalid/terms"
+      }
+    },
+    {
+      "id": "raw-osint_news-news-1",
+      "provider": "osint_news",
+      "sourceType": "bulletin",
+      "ingestedAt": "2026-03-29T00:00:00.000Z",
+      "receivedAt": "2026-03-28T18:10:00.000Z",
+      "raw": {
+        "headline": "Regional desk reports emergency reroutes linked to suspected strike activity",
+        "citations": [
+          "desk-1",
+          "desk-2"
+        ]
+      },
+      "attribution": {
+        "name": "osint_news",
+        "note": "Seeded bulletin/indicator payload for offline/demo mode.",
+        "termsUrl": "https://example.invalid/terms"
+      }
+    },
+    {
+      "id": "raw-osint_news-osint-2",
+      "provider": "osint_news",
+      "sourceType": "bulletin",
+      "ingestedAt": "2026-03-29T00:00:00.000Z",
+      "receivedAt": "2026-03-28T19:38:00.000Z",
+      "raw": {
+        "headline": "Two independent reports mention flashes near the southern Israeli corridor",
+        "citations": [
+          "observer-1",
+          "observer-2"
+        ]
+      },
+      "attribution": {
+        "name": "osint_news",
+        "note": "Seeded bulletin/indicator payload for offline/demo mode.",
+        "termsUrl": "https://example.invalid/terms"
+      }
+    },
+    {
+      "id": "raw-osint_news-osint-3",
+      "provider": "osint_news",
+      "sourceType": "bulletin",
+      "ingestedAt": "2026-03-29T00:00:00.000Z",
+      "receivedAt": "2026-03-28T10:30:00.000Z",
+      "raw": {
+        "headline": "Single channel claims blast near western Iran",
+        "citations": [
+          "single-channel"
+        ]
+      },
+      "attribution": {
+        "name": "osint_news",
+        "note": "Seeded bulletin/indicator payload for offline/demo mode.",
+        "termsUrl": "https://example.invalid/terms"
+      }
+    }
+  ],
+  "analytics": {
+    "corridorDensity": [
+      {
+        "corridorId": "med-northbound",
+        "corridorName": "Eastern Mediterranean northbound",
+        "regionId": "eastern-mediterranean",
+        "currentTrackCount": 3,
+        "baselineTrackCount": 2,
+        "deltaPct": 50
+      },
+      {
+        "corridorId": "levant-gulf",
+        "corridorName": "Levant to Gulf diversion corridor",
+        "regionId": "arabian-peninsula",
+        "currentTrackCount": 4,
+        "baselineTrackCount": 3,
+        "deltaPct": 33.3
+      },
+      {
+        "corridorId": "iran-west",
+        "corridorName": "Western Iran transit corridor",
+        "regionId": "iran",
+        "currentTrackCount": 3,
+        "baselineTrackCount": 2,
+        "deltaPct": 50
+      },
+      {
+        "corridorId": "israel-holding",
+        "corridorName": "Israeli holding pattern corridor",
+        "regionId": "israel",
+        "currentTrackCount": 3,
+        "baselineTrackCount": 2,
+        "deltaPct": 50
+      }
+    ],
+    "deviations": {
+      "routeDeviationCount": 6,
+      "abruptAltitudeChangeCount": 2,
+      "holdingPatternCount": 2,
+      "transponderLossCount": 5,
+      "corridorShiftCount": 0
+    },
+    "transponderLossWindows": [
+      {
+        "start": "2026-03-28T17:31:00.000Z",
+        "end": "2026-03-28T17:51:00.000Z",
+        "impactedAircraft": [
+          "MEA440"
+        ]
+      },
+      {
+        "start": "2026-03-28T18:05:00.000Z",
+        "end": "2026-03-28T18:25:00.000Z",
+        "impactedAircraft": [
+          "MEA440"
+        ]
+      },
+      {
+        "start": "2026-03-28T09:30:00.000Z",
+        "end": "2026-03-28T09:50:00.000Z",
+        "impactedAircraft": [
+          "IRA781"
+        ]
+      },
+      {
+        "start": "2026-03-28T18:35:00.000Z",
+        "end": "2026-03-28T18:55:00.000Z",
+        "impactedAircraft": [
+          "KAC778"
+        ]
+      },
+      {
+        "start": "2026-03-27T22:38:00.000Z",
+        "end": "2026-03-27T22:58:00.000Z",
+        "impactedAircraft": [
+          "DMS102"
+        ]
+      }
+    ],
+    "rerouteClusters": [
+      {
+        "regionId": "israel",
+        "start": "2026-03-28T16:31:00.000Z",
+        "end": "2026-03-28T16:31:00.000Z",
+        "aircraftIds": [
+          "EM9001",
+          "MEA440",
+          "AXY330"
+        ]
+      }
+    ],
+    "thermalClusters": [
+      {
+        "clusterId": "thermal-1",
+        "startedAt": "2026-03-28T17:41:00.000Z",
+        "endedAt": "2026-03-28T17:41:00.000Z",
+        "regionIds": [
+          "eastern-mediterranean"
+        ],
+        "indicatorIds": [
+          "thermal-1"
+        ]
+      },
+      {
+        "clusterId": "thermal-2",
+        "startedAt": "2026-03-28T18:02:00.000Z",
+        "endedAt": "2026-03-28T18:02:00.000Z",
+        "regionIds": [
+          "eastern-mediterranean"
+        ],
+        "indicatorIds": [
+          "thermal-2"
+        ]
+      },
+      {
+        "clusterId": "thermal-3",
+        "startedAt": "2026-03-28T18:18:00.000Z",
+        "endedAt": "2026-03-28T18:18:00.000Z",
+        "regionIds": [
+          "eastern-mediterranean"
+        ],
+        "indicatorIds": [
+          "thermal-3"
+        ]
+      },
+      {
+        "clusterId": "thermal-4",
+        "startedAt": "2026-03-28T19:22:00.000Z",
+        "endedAt": "2026-03-28T19:22:00.000Z",
+        "regionIds": [
+          "israel"
+        ],
+        "indicatorIds": [
+          "thermal-4"
+        ]
+      },
+      {
+        "clusterId": "thermal-5",
+        "startedAt": "2026-03-28T19:46:00.000Z",
+        "endedAt": "2026-03-28T19:46:00.000Z",
+        "regionIds": [
+          "israel"
+        ],
+        "indicatorIds": [
+          "thermal-5"
+        ]
+      }
+    ],
+    "eventCorrelationStats": {
+      "confirmed_strike": 1,
+      "probable_strike": 1,
+      "airspace_closure": 2,
+      "aircraft_diversion_cluster": 1,
+      "thermal_anomaly": 2,
+      "unverified_report": 1
+    }
+  },
+  "stats": {
+    "providerFailures": 0,
+    "ingestionLagSeconds": 90,
+    "dedupeRate": 0.094,
+    "eventVolume": 8
+  }
+}

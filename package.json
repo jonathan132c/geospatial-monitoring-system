@@ -1,0 +1,46 @@
+{
+  "name": "geospatial-monitoring-system-20260329",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Production-oriented demo geospatial monitoring system with Fastify, React, PostGIS schema, seeded providers, and report generation.",
+  "scripts": {
+    "build": "npm run build:api && npm run build:web && npm run build:worker",
+    "build:api": "tsc -p apps/api/tsconfig.json",
+    "build:web": "vite build --config apps/web/vite.config.ts",
+    "build:worker": "tsc -p apps/worker/tsconfig.json",
+    "dev:api": "tsx apps/api/src/server.ts",
+    "dev:web": "vite --config apps/web/vite.config.ts",
+    "preview:web": "vite preview --config apps/web/vite.config.ts --host 0.0.0.0 --port 4173",
+    "dev:worker": "tsx apps/worker/src/worker.ts",
+    "seed:demo": "tsx scripts/seed-demo.ts",
+    "generate:report": "tsx scripts/generate-demo-report.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint:types": "tsc -p apps/api/tsconfig.json --noEmit && tsc -p apps/worker/tsconfig.json --noEmit && tsc -p apps/web/tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@fastify/cors": "^10.0.1",
+    "fastify": "^5.1.0",
+    "leaflet": "^1.9.4",
+    "pino": "^9.5.0",
+    "prom-client": "^15.1.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-leaflet": "^4.2.1",
+    "redis": "^4.7.0",
+    "uuid": "^11.0.3",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/leaflet": "^1.9.15",
+    "@types/node": "^22.10.2",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "jsdom": "^25.0.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vite": "^5.4.11",
+    "vitest": "^2.1.8"
+  }
+}

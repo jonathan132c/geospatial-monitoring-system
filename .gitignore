@@ -1,0 +1,10 @@
+node_modules
+apps/api/dist
+apps/worker/dist
+apps/web/dist
+dist
+.vite
+coverage
+.env
+.env.*
+.DS_Store
