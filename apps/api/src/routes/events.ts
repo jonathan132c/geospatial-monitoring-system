@@ -17,7 +17,7 @@ export const registerEventRoutes = (app: FastifyInstance, repository: SnapshotRe
         sourceType: parsed.sourceType,
         bbox: parseBBox(parsed.bbox)
       }).map(toPublicEvent),
-      meta: publicResponseMeta('events')
+      meta: publicResponseMeta(snapshot, 'events')
     };
   });
 
@@ -38,7 +38,7 @@ export const registerEventRoutes = (app: FastifyInstance, repository: SnapshotRe
     return {
       ...toPublicEvent(event),
       auditPayloads,
-      meta: publicResponseMeta('event_detail')
+      meta: publicResponseMeta(snapshot, 'event_detail')
     };
   });
 };

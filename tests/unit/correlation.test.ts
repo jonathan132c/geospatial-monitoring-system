@@ -9,7 +9,7 @@ const logger = {
 
 describe('correlation rules', () => {
   it('produces confirmed, probable, and unverified event classes from heterogeneous evidence', async () => {
-    const snapshot = await buildMonitoringSnapshot({ logger });
+    const snapshot = await buildMonitoringSnapshot({ logger, sourceMode: 'demo' });
     const eventTypes = snapshot.events.map((event) => event.eventType);
 
     expect(eventTypes).toContain('confirmed_strike');

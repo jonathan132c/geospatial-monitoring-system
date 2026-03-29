@@ -1,8 +1,8 @@
-import type { AirspaceRestriction, FlightTrack, InferredEvent, RawSourcePayload, SupportedGeometry } from '../../../../packages/core/src';
+import type { AirspaceRestriction, FlightTrack, InferredEvent, MonitoringSnapshot, RawSourcePayload, SupportedGeometry } from '../../../../packages/core/src';
 
 const COORD_DECIMALS = 1;
 
-export const PUBLIC_SAFETY_NOTICE = 'Non-operational public-source analytical output only. Historical/seeded or delayed data, coarsened map geometry, probabilistic inference, and no live tactical guidance.';
+export const PUBLIC_SAFETY_NOTICE = 'Non-operational public-source analytical output only. Public geometry is coarsened, inference is probabilistic, and no tactical guidance is provided.';
 
 export const EVENT_TYPE_LABELS: Record<string, string> = {
   possible_strike: 'Possible strike candidate',
@@ -100,10 +100,25 @@ export const sanitizeRawPayloadForApi = (payload: RawSourcePayload) => ({
   safetyNotice: 'Raw payload preserved locally for auditability; API view is summarized and coordinate-coarsened for non-operational use.'
 });
 
-export const publicResponseMeta = (resource: string) => ({
-  resource,
-  mode: 'non-operational-public-source-analytical-demo',
-  delayModel: 'seeded/historical snapshot or delayed analytical output',
-  coordinatePrecision: 'coarsened for public map display',
-  safetyNotice: PUBLIC_SAFETY_NOTICE
-});
+export const publicResponseMeta = (snapshot: MonitoringSnapshot, resource: string) => {
+  const sourceMetadata = snapshot.sourceMetadata ?? {
+    mode: 'demo' as const,
+    liveData: false,
+    activeProviders: [] as string[]
+  };
+
+  return {
+    resource,
+    mode: sourceMetadata.mode === 'live'
+      ? 'non-operational-public-source-analytical-live'
+      : 'non-operational-public-source-analytical-demo',
+    snapshotMode: sourceMetadata.mode,
+    liveData: sourceMetadata.liveData,
+    activeProviders: sourceMetadata.activeProviders,
+    delayModel: sourceMetadata.mode === 'live'
+      ? 'live public-source inputs with unsupported providers disabled and no fixture fallback'
+      : 'seeded/historical snapshot or delayed analytical output',
+    coordinatePrecision: 'coarsened for public map display',
+    safetyNotice: PUBLIC_SAFETY_NOTICE
+  };
+};

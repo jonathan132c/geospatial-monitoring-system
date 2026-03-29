@@ -7,7 +7,7 @@ Its intended use is limited to:
 - public-source research
 - journalism
 - humanitarian situational awareness
-- technical prototyping using seeded/demo or delayed analytical outputs
+- technical prototyping using explicit demo fixtures or honest live public-source outputs
 
 It is not designed or documented as a real-time tactical targeting system. It does not provide live tactical guidance, precision strike attribution, or direct missile-tracking claims.
 
@@ -21,10 +21,10 @@ It is not designed or documented as a real-time tactical targeting system. It do
    - Schedules ingestion cycles.
    - Calls provider adapters with retry/backoff and cache hooks.
    - Normalizes timestamps to UTC, deduplicates overlapping observations, correlates events, computes analytics.
-   - Writes a snapshot (`data/generated/demo-snapshot.json`) for offline/demo mode.
+   - Writes either `data/generated/demo-snapshot.json` or `data/generated/live-snapshot.json` depending on `SNAPSHOT_MODE`.
 2. **API (`apps/api`)**
    - Serves REST endpoints for tracks, events, airspace restrictions, regions, health, and metrics.
-   - Uses a file-backed repository in seeded/demo mode.
+   - Uses a file-backed repository in both demo and live snapshot modes.
    - Includes a scaffolded Postgres repository aligned to the provided PostGIS schema.
    - Adds public safety metadata, coarsens map geometry in public responses, and summarizes audit payload exposure.
 3. **Frontend (`apps/web`)**
@@ -34,7 +34,7 @@ It is not designed or documented as a real-time tactical targeting system. It do
 4. **Data stores**
    - **PostgreSQL + PostGIS**: canonical long-term storage schema, geospatial indexing, audit payload retention.
    - **Redis**: cache/short-lived provider state (wired through adapter interface; demo defaults to in-memory cache).
-   - **Snapshot JSON**: deterministic seeded/demo mode so the project works without credentials or live feeds.
+   - **Snapshot JSON**: either deterministic demo fixtures or honest live public data, depending on `SNAPSHOT_MODE`.
 
 ## Processing pipeline
 - `providers/` fetch raw data behind interfaces.
@@ -43,7 +43,7 @@ It is not designed or documented as a real-time tactical targeting system. It do
 - `correlation/events.ts` combines thermal clusters, reports, restrictions, bulletins, and aircraft anomalies into analytical event classes.
 - `scoring/confidence.ts` emits a transparent reasoning object with additive/subtractive signals.
 - `analytics/summary.ts` computes corridor density, deviation counts, transponder loss windows, reroute clusters, and event mix.
-- `reporting/markdown.ts` renders a generated markdown brief for seeded/demo output.
+- `reporting/markdown.ts` renders a generated markdown brief that labels demo vs live inputs honestly.
 
 ## Reliability / observability
 - Structured logs via Pino.
@@ -51,10 +51,13 @@ It is not designed or documented as a real-time tactical targeting system. It do
 - Cache adapter abstraction (in-memory demo + Redis adapter).
 - Prometheus metrics endpoint exposing ingestion lag, provider failures, dedupe rate, and event volume.
 - Fail-closed geospatial validation for polygons/bboxes.
-- Raw payload preservation for every seeded provider record.
+- Raw payload preservation for every ingested provider response, including live OpenSky snapshots.
 
 ## Honest status
-- Seeded/demo flow works end-to-end without network access.
-- Live provider credentialed ingestion is scaffolded behind interfaces, not claimed as fully production-wired in this first implementation.
-- PostGIS schema/migrations are included and align to the runtime model, but demo mode persists to a JSON snapshot for deterministic local use.
+- Demo flow works end-to-end without network access.
+- Live flow works end-to-end for the public OpenSky current-state track feed.
+- Because that live source is current-state only, live mode presently yields track snapshots without live restriction/indicator correlation.
+- ADS-B Exchange, FlightAware, NOTAM feeds, ICAO/EASA bulletins, and automated live OSINT remain outside the active live path in this branch.
+- NASA FIRMS is not enabled by default because its live API requires credentials (`MAP_KEY`).
+- PostGIS schema/migrations are included and align to the runtime model, but file-backed JSON snapshots remain the default local runtime.
 - Public UI/API output is intentionally safer than internal storage: delayed/coarsened, clearly labeled, and framed for research/journalistic/humanitarian use only.

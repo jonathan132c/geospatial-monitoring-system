@@ -1,5 +1,5 @@
 {
-  "reviewedAt": "2026-03-29T10:11:53Z",
+  "reviewedAt": "2026-03-29T16:29:51Z",
   "sourceFile": "data/generated/demo-snapshot.json",
   "outputFiles": [
     "data/generated/demo-snapshot.json",
@@ -731,7 +731,7 @@
     },
     {
       "recordType": "event",
-      "id": "event-diversion-4defb183-14b2-4d4c-a9df-2a14868f82aa",
+      "id": "event-diversion-644de497-2c02-41d6-b293-b4883cc07569",
       "changes": [
         "removed overstated taxonomy",
         "recomputed conservative score",
@@ -1602,7 +1602,7 @@
     },
     {
       "recordType": "event",
-      "id": "event-diversion-4defb183-14b2-4d4c-a9df-2a14868f82aa",
+      "id": "event-diversion-644de497-2c02-41d6-b293-b4883cc07569",
       "from": {
         "eventType": "aircraft_diversion_cluster",
         "confidence": 0.55,
@@ -2161,7 +2161,7 @@
     },
     {
       "recordType": "event",
-      "id": "event-diversion-4defb183-14b2-4d4c-a9df-2a14868f82aa",
+      "id": "event-diversion-644de497-2c02-41d6-b293-b4883cc07569",
       "from": [
         "israel",
         "eastern-mediterranean"
@@ -2224,7 +2224,7 @@
       "reason": "New deterministic score penalizes synthetic lineage and missing exact external matches."
     },
     {
-      "eventId": "event-diversion-4defb183-14b2-4d4c-a9df-2a14868f82aa",
+      "eventId": "event-diversion-644de497-2c02-41d6-b293-b4883cc07569",
       "legacyEventType": "aircraft_diversion_cluster",
       "newEventType": "traffic_disruption_cluster",
       "legacyConfidence": 0.55,

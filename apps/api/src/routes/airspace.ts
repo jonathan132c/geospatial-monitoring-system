@@ -14,7 +14,7 @@ export const registerAirspaceRoutes = (app: FastifyInstance, repository: Snapsho
         start: parsed.start,
         end: parsed.end
       }).map(toPublicRestriction),
-      meta: publicResponseMeta('airspace_restrictions')
+      meta: publicResponseMeta(snapshot, 'airspace_restrictions')
     };
   });
 };

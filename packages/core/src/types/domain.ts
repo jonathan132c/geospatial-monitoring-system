@@ -2,6 +2,11 @@ export type RegionId = 'iran' | 'israel' | 'arabian-peninsula' | 'eastern-medite
 
 export type WindowHours = 6 | 24 | 72;
 
+export type SnapshotMode = 'demo' | 'live';
+export type ProviderKind = 'track' | 'restriction' | 'conflict';
+export type ProviderAccess = 'fixture' | 'public' | 'credentialed' | 'manual';
+export type ProviderExecutionStatus = 'success' | 'failed' | 'disabled' | 'unsupported';
+
 export interface PointGeometry {
   type: 'Point';
   coordinates: [number, number];
@@ -217,9 +222,32 @@ export interface AnalyticsSummary {
   eventCorrelationStats: Record<EventType, number>;
 }
 
+export interface ProviderRunStatus {
+  provider: string;
+  kind: ProviderKind;
+  access: ProviderAccess;
+  status: ProviderExecutionStatus;
+  enabled: boolean;
+  liveCapable: boolean;
+  recordCount: number;
+  rawPayloadCount: number;
+  reason?: string;
+}
+
+export interface SnapshotSourceMetadata {
+  mode: SnapshotMode;
+  liveData: boolean;
+  honestLivePath: boolean;
+  fixtureBacked: boolean;
+  activeProviders: string[];
+  notes: string[];
+  providerStatuses: ProviderRunStatus[];
+}
+
 export interface MonitoringSnapshot {
   generatedAt: string;
   windowHours: WindowHours;
+  sourceMetadata: SnapshotSourceMetadata;
   regions: RegionDefinition[];
   restrictions: AirspaceRestriction[];
   tracks: FlightTrack[];
